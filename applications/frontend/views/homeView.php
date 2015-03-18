@@ -357,7 +357,7 @@
                                 <span ng-bind-html="&#39;OS-ABOUT-TIMELINE-DESCRIPTION&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->timeline_description ?></span>
                               </p>
                           </div>
-                          <div class="row padbottom padtop subrow">
+                          <div class="row padbottom padtop subrow" style="display:none;">
                             <div class="col-md-4">
                               <div class="text-center">
                                 <h3 class="titlify DidotLTPro-Italic"><span ng-bind-html="&#39;OS-ABOUT-SHARE-THE&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->first_title[0] ?></span> <span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-ABOUT-INNOVATION&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->first_title[1] ?></span> </span></h3>
@@ -398,7 +398,7 @@
     </script>
 </div><!-- end ngIf: session.language -->
   <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/products.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/products.html&#39;" analytics-on="scrollby" analytics-event="Products" analytics-category="Scrolled To" class="ng-scope"><!-- products.html -->
-<section class="subsection ng-scope" id="why_jafra_products">
+<section class="subsection ng-scope expanded" id="why_jafra_products">
         <div class="container subcontainer">
             <div class="row">
                 <div class="col-md-6">
@@ -410,7 +410,7 @@
                             <span ng-bind-html="&#39;OS-SECTION2-BODY&#39; | translate | unsafe" class="ng-binding">¡Te fascinan desde la primera vez que los pruebas! Nuestras líneas de productos JAFRA son únicas ya que combinan lo mejor de la ciencia con la naturaleza. Ofréceles a tus Clientes resultados comprobados en el cuidado de la piel, colores de moda, artículos de tocador, y las lujosas fragancias para damas y caballeros.</span>
                         </p>
                         <!-- collapsed section toggle (default collapsed) -->
-                        <p class="text-right prod_more_link"><a class="more-link more-link-alt collapsed" data-toggle="collapse" data-target="#more_products" analytics-on="click" analytics-event="Expand Products" analytics-category="Content"><span><span ng-bind-html="&#39;OUR-PRODUCTS&#39; | translate | unsafe" class="ng-binding">Nuestros Productos</span></span></a></p>
+                        <p class="text-right prod_more_link"><a style="display:none" class="more-link more-link-alt collapsed" data-toggle="collapse" data-target="#more_products" analytics-on="click" analytics-event="Expand Products" analytics-category="Content"><span><span ng-bind-html="&#39;OUR-PRODUCTS&#39; | translate | unsafe" class="ng-binding">Nuestros Productos</span></span></a></p>
                     </div><!-- /.section-copy -->
                 </div><!-- /.col -->
                 <div class="col-md-6">
@@ -445,7 +445,7 @@
                     </div><!-- /.carousel -->
                 </div><!-- /.col -->
             </div><!-- /.row -->
-            <div id="more_products" class="row collapse">
+            <div id="more_products" class="row collapse in">
                 <div class="col-md-10 col-md-offset-1 padtop">
                   <h3 class="titlify text-center section-title"><span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE&#39; | translate | unsafe" class="ng-binding">PUREZA y RENDIMIENTO</span></h3>
                   <p class="freedom_flexibility_description text-center padbottom">
