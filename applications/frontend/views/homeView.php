@@ -147,7 +147,7 @@
       <!-- ngView:  --><div ng-view="" class="ngview ng-scope" autoscroll="true">
 <section id="top" class="ng-scope">
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron" style="background:url('<?php echo $hero[0]->path ?>')">
+  <div class="jumbotron" style="background-image:url('<?php echo $hero[0]->path ?>')">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -818,118 +818,39 @@
     <div class="subsection">
         <div class="container">
             <div class="col-md-6">
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse1" analytics-on="click" analytics-event="Expand FAQ 01" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION1&#39; | translate | unsafe" class="ng-binding">P: ¿Qué significa ser una Consultora de JAFRA?</span> <a class="h4 more-link"></a>
+            <?php for ($i=0; $i < 6; $i++): ?>
+                    
+                    <div class="faqs-item">
+                        <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse<?= $i+1; ?>" analytics-on="click" analytics-event="Expand FAQ 0<?= $i+1; ?>" analytics-category="Content">
+                            <span ng-bind-html="&#39;OS-FAQ-QUESTION5&#39; | translate | unsafe" class="ng-binding"><?= $faqs[$i]->question ?></span> <a class="h4 more-link"></a>
+                        </div>
+                        <div class="faqs-item-answer">
+                            <!-- collapsed section content (default collapsed) -->
+                            <p id="FAQcollapse<?= $i+1; ?>" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION5-ANSWER&#39; | translate | unsafe"><?= $faqs[$i]->answer ?></p>
+                        </div>
                     </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse1" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION1-ANSWER&#39; | translate | unsafe">R: Estás ahí como nuestra representante para vender nuestros fantásticos productos JAFRA directamente a clientes donde quieras hacerlo: en Clases con Anfitrionas, en reuniones informales, o a través del Internet. ¡De ti depende! Además, ahora formas parte de un grupo de mujeres inteligentes que viven una vida plena, con un verdadero sentido. Tú crees en la amistad y te apasiona lo que haces. JAFRA te abre el camino para que tu potencial se convierta en la vida exitosa que sólo tú puedes imaginar.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question" data-toggle="collapse" data-target="#FAQcollapse2" analytics-on="click" analytics-event="Expand FAQ 02" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION2&#39; | translate | unsafe" class="ng-binding">P: ¿Qué necesito saber sobre los productos JAFRA?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse2" class="ng-binding collapse in" ng-bind-html="&#39;OS-FAQ-QUESTION2-ANSWER&#39; | translate | unsafe" style="height: auto;">R. Te encantará compartir, demostrar y vender los productos JAFRA porque son fabulosos para embellecer de la cabeza a los pies. A medida que participes en las capacitaciones en línea y veas nuestros Folletos y Catálogos, aprenderás acerca de nuestras cuatro categorías de productos que incluyen cuidado de la piel, color, fragancias y cuidado personal.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse3" analytics-on="click" analytics-event="Expand FAQ 03" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION3&#39; | translate | unsafe" class="ng-binding">P: ¿Cómo empiezo a compartir los productos JAFRA?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse3" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION3-ANSWER&#39; | translate | unsafe">R: Sólo tienes que hacer una lista de tus amistades, familiares y vecinas, y llámalas por teléfono o ponte en contacto con ellas a través de las redes sociales. Hazles saber que ahora eres una Consultora de JAFRA, y que les quieres mostrar la belleza de los productos JAFRA. Todo el mundo quiere lucir mejor su belleza, ¡así que encontrarás personas interesadas de inmediato!</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse4" analytics-on="click" analytics-event="Expand FAQ 04" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION4&#39; | translate | unsafe" class="ng-binding">P: ¿Cuánto puedo ganar?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse4" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION4-ANSWER&#39; | translate | unsafe">R: Tú eres la dueña de tu negocio ¡así que de ti depende! Puedes ganar hasta una comisión del 50% por tus ventas personales. ¡Entre más vendas, más ganas! En una Clase con ventas de $300, puedes recuperar fácilmente tu inversión inicial y más. También puedes convertirte en Líder y patrocinar a otras empresarias para vender JAFRA, ¡lo cual generará más ingreso potencial para ti sobre las ventas de tu Equipo! También puedes recibir grandes recompensas, tales como viajes fantásticos, productos gratis, joyas y otros fabulosos regalos de incentivo.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse5" analytics-on="click" analytics-event="Expand FAQ 05" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION5&#39; | translate | unsafe" class="ng-binding">P: ¿Cómo me pagan los bonos y comisiones?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse5" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION5-ANSWER&#39; | translate | unsafe">R: Tienes dos opciones. Los pagos se hacen: 1) A través de Depósito Directo en tu cuenta de cheques. 2) Se depositan en una cuenta de Débito MasterCard de JAFRA. Asegúrate de elegir la opción en cuanto ingreses a  JAFRA ¡para que no dejes de recibir tu pago!</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse6" analytics-on="click" analytics-event="Expand FAQ 06" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION6&#39; | translate | unsafe" class="ng-binding">P: ¿Recibiré capacitación de JAFRA?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse6" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION6-ANSWER&#39; | translate | unsafe">R: ¡Sí! Recuerda que tu negocio es independiente ¡pero no estás sola! Con rapidez, serás una experta en JAFRA con nuestra práctica y poderosa capacitación en línea, que incluye transmisiones en vivo, videos y herramientas que puedes bajar y mucho más. También te informaremos acerca de importantes juntas de Equipo mensuales. Además, JAFRA realiza eventos de capacitación donde miles de Consultoras se reúnen para recibir una capacitación avanzada y para conocer más oportunidades del negocio.</p>
-                    </div>
-                </div>
+                    <hr>
+            <?php endfor; ?>
             </div>
             <div class="col-md-6">
-                <hr class="hidden-md hidden-lg">
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse7" analytics-on="click" analytics-event="Expand FAQ 07" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION7&#39; | translate | unsafe" class="ng-binding">P: ¿Necesito trabajar cierto número de horas?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse7" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION7-ANSWER&#39; | translate | unsafe">R: No es necesario. Eres tu propio jefe así que tú decides cuánto tiempo le quieres dedicar a tu negocio JAFRA. Puedes pensar en él como una oportunidad de tiempo completo o de tiempo parcial. De cualquier manera, tienes la libertad de programar el tiempo con tu familia o para tu vida personal de la manera que lo desees.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse8" analytics-on="click" analytics-event="Expand FAQ 08" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION8&#39; | translate | unsafe" class="ng-binding">P: ¿Necesito lograr un número mínimo de ventas?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse8" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION8-ANSWER&#39; | translate | unsafe">R: Tenemos una norma para esto: Para permanecer como Consultora de JAFRA, debes hacer por lo menos un Pedido al Precio Público de $300 ó más en un período de 12 meses. Con todos los fabulosos productos JAFRA que la gente va a querer adquirir de ti, puedes estar segura de cumplir fácilmente con este requisito.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse9" analytics-on="click" analytics-event="Expand FAQ 09" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION9&#39; | translate | unsafe" class="ng-binding">P: ¿Cuánto dinero tengo que invertir?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse9" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION9-ANSWER&#39; | translate | unsafe">R: Puedes adquirir nuestro Kit Royal del Negocio por $99 más envío y manejo. Este kit tiene todo lo que necesitas para tener éxito. O puedes elegir comprar nuestro Kit Especial del Negocio por un precio tan bajo como $39.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse10" analytics-on="click" analytics-event="Expand FAQ 10" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION10&#39; | translate | unsafe" class="ng-binding">P: ¿Ofrece JAFRA una garantía del producto?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse10" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION10-ANSWER&#39; | translate | unsafe">R: ¡Por supuesto! Es una garantía que respeta los deseos de nuestros Clientes. Queremos Consultoras felices y Clientes 100% satisfechos. Por lo tanto, ofrecemos con facilidad hacer devoluciones gratis e intercambios dentro de seis (6) meses de la fecha de compra de un producto.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="faqs-item">
-                    <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse11" analytics-on="click" analytics-event="Expand FAQ 11" analytics-category="Content">
-                        <span ng-bind-html="&#39;OS-FAQ-QUESTION11&#39; | translate | unsafe" class="ng-binding">P: ¿En qué se diferencia JAFRA de otras compañías de cosméticos en ventas directas?</span> <a class="h4 more-link"></a>
-                    </div>
-                    <div class="faqs-item-answer">
-                        <!-- collapsed section content (default collapsed) -->
-                        <p id="FAQcollapse11" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION11-ANSWER&#39; | translate | unsafe">R: Fundada en 1956 en Malibu, California, por Jan y Frank Day, JAFRA ha permanecido fiel a su misión por más de 58 años --- ayudando a las mujeres a lograr la vida que se han imaginado a través de un negocio propio. Esta misión también se enfoca en liderazgo, la pasión por servir, trabajo en equipo e integridad. Como resultado, más de 500,000 Consultoras venden nuestros productos en 18 países, y JAFRA es parte de una familia que se encuentra entre las cinco primeras compañías de ventas directas en el mundo.</p>
-                    </div>
-                </div>
+                <?php for ($i=6; $i < count($faqs); $i++): ?>
+                    
+                        <div class="faqs-item">
+                            <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse<?= $i+1; ?>" analytics-on="click" analytics-event="Expand FAQ 05" analytics-category="Content">
+                                <span ng-bind-html="&#39;OS-FAQ-QUESTION5&#39; | translate | unsafe" class="ng-binding"><?= $faqs[$i]->question ?></span> <a class="h4 more-link"></a>
+                            </div>
+                            <div class="faqs-item-answer">
+                                <!-- collapsed section content (default collapsed) -->
+                                <p id="FAQcollapse<?= $i+1; ?>" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION5-ANSWER&#39; | translate | unsafe"><?= $faqs[$i]->answer ?></p>
+                            </div>
+                        </div>
+                        <hr>
+                <?php endfor; ?>
             </div>
+            
+            
+            
+            
             <div class="col-md-12 text-center">
                 <div class="well">
                     <a class="btn btn-primary btn-lg HelveticaNeueLTStd-BdCn" analytics-on="click" analytics-event="FAQs CTA" analytics-category="Buttons" role="button" data-toggle="modal" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-JOIN-BTN&#39; | translate | unsafe" class="ng-binding">¡Únete ahora!</span></a>

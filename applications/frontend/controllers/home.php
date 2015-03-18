@@ -46,8 +46,9 @@ class Home extends CI_Controller
         
         // $data['pageTitle']             =     '';
         // $data['pageDescription']                =    '';
-        $data['hero']            = $this->cms->getHeroSection();
-        $data['timeline']                    = $this->cms->getTimelineSection();
+        $data['hero']     = $this->cms->getHeroSection();
+        $data['timeline'] = $this->cms->getTimelineSection();
+        $data['faqs'] = $this->cms->getFaqSection();
         // $data['seo']                            = $this->cms->seoData('28');
         $this->load->view('homeView',$data);
         

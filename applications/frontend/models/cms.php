@@ -54,6 +54,18 @@ class Cms extends CI_Model {
             }
     }
     
+    public function getFaqSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_faqs');
+   	 $query = $this->db->get();
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{  
+       		$row = $query->result();
+            return $row;
+            }
+    }
+    
     private function splitWords($str){
         $array = explode(' ',$str);
         $lastword = array_pop($array);
