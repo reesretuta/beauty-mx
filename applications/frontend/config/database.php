@@ -42,33 +42,34 @@ if($_SERVER['HTTP_HOST']=='')
 else
     $active_group = 'local';
     
-$active_record = TRUE;
-
 
 if ($_SERVER['HTTP_HOST'] == 'peaceful-dusk-5744.herokuapp.com') {
     $active_group = 'heroku';
 }
 
+if ($_SERVER['HTTP_HOST'] == 'mexico.lavisual.com') {
+    $active_group = 'staging';
+}
 
 
+$active_record = TRUE;
 
 
-
-$db['default']['hostname'] = 'farmersmarketla.com';
-$db['default']['username'] = 'farmersmarket';
-$db['default']['password'] = 'f@rm3r5M@rk3T';
-$db['default']['database'] = 'fmla';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+// $db['default']['hostname'] = 'farmersmarketla.com';
+// $db['default']['username'] = 'farmersmarket';
+// $db['default']['password'] = 'f@rm3r5M@rk3T';
+// $db['default']['database'] = 'fmla';
+// $db['default']['dbdriver'] = 'mysql';
+// $db['default']['dbprefix'] = '';
+// $db['default']['pconnect'] = TRUE;
+// $db['default']['db_debug'] = TRUE;
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
 
 
 $db['draft']['hostname'] = 'lavisual.com';
@@ -104,40 +105,56 @@ $db['local']['swap_pre'] = '';
 $db['local']['autoinit'] = TRUE;
 $db['local']['stricton'] = FALSE;
 
-
-$db['heroku']['hostname'] = 'us-cdbr-iron-east-02.cleardb.net';
-$db['heroku']['username'] = 'b66d43ad3d8cb8';
-$db['heroku']['password'] = '9512ed6a';
-$db['heroku']['database'] = 'heroku_b524545de656659';
-$db['heroku']['dbdriver'] = 'mysql';
-$db['heroku']['dbprefix'] = '';
-$db['heroku']['pconnect'] = TRUE;
-$db['heroku']['db_debug'] = TRUE;
-$db['heroku']['cache_on'] = FALSE;
-$db['heroku']['cachedir'] = '';
-$db['heroku']['char_set'] = 'utf8';
-$db['heroku']['dbcollat'] = 'utf8_general_ci';
-$db['heroku']['swap_pre'] = '';
-$db['heroku']['autoinit'] = TRUE;
-$db['heroku']['stricton'] = FALSE;
-
+$db['staging']['hostname'] = 'localhost';
+$db['staging']['username'] = 'reesretuta';
+$db['staging']['password'] = 'bn9?11Hl';
+$db['staging']['database'] = 'mexico_jafra';
+$db['staging']['dbdriver'] = 'mysql';
+$db['staging']['dbprefix'] = '';
+$db['staging']['pconnect'] = TRUE;
+$db['staging']['db_debug'] = TRUE;
+$db['staging']['cache_on'] = FALSE;
+$db['staging']['cachedir'] = '';
+$db['staging']['char_set'] = 'utf8';
+$db['staging']['dbcollat'] = 'utf8_general_ci';
+$db['staging']['swap_pre'] = '';
+$db['staging']['autoinit'] = TRUE;
+$db['staging']['stricton'] = FALSE;
 
 
-$db['svn_server']['hostname'] = 'localhost';
-$db['svn_server']['username'] = 'root';
-$db['svn_server']['password'] = '52visual';
-$db['svn_server']['database'] = 'author_bucket';
-$db['svn_server']['dbdriver'] = 'mysql';
-$db['svn_server']['dbprefix'] = '';
-$db['svn_server']['pconnect'] = TRUE;
-$db['svn_server']['db_debug'] = TRUE;
-$db['svn_server']['cache_on'] = FALSE;
-$db['svn_server']['cachedir'] = '';
-$db['svn_server']['char_set'] = 'utf8';
-$db['svn_server']['dbcollat'] = 'utf8_general_ci';
-$db['svn_server']['swap_pre'] = '';
-$db['svn_server']['autoinit'] = TRUE;
-$db['svn_server']['stricton'] = FALSE;
+// $db['heroku']['hostname'] = 'us-cdbr-iron-east-02.cleardb.net';
+// $db['heroku']['username'] = 'b66d43ad3d8cb8';
+// $db['heroku']['password'] = '9512ed6a';
+// $db['heroku']['database'] = 'heroku_b524545de656659';
+// $db['heroku']['dbdriver'] = 'mysql';
+// $db['heroku']['dbprefix'] = '';
+// $db['heroku']['pconnect'] = TRUE;
+// $db['heroku']['db_debug'] = TRUE;
+// $db['heroku']['cache_on'] = FALSE;
+// $db['heroku']['cachedir'] = '';
+// $db['heroku']['char_set'] = 'utf8';
+// $db['heroku']['dbcollat'] = 'utf8_general_ci';
+// $db['heroku']['swap_pre'] = '';
+// $db['heroku']['autoinit'] = TRUE;
+// $db['heroku']['stricton'] = FALSE;
+
+
+
+// $db['svn_server']['hostname'] = 'localhost';
+// $db['svn_server']['username'] = 'root';
+// $db['svn_server']['password'] = '52visual';
+// $db['svn_server']['database'] = 'author_bucket';
+// $db['svn_server']['dbdriver'] = 'mysql';
+// $db['svn_server']['dbprefix'] = '';
+// $db['svn_server']['pconnect'] = TRUE;
+// $db['svn_server']['db_debug'] = TRUE;
+// $db['svn_server']['cache_on'] = FALSE;
+// $db['svn_server']['cachedir'] = '';
+// $db['svn_server']['char_set'] = 'utf8';
+// $db['svn_server']['dbcollat'] = 'utf8_general_ci';
+// $db['svn_server']['swap_pre'] = '';
+// $db['svn_server']['autoinit'] = TRUE;
+// $db['svn_server']['stricton'] = FALSE;
 
 define('DATABASE', $db[$active_group]['database']);
 

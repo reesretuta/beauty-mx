@@ -42,7 +42,19 @@ if($_SERVER['HTTP_HOST']=='')
 else
     $active_group = 'local';
     
-    $active_record = TRUE;
+    
+    
+    
+if ($_SERVER['HTTP_HOST'] == 'peaceful-dusk-5744.herokuapp.com') {
+    $active_group = 'heroku';
+}
+
+if ($_SERVER['HTTP_HOST'] == 'mexico.lavisual.com') {
+    $active_group = 'staging';
+}
+    
+
+$active_record = TRUE;
 
 
 
@@ -50,38 +62,38 @@ else
     
 
 
-$db['default']['hostname'] = 'farmersmarketla.com';
-$db['default']['username'] = 'farmersmarket';
-$db['default']['password'] = 'f@rm3r5M@rk3T';
-$db['default']['database'] = 'fmla';
-$db['default']['dbdriver'] = 'mysql';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+// $db['default']['hostname'] = 'farmersmarketla.com';
+// $db['default']['username'] = 'farmersmarket';
+// $db['default']['password'] = 'f@rm3r5M@rk3T';
+// $db['default']['database'] = 'fmla';
+// $db['default']['dbdriver'] = 'mysql';
+// $db['default']['dbprefix'] = '';
+// $db['default']['pconnect'] = TRUE;
+// $db['default']['db_debug'] = TRUE;
+// $db['default']['cache_on'] = FALSE;
+// $db['default']['cachedir'] = '';
+// $db['default']['char_set'] = 'utf8';
+// $db['default']['dbcollat'] = 'utf8_general_ci';
+// $db['default']['swap_pre'] = '';
+// $db['default']['autoinit'] = TRUE;
+// $db['default']['stricton'] = FALSE;
 
 
-$db['draft']['hostname'] = 'lavisual.com';
-$db['draft']['username'] = 'v-jafra';
-$db['draft']['password'] = 'uO1ge6_8';
-$db['draft']['database'] = 'videra_jafra';
-$db['draft']['dbdriver'] = 'mysql';
-$db['draft']['dbprefix'] = '';
-$db['draft']['pconnect'] = FALSE;
-$db['draft']['db_debug'] = TRUE;
-$db['draft']['cache_on'] = FALSE;
-$db['draft']['cachedir'] = '';
-$db['draft']['char_set'] = 'utf8';
-$db['draft']['dbcollat'] = 'utf8_general_ci';
-$db['draft']['swap_pre'] = '';
-$db['draft']['autoinit'] = TRUE;
-$db['draft']['stricton'] = FALSE;
+// $db['draft']['hostname'] = 'lavisual.com';
+// $db['draft']['username'] = 'v-jafra';
+// $db['draft']['password'] = 'uO1ge6_8';
+// $db['draft']['database'] = 'videra_jafra';
+// $db['draft']['dbdriver'] = 'mysql';
+// $db['draft']['dbprefix'] = '';
+// $db['draft']['pconnect'] = FALSE;
+// $db['draft']['db_debug'] = TRUE;
+// $db['draft']['cache_on'] = FALSE;
+// $db['draft']['cachedir'] = '';
+// $db['draft']['char_set'] = 'utf8';
+// $db['draft']['dbcollat'] = 'utf8_general_ci';
+// $db['draft']['swap_pre'] = '';
+// $db['draft']['autoinit'] = TRUE;
+// $db['draft']['stricton'] = FALSE;
 
 
 $db['local']['hostname'] = 'localhost';
@@ -101,22 +113,38 @@ $db['local']['autoinit'] = TRUE;
 $db['local']['stricton'] = FALSE;
 
 
+$db['staging']['hostname'] = 'localhost';
+$db['staging']['username'] = 'reesretuta';
+$db['staging']['password'] = 'bn9?11Hl';
+$db['staging']['database'] = 'mexico_jafra';
+$db['staging']['dbdriver'] = 'mysql';
+$db['staging']['dbprefix'] = '';
+$db['staging']['pconnect'] = TRUE;
+$db['staging']['db_debug'] = TRUE;
+$db['staging']['cache_on'] = FALSE;
+$db['staging']['cachedir'] = '';
+$db['staging']['char_set'] = 'utf8';
+$db['staging']['dbcollat'] = 'utf8_general_ci';
+$db['staging']['swap_pre'] = '';
+$db['staging']['autoinit'] = TRUE;
+$db['staging']['stricton'] = FALSE;
 
-$db['svn_server']['hostname'] = 'localhost';
-$db['svn_server']['username'] = 'root';
-$db['svn_server']['password'] = '52visual';
-$db['svn_server']['database'] = 'author_bucket';
-$db['svn_server']['dbdriver'] = 'mysql';
-$db['svn_server']['dbprefix'] = '';
-$db['svn_server']['pconnect'] = TRUE;
-$db['svn_server']['db_debug'] = TRUE;
-$db['svn_server']['cache_on'] = FALSE;
-$db['svn_server']['cachedir'] = '';
-$db['svn_server']['char_set'] = 'utf8';
-$db['svn_server']['dbcollat'] = 'utf8_general_ci';
-$db['svn_server']['swap_pre'] = '';
-$db['svn_server']['autoinit'] = TRUE;
-$db['svn_server']['stricton'] = FALSE;
+
+// $db['svn_server']['hostname'] = 'localhost';
+// $db['svn_server']['username'] = 'root';
+// $db['svn_server']['password'] = '52visual';
+// $db['svn_server']['database'] = 'author_bucket';
+// $db['svn_server']['dbdriver'] = 'mysql';
+// $db['svn_server']['dbprefix'] = '';
+// $db['svn_server']['pconnect'] = TRUE;
+// $db['svn_server']['db_debug'] = TRUE;
+// $db['svn_server']['cache_on'] = FALSE;
+// $db['svn_server']['cachedir'] = '';
+// $db['svn_server']['char_set'] = 'utf8';
+// $db['svn_server']['dbcollat'] = 'utf8_general_ci';
+// $db['svn_server']['swap_pre'] = '';
+// $db['svn_server']['autoinit'] = TRUE;
+// $db['svn_server']['stricton'] = FALSE;
 
 define('DATABASE', $db[$active_group]['database']);
 
