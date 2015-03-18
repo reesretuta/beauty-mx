@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CMS  :: Welcome</title>
+	<link href="/media/css/styles.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css" />
+	<link href="/media/css/default_cms.css" type="text/css" rel="stylesheet"/>
+	<link href="/media/css/fileuploader.css" type="text/css" rel="stylesheet"/>	
+	<link href="/media/css/jquery.qtip.min.css" type="text/css" rel="stylesheet"/>
+	<link href="/media/css/jquery.uix.multiselect.css" type="text/css" rel="stylesheet"/>
+	<link href="/media/css/jquery.fancybox.css" type="text/css" rel="stylesheet"/>
+	
+	<script type="text/javascript" src="/media/js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="/media/js/jquery-ui-1.8.10.min.js"></script>
+	<script type="text/javascript" src="/media/js/common.js"></script>
+	<script type="text/javascript" src="/media/js/fileuploader.js"></script>
+	<script type="text/javascript" src="/media/js/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.stickyFeet.js"></script>
+	<script src="/media/js/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/media/js/jquery.qtip.pack.js"></script>
+	<script type="text/javascript" src="/media/js/customInput.jquery.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.hoverIntent.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.reOrder.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.uix.multiselect.min.js"></script>
+	<script type="text/javascript" src="/media/js/jquery.fancybox.js"></script>
+	<script type="text/javascript">        
+	function createUploader(){ 
+		$(".file_uploader").each(function (e){
+			var uploader = new qq.FileUploader({
+	    		element: $('.file_uploader')[e],
+	            action: '/media/uploader.php',
+	            debug: true,
+	           	allowedExtensions: ['png', 'jpg', 'gif', 'jpeg'], 
+	           	sizeLimit: 10 * 1024 * 1024,
+	            minSizeLimit: 10,
+	            multiple:false,
+	            showMessage:function(message){ $(".uploadstatus").html(message); },
+	            onComplete:function(id, fileName, response){
+		            $(".file_uploaded").eq(e).parents().find('form').prepend('<input type="hidden" name="_unlink[]" value="'+$(".file_uploaded").eq(e).val()+'"/>');
+	            	$(".file_uploaded").eq(e).val('/media/'+response.filename);
+	            	
+	            	$(".file_uploader").eq(e).find(".qq-upload-success").not(":last").remove();
+	            	$(".uploaded_image").eq(e).attr("src", '/media/imagecache.php?width=200&height=200&image=/media/'+response.filename);
+	            	$(".uploaded_image").eq(e).fadeIn(1000);
+	            	$(".file_uploader").eq(e).find("a.qq-upload-cancel").addClass('removeUploadedImage');
+	            	$(".file_uploader").eq(e).find('.removeUploadedImage').click(function (){
+	            		$(this).removeClass('.qq-upload-cancel');
+						$(".file_uploader").eq(e).find(".qq-upload-success").fadeOut();
+						$(".uploaded_image").eq(e).attr("src", "");
+						$(".uploaded_image").eq(e).slideUp();
+	            	});
+	            }
+	       });
+		});
+	}
+	window.onload = createUploader;
+	</script> 
+</head>
+
+<body>
+
+		<table class="mainpage">
+	<tr class="bt bb">
+		<td class="left">Pages:</td>
+		<td class="right">
+										<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/1"><img class="swapper" static="/media/files/f3b96c38963a04c06f0eae6b81cbda35.png" active="/media/files/1d631849954795939b285486316958c5.png" hover="/media/files/f06e1dff2f9828af42ddcf06ab9dd844.png" src="/media/files/f3b96c38963a04c06f0eae6b81cbda35.png"/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/4"><img class="swapper" static="/media/files/a343a8ce2793bc7d375d879dd8cfe0ce.png" active="/media/files/2b1b28d78c319f26713f4a4fc81ed785.png" hover="/media/files/bc31d45509d46331442f64974360f108.png" src="/media/files/a343a8ce2793bc7d375d879dd8cfe0ce.png"/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/5"><img class="swapper" static="/media/files/e4f9b96d5e75892c3426c4db518fbd6e.png" active="/media/files/b006ed8772923a46cf1a9501017bffe7.png" hover="/media/files/73534cdf8b63de0370b68aaef41a28d4.png" src="/media/files/e4f9b96d5e75892c3426c4db518fbd6e.png"/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/6"><img class="swapper" static="/media/files/63f2a5f1c8b6e221950e9df74b39d7f5.png" active="/media/files/2aba3fc85111f2fe625aab878dc41020.png" hover="/media/files/29dcc88906e6f59f6ae646d618b1db26.png" src="/media/files/63f2a5f1c8b6e221950e9df74b39d7f5.png"/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/7"><img class="swapper" static="/media/files/a521896e0bf5f3e083b9d8d282aff1ed.png" active="/media/files/2e36aae14029ac7be729dc8801cb33b4.png" hover="/media/files/6036f93b66e6e3226c7cd10110f556c1.png" src="/media/files/a521896e0bf5f3e083b9d8d282aff1ed.png"/></a>
+								<br clear="all"/>							<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/8"><img class="swapper" static="/media/files/a2e5e3b895b86c80dba68cbc48508b9b.png" active="/media/files/54bf251fe878d3c5a751932e1a4dd572.png" hover="/media/files/eb97d695ba5b82e5ee2ad0fd9f145ec0.png" src="/media/files/a2e5e3b895b86c80dba68cbc48508b9b.png"/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/9"><img class="swapper" static="/media/files/3d928bd12eda15ee327293f10a2ff5e7.png" active="/media/files/a32eecf193b4f19931eb732f7bd4cd3f.png" hover="/media/files/e3a10d5cc7131f1065a432f64fd6ba33.png" src="/media/files/3d928bd12eda15ee327293f10a2ff5e7.png"/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/10"><img class="swapper" static="/media/files/16534e2af5e0f0b8233d57adab2dcd28.png" active="/media/files/40007438d9e16318f8011ddcdd47bcfa.png" hover="/media/files/6c8568906b6dd1866dcc1e0e39afed59.png" src="/media/files/16534e2af5e0f0b8233d57adab2dcd28.png"/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/11"><img class="swapper" static="" active="" hover="" src=""/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/12"><img class="swapper" static="" active="" hover="" src=""/></a>
+								<br clear="all"/>							<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/13"><img class="swapper" static="" active="" hover="" src=""/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/14"><img class="swapper" static="" active="" hover="" src=""/></a>
+															<a class="img mainspan_img" href="http://www.farmersmarketla.com/cms/menu/15"><img class="swapper" static="" active="" hover="" src=""/></a>
+													</td>
+	</tr>
+	<tr>
+		<td class="left">Shortcuts:</td>
+		<td class="right">
+													<a class="mainspan_text bt" href="http://www.farmersmarketla.com/cms/content/blogs">01&nbsp;&nbsp;Blogs</a>
+																						<a class="mainspan_text bt" href="http://www.farmersmarketla.com/cms/content/comments">02&nbsp;&nbsp;Comments</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/media">03&nbsp;&nbsp;Media</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/cms_users">04&nbsp;&nbsp;CMS Users</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/flat_pages">05&nbsp;&nbsp;Flat Pages</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/cms_groups">06&nbsp;&nbsp;CMS Groups</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/hero">07&nbsp;&nbsp;Heros</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/users">08&nbsp;&nbsp;Users</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/promo_codes">09&nbsp;&nbsp;Promo Codes</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/sub_menu">10&nbsp;&nbsp;Sub Menus</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/cart">11&nbsp;&nbsp;Carts</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/menu">12&nbsp;&nbsp;Menus</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/cms_table_rules">13&nbsp;&nbsp;CMS Table Rules</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/merchant">14&nbsp;&nbsp;Merchants</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/merchant_category">15&nbsp;&nbsp;Merchant Categories</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/merchant_media">16&nbsp;&nbsp;Merchant Media</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/homepage_feature_tray">17&nbsp;&nbsp;Homepage Feature Trays</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/history">18&nbsp;&nbsp;Histories</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/events">19&nbsp;&nbsp;Events</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/event_media">20&nbsp;&nbsp;Event Media</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/faq_questions">21&nbsp;&nbsp;Faq Questions</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/visitor_section_category">22&nbsp;&nbsp;Visitor Section Categories</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/visitor_page_content">23&nbsp;&nbsp;Visitor Page Contents</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/direction_map">24&nbsp;&nbsp;Direction Maps</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/visitor_center_text">25&nbsp;&nbsp;Visitor Center Texts</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/featured_event">26&nbsp;&nbsp;Featured Events</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/featured_press">27&nbsp;&nbsp;Featured Press</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/find_us_online">28&nbsp;&nbsp;Find Us Onlines</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/media_contact">29&nbsp;&nbsp;Media Contacts</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/featured_press_release">30&nbsp;&nbsp;Featured Press Releases</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/items">31&nbsp;&nbsp;Items</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/item_category">32&nbsp;&nbsp;Item Categories</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/item_images">33&nbsp;&nbsp;Item Images</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/featured_items">34&nbsp;&nbsp;Featured Items</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/special_offers">35&nbsp;&nbsp;Special Offers</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/merchant_sub_category">36&nbsp;&nbsp;Merchant Sub Categories</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/item_attribute">37&nbsp;&nbsp;Item Attributes</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/item_attribute_value">38&nbsp;&nbsp;Item Attribute Values</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/event_flyer">39&nbsp;&nbsp;Event Flyers</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/social_links">40&nbsp;&nbsp;Social Links</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/products">41&nbsp;&nbsp;Products</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/attribute_name">42&nbsp;&nbsp;Attribute Names</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/attribute_value">43&nbsp;&nbsp;Attribute Values</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/upc">44&nbsp;&nbsp;Upcs</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/upc_attribute_set">45&nbsp;&nbsp;Upc Attribute Sets</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/product_categories">46&nbsp;&nbsp;Product Categories</a>
+				<br clear="all"/>																		<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/product_media">47&nbsp;&nbsp;Product Media</a>
+																						<a class="mainspan_text " href="http://www.farmersmarketla.com/cms/content/seo">48&nbsp;&nbsp;Seos</a>
+				<br clear="all"/>													</td>
+	</tr>
+</table>
+
+<ul style="display: none;">
+		<li><a href="http://www.farmersmarketla.com/cms/content/blogs">Blogs</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/comments">Comments</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/media">Media</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/cms_users">CMS Users</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/flat_pages">Flat Pages</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/cms_groups">CMS Groups</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/hero">Heros</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/users">Users</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/promo_codes">Promo Codes</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/sub_menu">Sub Menus</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/cart">Carts</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/menu">Menus</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/cms_table_rules">CMS Table Rules</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/merchant">Merchants</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/merchant_category">Merchant Categories</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/merchant_media">Merchant Media</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/homepage_feature_tray">Homepage Feature Trays</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/history">Histories</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/events">Events</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/event_media">Event Media</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/faq_questions">Faq Questions</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/visitor_section_category">Visitor Section Categories</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/visitor_page_content">Visitor Page Contents</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/direction_map">Direction Maps</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/visitor_center_text">Visitor Center Texts</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/featured_event">Featured Events</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/featured_press">Featured Press</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/find_us_online">Find Us Onlines</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/media_contact">Media Contacts</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/featured_press_release">Featured Press Releases</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/items">Items</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/item_category">Item Categories</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/item_images">Item Images</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/featured_items">Featured Items</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/special_offers">Special Offers</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/merchant_sub_category">Merchant Sub Categories</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/item_attribute">Item Attributes</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/item_attribute_value">Item Attribute Values</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/event_flyer">Event Flyers</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/social_links">Social Links</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/products">Products</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/attribute_name">Attribute Names</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/attribute_value">Attribute Values</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/upc">Upcs</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/upc_attribute_set">Upc Attribute Sets</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/product_categories">Product Categories</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/product_media">Product Media</a></li>
+		<li><a href="http://www.farmersmarketla.com/cms/content/seo">Seos</a></li>
+	</ul>
+<p style="display: none;">rendered in 0.0441s</p>
+	
+	<div id="stickyFeet">
+		<div class="dashboard_container">
+			<div class="powered_by" style="position: absolute; width:200px; right:0; margin-top:-34px; margin-right:25px;">
+				<a target="_blank" href="http://www.lavisual.com">CMS powered by La Visual <img src="/media/images/icons/LaVisual_bubble.png" alt="lavisual exclamation"/></a>
+			</div>
+			<div class="dashboard_tab" tip="click to show/hide dashboard"><span class="inner_dash">Dashboard</span></div>
+			<div class="dashboard">
+				<span style="display: block; background: #FFF; height:3px; font-size:1px;">&nbsp;</span>
+				<div class="dashboard_contents" style="padding:10px;">
+					<a class="img dashboard_logo" href="http://www.farmersmarketla.com/cms/"><img src="/media/images/logo.png"/></a>
+			
+	<div class="user_bar">
+		You are logged in as: tech@lavisual.com			</div>
+					<div class="dashboard_icons">
+						<a class="home" href="http://www.farmersmarketla.com/cms/" rel="DASHBOARD">&nbsp;</a>
+						<a class="go_to_site" href="/" rel="GO TO SITE">&nbsp;</a>
+						<a class="help" rel="HELP">&nbsp;</a>
+						<a class="logout" href="http://www.farmersmarketla.com/cms/logout" rel="LOGOUT">&nbsp;</a>
+					</div>
+					<br clear="all"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="_image_preloader">
+		<img src="/media/images/admin/loading_small.gif"/>
+		<img src="/media/images/admin/overlaybg_white.png"/>
+		<img src="/media/images/image_upload.gif"/>
+		<img src="/media/images/loading_file.gif"/>
+		<img src="/media/images/loading_small.gif"/>
+		<img src="/media/images/loading.gif"/>
+	</div>
+	
+<!-- wysiwyg -->
+
+<script type="text/javascript">
+$(function (){
+
+	$("#stickyFeet").stickyFeet();
+	$('input').customInput();
+
+
+	$("div.dashboard_tab").qtip({
+		content:{attr:"tip"},
+		position:{my:'bottom center', at:'right right'},
+		hide:'click'
+		});
+	
+	$("div.dashboard_tab").click(function(){
+		if(!$(".dashboard").is(":visible")){
+			$(this).css({'height':29});
+			$(".dashboard").slideDown();
+			$('html, body').animate({ scrollTop: 60000 }, 'slow');
+		}
+		else{
+			$(".dashboard").slideUp(function(){
+				$("div.dashboard_tab").css({'position':'absolute', 'margin-top':-32, 'height':33});
+			});
+		}
+
+	});
+
+	$(".file_uploader_redux").click(function(){
+		window.open("/cms/tools/browser?regUploader="+$(this).attr('ffield'), '', 'width=850, height=800');
+	});
+        
+
+	$(".file_cropper").live('click',function(){
+		window.open("/cms/tools/cropper?regUploader="+$(".file_uploader_redux").attr('ffield')+"&image_src="+$(".file_uploaded").val(), '', 'width=800, height=650');
+	});
+	
+	CKEDITOR.replace('content', {
+                extraPlugins:'maximize',
+	toolbar:
+		[
+			['Bold', 'Italic', 'Underline', 'Strike', 
+			 '-', 'NumberedList', 'BulletedList','Outdent','Indent','Blockquote', 'JustifyLeft', 'JustifyCenter','JustifyRight',
+			 '-', 'Link','Unlink','Anchor',
+			 '-','Cut','Copy','Paste','PasteText','PasteFromWord', 
+			 '-', 'Image', 'Iframe', 'Table', 'HorizontalRule',
+			 '-', 'Maximize', '-','Source', 'Styles', 'Format', 'FontSize', 'TextColor', '-', 'Save']
+		],
+	filebrowserImageBrowseUrl:'http://www.farmersmarketla.com/cms/browser'
+	});
+});
+</script>	
+	
+	
+</body>
+
+</html>

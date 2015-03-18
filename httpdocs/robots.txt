@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cms/
+Disallow: /ERD/
+Disallow: /hoverly/
+Disallow: /media/
+Disallow: /picture_library/
+Disallow: /plesk-stat/
+Disallow: /.svn/

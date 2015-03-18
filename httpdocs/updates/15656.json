@@ -1,0 +1,90 @@
+[{
+				   "_id":"15656",
+				   "usage":"​",
+				   "ingredients":"​",
+				   "type":"product",
+				   "taxCode":"P0000000",
+				   "standardCost":0,
+				   "searchable":true,
+				   "quantity":"",
+				   "productClass":0,
+				   "onHold":false,
+				   "name":"Powder Eyeshadow Trio",
+				   "masterType":"",
+				   "masterStatus":"",
+				   "hazmatClass":0,
+				   "description":"S<p align="left">Glides on smoothly, evenly, flawlessly. Vitamins E and C condition. Crease-proof, fade-resistant. Contact lens-compatible.</p><p align="left"></p><p align="left">Includes three shades: Amber | Pearl | Carnelian</p>",
+				   "usage_es_US":"​",
+				   "ingredients_es_US":"​",
+				   "name_es_US":"Bazaar - Trío de Sombras",
+				   "description_es_US":"<p align="left">Se desvanecen con suavidad, de manera uniforme e impecable. Con vitaminas E y C que acondicionan. No se corren en el pliegue del párpado, no cambian de color. Compatibles con el uso de lentes de contacto.</p><p align="left"></p><p align="left">Incluye tres tonos: Amber | Pearl | Carnelian</p>",
+				   "quantity_es_US":".11 oz.",
+				   "__v":0,
+				   "lastUpdated":"",
+				   "unavailableComponents":false,
+				   "availableInventory":0,
+				   "kitGroups":[
+				
+				   ],
+				   "contains":[
+				
+				   ],
+				   "hideWhenProductsUnavailable":false,
+				   "prices":[
+				      {
+				         "typeId":1,
+				         "shippingSurcharge":0,
+				         "retailVolume":0,
+				         "rebate":0,
+				         "qualifyingVolume":0,
+				         "price":16.00,
+				         "instantProfit":0,
+				         "commissionableVolume":0,
+				         "_id":"",
+				         "effectiveStartDate":"2011-01-13 21:00:00",
+				         "effectiveEndDate":"2015-02-20 18:22:36",
+				         "customerTypes":[
+				            "Non-Party Customer",
+				            "Consultant",
+				            "Party Guest",
+				            "Hostess"
+				         ],
+				         "id":""
+				      }
+				   ],
+				   "categories":[
+						
+				   ],
+				   "images":[
+				      {
+				         "rank":$i,
+				         "imagePath":"/csr-admin-4/sharedfiles/image-gallery/US/corporate/product-catalog/en_US/product/PowderEyeshadowTrio_Bazaar_580.jpg",
+				         "alt":"&nbsp;",
+				         "_id":"1",
+				         "localPath":"/media/files/PowderEyeshadowTrio_Bazaar_580.jpg",
+				         "startDate":"2014-09-10T04:00:00.000Z",
+				         "endDate":"2029-09-30T04:00:00.000Z",
+				         "id":"1"
+				      },{
+				         "rank":$i,
+				         "imagePath":"/csr-admin-4/sharedfiles/image-gallery/US/corporate/product-catalog/en_US/product/Trio_Bazzar_15656.jpg",
+				         "alt":"&nbsp;",
+				         "_id":"2",
+				         "localPath":"/media/files/Trio_Bazzar_15656.jpg",
+				         "startDate":"2014-09-10T04:00:00.000Z",
+				         "endDate":"2029-09-30T04:00:00.000Z",
+				         "id":"2"
+				      }
+				   ],
+				   "youMayAlsoLike":[
+				
+				   ],
+				   "upsellItems":[
+				
+				   ],
+				   "sharedAssets":[
+				
+				   ],
+				   "sku":"15656",
+				   "id":"15656"
+				}]

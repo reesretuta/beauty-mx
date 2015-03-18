@@ -1,0 +1,27 @@
+# Required
+# --------
+
+scheme: ftp
+host: lionstepx2.com
+username: rees
+password: sUu4c7_4
+
+# Optional
+# --------
+
+# Remote path
+path: /var/www/vhosts/lavisual.com/subdomains/mexico
+
+# Remote file name in which the current revision is stored
+revision_file: .revision
+
+# These files (from Git) will not be uploaded during a deploy
+exclude:
+    - .gitignore
+    - dandelion.yml
+
+# These files (from your working directory) will be uploaded on every deploy
+# additional:
+#     - public/css/print.css
+#     - public/css/screen.css
+#     - public/js/main.js
