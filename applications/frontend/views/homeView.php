@@ -98,9 +98,9 @@
 
           <div id="navbar-sections">
           <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿Por qué JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#starter_kits" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">KITS DE INICIO</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#FAQs" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">PREGUNTAS FRECUENTES</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿Who is JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#starter_kits" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCT</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#FAQs" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATALOGUE</span></a></li><!-- end ngIf: !inCheckout -->
             <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="" class="cta" data-toggle="modal" data-target=".bs-example-modal-lg" analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">¡INGRESA AHORA!</span></a></li><!-- end ngIf: !inCheckout -->
             <li class="contact-dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" analytics-on="click" analytics-event="Menu Contact" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV5&#39; | translate | unsafe" class="ng-binding">Contacto</span></a>
@@ -128,11 +128,13 @@
               </ul>
             </li>
             <li class="language-dropdown ng-scope" ng-controller="LanguageSwitcherController">
-              <a class="dropdown-toggle" data-toggle="dropdown" style="white-space: nowrap"><span ng-bind-html="getCurrentLanguage() | translate | unsafe" class="ng-binding">Español</span> <span class="caret"></span></a>
+                
+                <img style="padding-top:3px" src="/media/JAFRA_files/img/mexico-flag.jpg">
+              <!-- <a class="dropdown-toggle" data-toggle="dropdown" style="white-space: nowrap"><span ng-bind-html="getCurrentLanguage() | translate | unsafe" class="ng-binding">Español</span> <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a ng-click="setLanguage(&#39;en_US&#39;)" analytics-on="click" analytics-event="Language English" analytics-category="Content"><span ng-bind-html="&#39;LAN01&#39; | translate | unsafe" class="ng-binding">Inglés</span></a></li>
                 <li><a ng-click="setLanguage(&#39;es_US&#39;)" analytics-on="click" analytics-event="Language Spanish" analytics-category="Content"><span ng-bind-html="&#39;LAN02&#39; | translate | unsafe" class="ng-binding">Español</span></a></li>
-              </ul>
+              </ul> -->
             </li>
           </ul>
 			</div>
