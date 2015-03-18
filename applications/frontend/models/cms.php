@@ -24,7 +24,7 @@ class Cms extends CI_Model {
 
 
 	public function getHeroSection(){
-	 $this->db->select('header, sub_title, start_button, path');
+	 $this->db->select('*');
 	 $this->db->from('homepage_hero');
 	 $query = $this->db->get();
 	 if($query->num_rows() == 0 ){ 

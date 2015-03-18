@@ -98,15 +98,15 @@
 
           <div id="navbar-sections">
           <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿Who is JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#starter_kits" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCT</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#FAQs" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATALOGUE</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="" class="cta" data-toggle="modal" data-target=".bs-example-modal-lg" analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">¡INGRESA AHORA!</span></a></li><!-- end ngIf: !inCheckout -->
-            <li class="contact-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" analytics-on="click" analytics-event="Menu Contact" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV5&#39; | translate | unsafe" class="ng-binding">Contacto</span></a>
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#starter_kits" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#FAQs" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="" class="cta" data-toggle="modal" data-target=".bs-example-modal-lg" analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">ÚNETE</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- <li class="contact-dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" analytics-on="click" analytics-event="Menu Contact" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV5&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a>
               <ul class="dropdown-menu dropdown_jafra contact-header" role="menu">
                 <li class="contact-description ng-binding" ng-bind-html="&#39;CONTACT-INFO&#39; | translate | unsafe">1 (800) 551-2345<br>Abierto: L-V 8:30am-5:30pm<br>Hora del Pacífico</li>
-                <!-- ngIf: !inCheckout --><li class="social_dropdown ng-scope" ng-if="!inCheckout">
+                <li class="social_dropdown ng-scope" ng-if="!inCheckout">
                       <div class="social-media-icons center-block">
                         <a target="_blank" href="http://www.facebook.com/JafraWorldwide" analytics-on="click" analytics-event="Menu JAFRA Facebook" analytics-category="External Link"><i class="fa fa-facebook-square"></i></a>
                         &nbsp;
@@ -124,9 +124,16 @@
                         &nbsp;
                       </div>
 
-                </li><!-- end ngIf: !inCheckout -->
+                </li>
               </ul>
-            </li>
+            </li> -->
+            <li class="language-dropdown ng-scope" ng-controller="LanguageSwitcherController">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="white-space: nowrap"><span ng-bind-html="getCurrentLanguage() | translate | unsafe" class="ng-binding">CONTACTO</span> <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a ng-click="setLanguage(&#39;en_US&#39;)" analytics-on="click" analytics-event="Language English" analytics-category="Content"><span ng-bind-html="&#39;LAN01&#39; | translate | unsafe" class="ng-binding">Quiero Comprar</span></a></li>
+                                <li><a ng-click="setLanguage(&#39;es_US&#39;)" analytics-on="click" analytics-event="Language Spanish" analytics-category="Content"><span ng-bind-html="&#39;LAN02&#39; | translate | unsafe" class="ng-binding">Me Quiero Unir</span></a></li>
+                            </ul>
+            </li>    
             <li class="language-dropdown ng-scope" ng-controller="LanguageSwitcherController">
                 
                 <img style="padding-top:3px" src="/media/JAFRA_files/img/mexico-flag.jpg">
@@ -147,15 +154,15 @@
       <!-- ngView:  --><div ng-view="" class="ngview ng-scope" autoscroll="true">
 <section id="top" class="ng-scope">
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron" style="background-image:url('<?php echo $hero[0]->path ?>')">
+  <div class="jumbotron" style="background-image:url('<?= $hero[0]->path ?>')">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1 class="jumbo-title">
-            <span class="jumbo-title-span-1"><span ng-bind-html="&#39;OS-SECTION1-TITLE1&#39; | translate | unsafe" class="ng-binding">Vive</span></span>
-            <span class="HelveticaNeueLTStd-Th jumbo-title-span-2"><span ng-bind-html="&#39;OS-SECTION1-TITLE2&#39; | translate | unsafe" class="ng-binding">la vida que</span></span><br>
-            <span class="HelveticaNeueLTStd-Th jumbo-title-span-3"><span ng-bind-html="&#39;OS-SECTION1-TITLE3&#39; | translate | unsafe" class="ng-binding">has</span></span>
-            <span class="DidotLTPro-Italic jumbo-title-span-4"><span ng-bind-html="&#39;OS-SECTION1-TITLE4&#39; | translate | unsafe" class="ng-binding">imaginado</span></span>
+            <span class="jumbo-title-span-1"><span ng-bind-html="&#39;OS-SECTION1-TITLE1&#39; | translate | unsafe" class="ng-binding" style="font-size:80%"><?= $hero[0]->header1 ?></span></span>
+            <span class="HelveticaNeueLTStd-Th jumbo-title-span-2"><span ng-bind-html="&#39;OS-SECTION1-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $hero[0]->header2 ?></span></span><br>
+            <span class="HelveticaNeueLTStd-Th jumbo-title-span-3"><span ng-bind-html="&#39;OS-SECTION1-TITLE3&#39; | translate | unsafe" class="ng-binding"><?= $hero[0]->header3 ?></span></span>
+            <span class="DidotLTPro-Italic jumbo-title-span-4"><span ng-bind-html="&#39;OS-SECTION1-TITLE4&#39; | translate | unsafe" class="ng-binding"><?= $hero[0]->header4 ?></span></span>
           </h1>
         </div>
       </div>
