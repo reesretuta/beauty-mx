@@ -185,7 +185,9 @@
   </div>
   
 </section>
-<div class="modal fade bs-example-modal-lg kit-modal ng-scope" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+
+<!-- <div class="modal fade bs-example-modal-lg kit-modal ng-scope" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content clearfix">
 
@@ -195,9 +197,6 @@
         </button>
         <h4 class="modal-title text-center ng-binding" ng-bind-html="&#39;OS-KIT-MODAL-TITLE&#39; | translate | unsafe">Selecciona tu Kit de Inicio</h4>
       </div>
-
-      <!-- kits.html -->
-      <!-- Starter Packages -->
 
       <section class="subsection royal_kit">
         <div class="subcontainer">
@@ -228,15 +227,14 @@
 
                   <div class="product-action pull-right">
                     <span class="product-price"><small>Only<br></small> $99</span>
-                    <!-- ngIf: session.language=='en_US' -->
-                    <!-- ngIf: session.language=='es_US' --><span ng-if="session.language==&#39;es_US&#39;" class="ng-scope">
+                    <span ng-if="session.language==&#39;es_US&#39;" class="ng-scope">
                       <button type="button" class="btn btn-primary btn-lg" ng-click="join(&#39;20495&#39;)" analytics-on="click" analytics-event="Modal Buy $99" analytics-category="Buttons">
                         Cómpralo <small>(Español)</small>
                       </button>
                       <a data-target="#" ng-click="join(&#39;20494&#39;)" class="color-red text-center" style="display:block; margin-top:15px;">
                         Compra el Kit de $99 en Inglés
                       </a>
-                    </span><!-- end ngIf: session.language=='es_US' -->
+                    </span>
                   </div>
 
                 </div>
@@ -245,7 +243,7 @@
                 <img class="img-responsive" src="/media/JAFRA_files/99kit-2x.jpg">
                 <span class="pull-right color-gold" style="margin-right: 15px;"><span style="text-decoration:none; margin-right: 10px;"><img src="/media/JAFRA_files/icons-video.gif" width="25px"> <img src="/media/JAFRA_files/icons-booklets.gif" width="25px"></span> <span ng-bind-html="&#39;OS-TRAINING-INCLUDED&#39; | translate | unsafe" class="ng-binding">Incluye Capacitación!</span></span>
               </div>
-              <!-- collapsed section content (default collapsed) -->
+
               <div id="more_royal_2" class="col-md-12 collapse">
                 <div class="section-copy">
                   <p ng-bind-html="&#39;OS-KIT-PRODUCT1-DESCRIPTION&#39; | translate | unsafe" class="ng-binding"><ul><li>Advanced Dynamics Limpiador Facial Equilibrante</li><li>Advanced Dynamics Loción Facial Equilibrante</li><li>Advanced Dynamics Crema Facial Equilibrante de Día </li><li>Advanced Dynamics Crema Facial Humectante Equilibrante de Noche</li><li>Royal Jelly Milk Balm Advanced</li><li>Gel Facial Reafirmante + con Complejo Firmiplex</li><li>Gel Humectante para el Contorno de los Ojos</li><li>Gel Facial Limpiador y Refrescante</li><li>Crema Facial Hidratante de Noche</li><li>Crema Facial Hidratante de Día con FPS 15</li><li>Mascarilla Facial Exfoliante Suave</li><li>Aceite para el Cuerpo Royal Almond</li><li>LEGEND EDT</li><li>Vesen EDT</li><li>Eau d'Arômes Spray Revitalizante</li><li>Skid EDT</li></ul><h4>Además recibes ¡HERRAMIENTAS DINÁMICAS!</h4><ul><li>Bolso JAFRA Negro</li><li>Estuche JAFRA Transparente</li><li>Juego de Material Impreso Bienvenida a JAFRA</li><li>Catálogo de Productos (5)</li><li>Folleto de Temporada (10)</li><li>Folleto de la Anfitriona</li><li>Tarjetas de Presentación (50)</li><li>Forma de Pedido del Cliente (10)</li></ul></p>
@@ -288,21 +286,20 @@
 
                 <div class="product-action">
                   <span class="product-price"><small>Only<br></small> $49</span>
-                  <!-- ngIf: session.language=='en_US' -->
-                  <!-- ngIf: session.language=='es_US' --><span ng-if="session.language==&#39;es_US&#39;" class="ng-scope">
+                    <span ng-if="session.language==&#39;es_US&#39;" class="ng-scope">
                     <button type="button" class="btn btn-primary btn-lg" ng-click="join(&#39;20499&#39;)" analytics-on="click" analytics-event="Modal Buy $49" analytics-category="Buttons">
                       Cómpralo <small>(Español)</small>
                     </button>
                     <a data-target="#" ng-click="join(&#39;20498&#39;)" class="color-red text-center" style="margin-left: 20px">
                       Compra el Kit de $49 en Inglés
                     </a>
-                  </span><!-- end ngIf: session.language=='es_US' -->
+                  </span>
                 </div>
 
               </div>
             </div>
 
-            <!-- collapsed section content (default collapsed) -->
+
             <div id="more_skincare_2" class="col-md-12 collapse">
               <div class="section-copy">
                 <p ng-bind-html="&#39;OS-KIT-PRODUCT2-DESCRIPTION&#39; | translate | unsafe" class="ng-binding"><ul><li>Advanced Dynamics Limpiador Facial Equilibrante</li><li>Advanced Dynamics Loción Facial Equilibrante</li><li>Advanced Dynamics Crema Facial Equilibrante de Día </li><li>Advanced Dynamics Crema Facial Humectante Equilibrante de Noche</li><li>Royal Jelly Milk Balm Advanced</li><li>Gel Humectante para el Contorno de los Ojos</li></ul><h4>Además recibes ¡HERRAMIENTAS DINÁMICAS!</h4><ul><li>Bolso ROJO de Negocios</li><li>Juego de Material Impreso Bienvenida a JAFRA</li><li>Catálogo de Productos (5)</li><li>Folleto de Temporada (10)</li><li>Folleto de la Anfitriona</li><li>Forma de Pedido del Cliente (10)</li></ul></p>
@@ -315,7 +312,7 @@
 
     </div>
   </div>
-</div>
+</div> -->
 
 
 <section id="why_jafra" class="ng-scope">
@@ -329,7 +326,9 @@
                         <div class="col-md-10 col-md-offset-1 text-center">
                           <h3 class="hero-header-title-freedom_flexibility"><span ng-bind-html="&#39;OS-ABOUT-TITLE&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->header ?></span> </h3>
                           <p class="freedom_flexibility_description">
-                            <span ng-bind-html="&#39;OS-ABOUT-DESCRIPTION&#39; | translate | unsafe" class="ng-binding">Gana dinero de un modo divertido y provechoso, tú fijas tu horario de trabajo y ayudas a otras mujeres a lograr independencia económica. Únete a más de <b>500,000 Consultoras</b> en <b>18 países que</b> viven una vida plena y feliz.</span>
+                            <span ng-bind-html="&#39;OS-ABOUT-DESCRIPTION&#39; | translate | unsafe" class="ng-binding">
+                              <?php echo $timeline[0]->content ?>
+                              
                           </p>
                           <p>
                               <a data-target="#more_freedom" data-toggle="collapse" class="more-link more-link-alt collapsed" analytics-on="click" analytics-event="Expand About" analytics-category="Content"><span><span ng-bind-html="&#39;OS-ABOUT-MORE-LINK&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->life_with_jafra_button ?></span> </span></a>
@@ -404,10 +403,10 @@
                 <div class="col-md-6">
                     <div class="section-copy">
                         <h3 class="titlify color-purple DidotLTPro-Italic">
-                            <span ng-bind-html="&#39;OS-SECTION2-TITLE1&#39; | translate | unsafe" class="ng-binding">productos</span><br><span class="color-gold HelveticaNeueLTStd-BdCn to_love"><span ng-bind-html="&#39;OS-SECTION2-TITLE2&#39; | translate | unsafe" class="ng-binding">FASCINANTES</span></span>
+                            <span ng-bind-html="&#39;OS-SECTION2-TITLE1&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->header1 ?></span><br><span class="color-gold HelveticaNeueLTStd-BdCn to_love"><span ng-bind-html="&#39;OS-SECTION2-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->header2 ?></span></span>
                         </h3>
                         <p>
-                            <span ng-bind-html="&#39;OS-SECTION2-BODY&#39; | translate | unsafe" class="ng-binding">¡Te fascinan desde la primera vez que los pruebas! Nuestras líneas de productos JAFRA son únicas ya que combinan lo mejor de la ciencia con la naturaleza. Ofréceles a tus Clientes resultados comprobados en el cuidado de la piel, colores de moda, artículos de tocador, y las lujosas fragancias para damas y caballeros.</span>
+                            <span ng-bind-html="&#39;OS-SECTION2-BODY&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->description ?></span>
                         </p>
                         <!-- collapsed section toggle (default collapsed) -->
                         <p class="text-right prod_more_link"><a style="display:none" class="more-link more-link-alt collapsed" data-toggle="collapse" data-target="#more_products" analytics-on="click" analytics-event="Expand Products" analytics-category="Content"><span><span ng-bind-html="&#39;OUR-PRODUCTS&#39; | translate | unsafe" class="ng-binding">Nuestros Productos</span></span></a></p>
@@ -447,9 +446,9 @@
             </div><!-- /.row -->
             <div id="more_products" class="row collapse in">
                 <div class="col-md-10 col-md-offset-1 padtop">
-                  <h3 class="titlify text-center section-title"><span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE&#39; | translate | unsafe" class="ng-binding">PUREZA y RENDIMIENTO</span></h3>
+                  <h3 class="titlify text-center section-title"><span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle ?></span></h3>
                   <p class="freedom_flexibility_description text-center padbottom">
-                      <span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE-DESC&#39; | translate | unsafe" class="ng-binding">Con los ingredientes más finos, mezclados y formulados a través de un proceso de tecnología avanzada, libre de crueldad. En cada paso de su elaboración se toman muestras para probar su pureza, eficacia y rendimiento. Esta pasión por la calidad e integridad en nuestros productos ha demostrado por qué los Clientes regresan por más.</span>
+                      <span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle_description ?></span>
                   </p>
                 </div>
 
@@ -458,8 +457,8 @@
                         <img src="/media/JAFRA_files/products-skincare.png" class="img-responsive">
                     </div>
                     <div class="col-md-8">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-SKINCARE&#39; | translate | unsafe" class="ng-binding">CUIDADO DEL CUTIS</span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-SKINCARE-DESC&#39; | translate | unsafe" class="ng-binding">Nuestro legado del cuidado del cutis empezó con la Jalea Real, un ingrediente natural súper rico en proteínas y vitaminas. En la actualidad, se encuentra presente en todos nuestros legendarios tratamientos Royal Jelly para el cuidado de la piel. También, somos conocidos por un innovador cuidado del cutis Advanced Dynamics y los cosmecéuticos de JAFRA PRO.</span></p>
+                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-SKINCARE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->first_title ?></span></h3>
+                        <p><span ng-bind-html="&#39;OS-PRODUCTS-SKINCARE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->first_description ?></span></p>
                     </div>
                 </div>
 
@@ -468,8 +467,8 @@
                         <img src="/media/JAFRA_files/products-fragrance.png" class="img-responsive">
                     </div>
                     <div class="col-md-5">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding">FRAGANCIAS</span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding">Perfumeros de fama internacional elaboran los aromas de JAFRA con ingredientes de excelente calidad. Ellos saben también que una fragancia debe crear recuerdos que evoquen momentos inolvidables y reflejen nuestra personalidad. Ofrecemos extensas líneas para damas y caballeros de todas las edades, e incluso para bebés.</span></p>
+                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->second_title ?></span></h3>
+                        <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->second_description ?></span></p>
                     </div>
                 </div>
 
@@ -478,8 +477,8 @@
                         <img src="/media/JAFRA_files/products-color.png" class="img-responsive">
                     </div>
                     <div class="col-md-5">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-COLOR&#39; | translate | unsafe" class="ng-binding">COLOR</span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-COLOR-DESC&#39; | translate | unsafe" class="ng-binding">Cuando veas los colores de JAFRA, sabrás por qué nuestros productos están a día con las tendencias e inspirados por la moda. Elige entre bases impecables de maquillaje, labiales de cobertura total en tonos de lujo, sombras y delineadores para ojos a la moda y los indispensables esmaltes para uñas.</span></p>
+                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-COLOR&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->third_title ?></span></h3>
+                        <p><span ng-bind-html="&#39;OS-PRODUCTS-COLOR-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->third_description ?></span></p>
                     </div>
                 </div>
 
@@ -488,23 +487,23 @@
                         <img src="/media/JAFRA_files/products-toiletries.png" class="img-responsive">
                     </div>
                     <div class="col-md-5">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-TOILETRIES&#39; | translate | unsafe" class="ng-binding">ARTÍCULOS DE TOCADOR</span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-TOILETRIES-DESC&#39; | translate | unsafe" class="ng-binding">Te sentirás orgullosa de vender los irresistibles y extraordinarios productos aromáticos para el cuidado del cuerpo y cabello. No nos hemos olvidado de nadie, tenemos líneas de artículos de tocador para toda la familia.</span></p>
+                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-TOILETRIES&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->fourth_title ?></span></h3>
+                        <p><span ng-bind-html="&#39;OS-PRODUCTS-TOILETRIES-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->fourth_description ?></span></p>
                     </div>
                 </div>
 
                <div class="row subrow text-center cta-section">
                     <p class="titlify color-purple DidotLTPro-Italic text-center">
 
-                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART1&#39; | translate | unsafe" class="ng-binding">La belleza es</span> 
+                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART1&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro1 ?></span> 
 
-                        <span class="color-red HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART2&#39; | translate | unsafe" class="ng-binding">tuya</span></span>. 
+                        <span class="color-red HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro2 ?></span></span>. 
 
-                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART3&#39; | translate | unsafe" class="ng-binding"><br>¡Todo lo que tienes que hacer es compartir!</span>
+                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART3&#39; | translate | unsafe" class="ng-binding"><br><?= $productstolove[0]->outro3 ?></span>
 
                     </p>
 
-                    <p><br><br> <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" data-toggle="modal" data-target=".bs-example-modal-lg" role="button" href=""><span ng-bind-html="&#39;OS-PRODUCTS-GET-YOUR-STARTER-KIT&#39; | translate | unsafe" class="ng-binding">Adquiere tu Kit de Inicio</span></a></p>
+                    <p><br><br> <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" data-toggle="modal" data-target=".bs-example-modal-lg" role="button" href=""><span ng-bind-html="&#39;OS-PRODUCTS-GET-YOUR-STARTER-KIT&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->get_starter_kit_button ?></span></a></p>
                </div>
             </div>
         </div><!-- /.container -->
@@ -519,10 +518,10 @@
                 </div><!-- /.col -->
                 <div class="col-md-6">
                     <div class="section-copy">
-                        <h3 class="hero-header-title"><small class="color-gold DidotLTPro-Italic">Es tu</small><br><span class="color-violet">Decisión</span>
+                        <h3 class="hero-header-title"><small class="color-gold DidotLTPro-Italic"><?= $decision[0]->first_header1 ?></small><br><span class="color-violet"><?= $decision[0]->first_header2 ?></span>
                         <img src="/media/JAFRA_files/fpo-itsyourcall.jpg" class="pull-right fpo-itsyourcall hidden-sm hidden-xs">
                         </h3>
-                        <p>Las oportunidades bajo el formato de venta directa en JAFRA son ilimitadas. Te permiten vender a tu manera. Tú fijas tu horario de acuerdo con el de tu familia y estilo de vida, y logras tu independencia económica haciendo lo que amas.</p>
+                        <p><?= $decision[0]->first_description ?></p>
                         <p class="text-right"><a data-target="#more_call" data-toggle="collapse" class="more-link more-link-alt collapsed" analytics-on="click" analytics-event="Expand Opportunity" analytics-category="Content"><span>OPORTUNIDADES</span></a></p>
                     </div><!-- /.section-copy -->
                 </div><!-- /.col -->
@@ -532,24 +531,24 @@
             <div id="more_call" class="row collapse subrow">
                 <div class="col-md-6">
                     <h3>
-                        <span class="you_choose">Tú Eliges</span><br>
-                        <span class="how_to">cómo construir tu</span><br>
-                        <span class="business">Propio Negocio</span>
+                        <span class="you_choose"><?= $decision[0]->second_header1 ?></span><br>
+                        <span class="how_to"><?= $decision[0]->second_header2 ?></span><br>
+                        <span class="business"><?= $decision[0]->second_header3 ?></span>
                     </h3>
                     <ul class="golden_bullets">
-                        <li>Comparte catálogos y folletos JAFRA</li>
-                        <li>Organiza una Clase para demostrar tus productos</li>
-                        <li>Vende en línea en tu propio sitio web</li>
-                        <li>Llega a más Clientes a través de las redes sociales</li>
+                        <li><?= $decision[0]->item_1 ?></li>
+                        <li><?= $decision[0]->item_2 ?></li>
+                        <li><?= $decision[0]->item_3 ?></li>
+                        <li><?= $decision[0]->item_4 ?></li>
                     </ul>
                 </div>
                 <div class="col-md-6 business-right-col">
                     <div class="row">
                         <div class="invest-icons-bg text-center">
-                            <span class="invest">Invierte</span><br>
-                            <span class="yourself">en ti</span>
+                            <span class="invest"><?= $decision[0]->third_header1 ?></span><br>
+                            <span class="yourself"><?= $decision[0]->third_header2 ?></span>
                         </div>
-                        <p class="col-md-offset-2 col-md-8 text-center">En una Clase puedes fácilmente recuperar tu inversión inicial y hasta más. Utiliza las súper herramientas de ventas que vienen en tu kit para obtener resultados más rápido. Recuerda que tú puedes ganar de dos maneras:</p>
+                        <p class="col-md-offset-2 col-md-8 text-center"><?= $decision[0]->third_description ?></p>
                     </div>
                     <div class="row sales-equation bg-color-honeyflower color-cesoir">
                         <div class="col-md-6 col-xs-6">HACÉ CLICK AQUÍ PARA<br>
@@ -564,14 +563,14 @@
                     </div>
                     <div class="row">
                         <div class="training-icons-bg text-center">
-                            <span class="invest">Capacitación</span><br>
-                            <span class="yourself">a tu alcance</span>
+                            <span class="invest"><?= $decision[0]->training_header1 ?></span><br>
+                            <span class="yourself"><?= $decision[0]->training_header2 ?></span>
                         </div>
-                        <p class="col-md-offset-2 col-md-8 text-center">Siempre estamos aquí para brindarte un apoyo constante y dedicado: capacitación en línea, herramientas de ventas, y una familia de Líderes con quienes puedes contar. También tienes al Equipo de Relaciones con el Cliente con los conocimientos que te respaldan a ti y a tu negocio.</p>
+                        <p class="col-md-offset-2 col-md-8 text-center"><?= $decision[0]->training_description ?></p>
                     </div>
                 </div>
             <div class="col-md-12 text-center cta-section">
-                <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-med dropdown-toggle" analytics-on="click" analytics-event="Opportunity CTA" analytics-category="Buttons" data-toggle="modal" data-target=".bs-example-modal-lg" role="button" href="">Decídete Ahora</a>
+                <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-med dropdown-toggle" analytics-on="click" analytics-event="Opportunity CTA" analytics-category="Buttons" data-toggle="modal" data-target=".bs-example-modal-lg" role="button" href=""><?= $decision[0]->call_button ?> </a>
             </div>
             </div>
         </div><!-- /.container -->
@@ -583,10 +582,10 @@
                 <div class="col-md-6">
                     <div class="section-copy">
                         <h3 class="titlify color-purple DidotLTPro-Italic">
-                            <span ng-bind-html="&#39;OS-SECTION4-TITLE1&#39; | translate | unsafe" class="ng-binding">abundantes</span><br>
-                            <span class="color-gold HelveticaNeueLTStd-BdCn enlarge"><span ng-bind-html="&#39;OS-SECTION4-TITLE2&#39; | translate | unsafe" class="ng-binding">Recompensas</span></span>
+                            <span ng-bind-html="&#39;OS-SECTION4-TITLE1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->header1 ?></span><br>
+                            <span class="color-gold HelveticaNeueLTStd-BdCn enlarge"><span ng-bind-html="&#39;OS-SECTION4-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->header2 ?></span></span>
                         </h3>
-                        <p><span ng-bind-html="&#39;OS-SECTION4-BODY&#39; | translate | unsafe" class="ng-binding">Define tus metas para ganar viajes maravillosos, recompensas fabulosas y productos de belleza JAFRA, gratis.</span></p>
+                        <p><span ng-bind-html="&#39;OS-SECTION4-BODY&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->sub_header ?></span></p>
                         <p class="text-right"><a data-target="#more_rewards" data-toggle="collapse" class="more-link more-link-alt collapsed" analytics-on="click" analytics-event="Expand Rewards" analytics-category="Content"><span><span ng-bind-html="&#39;OS-SECTION4-MORE&#39; | translate | unsafe" class="ng-binding">Recompensas</span></span></a></p>
                     </div>
                 </div>
@@ -614,19 +613,19 @@
             <div id="more_rewards" class="row collapse padtop">
                 <div class="col-md-6 text-left">
                     <div class="padleft padright">
-                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART1&#39; | translate | unsafe" class="ng-binding">viaja por el</span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART2&#39; | translate | unsafe" class="ng-binding">MUNDO</span></span></h3>
-                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART3&#39; | translate | unsafe" class="ng-binding">Logra un rendimiento excepcional en ventas y patrocinio y podrás ganar vacaciones en sitios de ensueño. ¡Empieza a soñar!</span></p>
-                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART1&#39; | translate | unsafe" class="ng-binding">más</span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART2&#39; | translate | unsafe" class="ng-binding">INCENTIVOS</span></span></h3>
-                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART3&#39; | translate | unsafe" class="ng-binding">Mayores esfuerzos en ventas y patrocinio te brindan un reconocimiento personal junto con bonos en efectivo y joyas. Aumenta tu confianza y experiencia en el negocio ¡y también tus cualidades de liderazgo!</span></p>
-                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART1&#39; | translate | unsafe" class="ng-binding">más de</span> <span class="color-purple HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART2&#39; | translate | unsafe" class="ng-binding">$1,300</span></span> <span ng-bind-html="&#39;OS-REWARDS-FREE-PART3&#39; | translate | unsafe" class="ng-binding">en</span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART4&#39; | translate | unsafe" class="ng-binding">PRODUCTOS GRATIS</span></span></h3>
-                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART5&#39; | translate | unsafe" class="ng-binding">Como nueva Consultora en el Programa “Bienvenida a JAFRA”, puedes ganar gratis más de $1,300 en productos de mayor venta.</span></p>
+                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->first_title1 ?></span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->first_title2 ?></span></span></h3>
+                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART3&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->first_description ?></span></p>
+                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->second_title1 ?></span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->second_title2 ?></span></span></h3>
+                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART3&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->second_description ?></span></p>
+                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title1 ?></span> <span class="color-purple HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title2 ?></span></span> <span ng-bind-html="&#39;OS-REWARDS-FREE-PART3&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title3 ?></span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART4&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title4 ?></span></span></h3>
+                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART5&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_description ?></span></p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="/media/JAFRA_files/traveltheworld.jpg" class="img-responsive padbottom">
+                    <img src="<?= $reward[0]->path; ?>" class="img-responsive padbottom">
                 </div>
                 <div class="text-center padbottom">
-                    <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Rewards CTA" analytics-category="Buttons" data-toggle="modal" role="button" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-REWARDS-TREAT-YOURSELF&#39; | translate | unsafe" class="ng-binding">DATE GUSTO</span></a>
+                    <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Rewards CTA" analytics-category="Buttons" data-toggle="modal" role="button" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-REWARDS-TREAT-YOURSELF&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->treat_yourself_button ?></span></a>
                 </div>
             </div>
             
@@ -640,10 +639,10 @@
                 <div class="col-md-12">
                     <div class="section-copy text-left padtop">
                         <h3 class="titlify color-purple DidotLTPro-Italic text-center">
-                            <span class="DidotLTPro-Roman"><span ng-bind-html="&#39;OS-SECTION5-TITLE1&#39; | translate | unsafe" class="ng-binding">¡JAFRA</span></span>
-                            <span class="is_everything"><small class="color-gold HelveticaNeueLTStd-Th"><span ng-bind-html="&#39;OS-SECTION5-TITLE2&#39; | translate | unsafe" class="ng-binding">es</span></small> <span ng-bind-html="&#39;OS-SECTION5-TITLE3&#39; | translate | unsafe" class="ng-binding">todo lo que</span></span><br>
-                            <span class="color-gold HelveticaNeueLTStd-BdCn enlarge"><span ng-bind-html="&#39;OS-SECTION5-TITLE4&#39; | translate | unsafe" class="ng-binding">IMAGINAMOS</span></span><br>
-                            <span class="and_more"><span ng-bind-html="&#39;OS-SECTION5-TITLE5&#39; | translate | unsafe" class="ng-binding">y más!</span></span>
+                            <span class="DidotLTPro-Roman"><span ng-bind-html="&#39;OS-SECTION5-TITLE1&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header1 ?></span></span>
+                            <span class="is_everything"><small class="color-gold HelveticaNeueLTStd-Th"><span ng-bind-html="&#39;OS-SECTION5-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header2 ?>es</span></small> <span ng-bind-html="&#39;OS-SECTION5-TITLE3&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header3 ?></span></span><br>
+                            <span class="color-gold HelveticaNeueLTStd-BdCn enlarge"><span ng-bind-html="&#39;OS-SECTION5-TITLE4&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header4 ?></span></span><br>
+                            <span class="and_more"><span ng-bind-html="&#39;OS-SECTION5-TITLE5&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header5 ?></span></span>
                         </h3>
                     </div>
                 </div>
@@ -652,10 +651,10 @@
                         <div class="testimonial center-block" style="max-width:320px">
                             <img class="img-responsive" src="/media/JAFRA_files/lori.png" alt="Lori Duncan Photo">
                             <h4 class="media-heading h3">
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1-NAME&#39; | translate | unsafe" class="ng-binding">Lori Duncan</span>
+                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1-NAME&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->first_name ?></span>
                             </h4>
                             <p>
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1&#39; | translate | unsafe" class="ng-binding">“¡Es fácil para mi vender JAFRA porque estoy apasionada con todos los productos! Su calidad es excelente.”</span>
+                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->first_qoute ?></span>
                             </p>
                         </div>
                     </div>
@@ -663,10 +662,10 @@
                         <div class="testimonial center-block" style="max-width:320px">
                             <img class="img-responsive center-block" src="/media/JAFRA_files/jennifer.png" alt="Jennifer Knight Photo">
                             <h4 class="media-heading h3">
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE2-NAME&#39; | translate | unsafe" class="ng-binding">Jennifer Knight</span>
+                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE2-NAME&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->second_name ?></span>
                             </h4>
                             <p>
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE2&#39; | translate | unsafe" class="ng-binding">“¡JAFRA me ha dado la oportunidad de ganar más dinero! Además, ¡el cielo es el límite! ¡Puedo ganar tanto como quiera!”</span>
+                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE2&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->second_qoute ?></span>
                             </p>
                         </div>
                     </div>
@@ -674,17 +673,17 @@
                         <div class="testimonial center-block" style="max-width:320px">
                             <img class="img-responsive center-block" src="/media/JAFRA_files/rossy.png" alt="Rossy Argueta Photo">
                             <h4 class="media-heading h3">
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE3-NAME&#39; | translate | unsafe" class="ng-binding">Rossy Argueta</span>
+                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE3-NAME&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->third_name ?></span>
                             </h4>
                             <p>
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE3&#39; | translate | unsafe" class="ng-binding">“Amo la libertad que tengo con JAFRA. ¡Puedo disfrutar a la familia ya que yo decido mi propio horario!”</span>
+                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE3&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->third_qoute ?></span>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row text-center mobile_tablet_centerfix">
-                <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg" analytics-on="click" analytics-event="Testimonials CTA" analytics-category="Buttons" data-toggle="modal" role="button" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-TESTIMONIAL-START-A-CAREER&#39; | translate | unsafe" class="ng-binding">Empieza una Carrera Hoy Mismo</span></a>
+                <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg" analytics-on="click" analytics-event="Testimonials CTA" analytics-category="Buttons" data-toggle="modal" role="button" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-TESTIMONIAL-START-A-CAREER&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->start_career_button ?></span></a>
             </div>
         </div>
     </section></div><!-- end ngIf: session.language -->
@@ -709,12 +708,12 @@
                 <div class="col-md-6">
                     <div class="section-copy">
                         <h3 class="titlify DidotLTPro-Roman kit-title">
-                          <small class="color-purple ng-binding" ng-bind-html="&#39;OS-KIT-PRODUCT1-NAME&#39; | translate | unsafe">Kit Royal del Negocio</small>
+                          <small class="color-purple ng-binding" ng-bind-html="&#39;OS-KIT-PRODUCT1-NAME&#39; | translate | unsafe"><?= $royalkit[0]->title1 ?></small>
                         </h3>
 
-                        <p class="color-gold HelveticaNeueLTStd-BdCn kit-desc">Recibe todo lo que necesitas</p>
-                        <p class="HelveticaNeueLTStd-Th kit-value">Un Valor al Público de más de $490</p>
-                        <p>Alegra tus fiestas con el Kit Royal del Negocio. Incluye todo lo necesario para iniciar tu nuevo negocio de inmediato.</p>
+                        <p class="color-gold HelveticaNeueLTStd-BdCn kit-desc"><?= $royalkit[0]->title2 ?></p>
+                        <p class="HelveticaNeueLTStd-Th kit-value"><?= $royalkit[0]->title3 ?></p>
+                        <p><?= $royalkit[0]->title4 ?></p>
 
                         <p>
                             <a data-target="#more_royal" data-toggle="collapse" class="more-link more-link-alt collapsed" analytics-on="click" analytics-event="In-Page $99 Kit Details" analytics-category="Content"><span>Mira lo que Incluye</span> </a>
@@ -732,7 +731,19 @@
                 </div><!-- collapsed section content (default collapsed) -->
                 <div id="more_royal" class="col-md-12 collapse">
                     <div class="section-copy">
-                        <p ng-bind-html="&#39;OS-KIT-PRODUCT1-DESCRIPTION&#39; | translate | unsafe" class="ng-binding"><ul><li>Advanced Dynamics Limpiador Facial Equilibrante</li><li>Advanced Dynamics Loción Facial Equilibrante</li><li>Advanced Dynamics Crema Facial Equilibrante de Día </li><li>Advanced Dynamics Crema Facial Humectante Equilibrante de Noche</li><li>Royal Jelly Milk Balm Advanced</li><li>Gel Facial Reafirmante + con Complejo Firmiplex</li><li>Gel Humectante para el Contorno de los Ojos</li><li>Gel Facial Limpiador y Refrescante</li><li>Crema Facial Hidratante de Noche</li><li>Crema Facial Hidratante de Día con FPS 15</li><li>Mascarilla Facial Exfoliante Suave</li><li>Aceite para el Cuerpo Royal Almond</li><li>LEGEND EDT</li><li>Vesen EDT</li><li>Eau d'Arômes Spray Revitalizante</li><li>Skid EDT</li></ul><h4>Además recibes ¡HERRAMIENTAS DINÁMICAS!</h4><ul><li>Bolso JAFRA Negro</li><li>Estuche JAFRA Transparente</li><li>Juego de Material Impreso Bienvenida a JAFRA</li><li>Catálogo de Productos (5)</li><li>Folleto de Temporada (10)</li><li>Folleto de la Anfitriona</li><li>Tarjetas de Presentación (50)</li><li>Forma de Pedido del Cliente (10)</li></ul></p>
+                        <p ng-bind-html="&#39;OS-KIT-PRODUCT1-DESCRIPTION&#39; | translate | unsafe" class="ng-binding">
+                            <ul>
+                                <?php for ($i=0; $i < count($royalkit[1]); $i++) :?>
+                                    <li><?= $royalkit[1][$i]->name //products ?></li>
+                                <?php endfor; ?>
+                            </ul>
+                                <h4><?= $royalkit[0]->tools_list_title ?></h4>
+                            <ul>
+                                <?php for ($i=0; $i < count($royalkit[2]); $i++) :?>
+                                    <li><?= $royalkit[2][$i]->name // tools?></li>
+                                <?php endfor; ?>
+                            </ul>
+                        </p>
                     </div>
                 </div>
                 <!-- <div class="promo pull-left">
@@ -778,13 +789,13 @@
                 <div class="col-md-6">
                     <div class="section-copy">
                         <h3 class="titlify DidotLTPro-Roman kit-title">
-                          <small class="color-purple">Kit Especial del Negocio</small>
+                          <small class="color-purple"><?= $specialkit[0]->title1 ?></small>
                         </h3>
 
-                        <p class="color-gold HelveticaNeueLTStd-BdCn kit-desc">Un Inicio Rápido</p>
-                        <p class="HelveticaNeueLTStd-Th kit-value">Un Valor al Público de $290</p>
+                        <p class="color-gold HelveticaNeueLTStd-BdCn kit-desc"><?= $specialkit[0]->title2 ?></p>
+                        <p class="HelveticaNeueLTStd-Th kit-value"><?= $specialkit[0]->title3 ?></p>
 
-                        <p>Inicia una nueva temporada de ingresos con este Kit Especial del Negocio. Ideal para Consultoras con un presupuesto limitado que desean incrementarlo.</p>
+                        <p><?= $specialkit[0]->title4 ?></p>
 
                         <span class="pull-right color-purple" style="margin: 30px 15px 0 0;"><span style="text-decoration:none; margin-right: 10px;"><img src="/media/JAFRA_files/icons-video.gif" width="25px"> <img src="/media/JAFRA_files/icons-booklets.gif" width="25px"></span> Incluye Capacitación!</span>
 
@@ -804,7 +815,19 @@
                 <div id="more_skincare" class="col-md-12 collapse">
                     
                         <div class="section-copy">
-                            <p ng-bind-html="&#39;OS-KIT-PRODUCT2-DESCRIPTION&#39; | translate | unsafe" class="ng-binding"><ul><li>Advanced Dynamics Limpiador Facial Equilibrante</li><li>Advanced Dynamics Loción Facial Equilibrante</li><li>Advanced Dynamics Crema Facial Equilibrante de Día </li><li>Advanced Dynamics Crema Facial Humectante Equilibrante de Noche</li><li>Royal Jelly Milk Balm Advanced</li><li>Gel Humectante para el Contorno de los Ojos</li></ul><h4>Además recibes ¡HERRAMIENTAS DINÁMICAS!</h4><ul><li>Bolso ROJO de Negocios</li><li>Juego de Material Impreso Bienvenida a JAFRA</li><li>Catálogo de Productos (5)</li><li>Folleto de Temporada (10)</li><li>Folleto de la Anfitriona</li><li>Forma de Pedido del Cliente (10)</li></ul></p>
+                            <p ng-bind-html="&#39;OS-KIT-PRODUCT2-DESCRIPTION&#39; | translate | unsafe" class="ng-binding">
+                                <ul>
+                                    <?php for ($i=0; $i < count($specialkit[1]); $i++) :?>
+                                        <li><?= $specialkit[1][$i]->name // tools?></li>
+                                    <?php endfor; ?>
+                                </ul>
+                                <h4><?= $specialkit[0]->tools_list_title ?></h4>
+                                <ul>
+                                    <?php for ($i=0; $i < count($specialkit[2]); $i++) :?>
+                                        <li><?= $specialkit[2][$i]->name // tools?></li>
+                                    <?php endfor; ?>
+                                </ul>
+                            </p>
                         </div>
                     
                 </div>

@@ -33,8 +33,7 @@ class Cms extends CI_Model {
 		$row = $query->result();   		
         return $row;
       }
-	
-	}
+    }
 
     public function getTimelineSection(){
    	 $this->db->select('*');
@@ -54,14 +53,109 @@ class Cms extends CI_Model {
             }
     }
     
+    public function getProductsToLoveSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_products_to_love');
+   	 $query = $this->db->get();
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{  
+       		$row = $query->result();
+            return $row;
+            }
+    }
+    
+    public function getDecisionSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_your_decision');
+   	 $query = $this->db->get();
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{
+       		$row = $query->result();
+            return $row;
+            }
+    }
+
+    public function getTestimonialSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_testimonials');
+   	 $query = $this->db->get();
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{
+       		$row = $query->result();
+            return $row;
+            }
+    }
+    
+    public function getRewardSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_rewards');
+   	 $query = $this->db->get();
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{
+       		$row = $query->result();
+            return $row;
+            }
+    }
+    
     public function getFaqSection(){
    	 $this->db->select('*');
    	 $this->db->from('homepage_faqs');
    	 $query = $this->db->get();
        	 if($query->num_rows() == 0 ){
        		return false;
+       	 }else{
+       		$row = $query->result();
+            return $row;
+            }
+    }
+    
+    public function getRoyalKitSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_kit_royal_info');
+   	 $query = $this->db->get();
+     
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_kit_royal_products');
+   	 $products = $this->db->get();
+     
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_kit_royal_tools');
+   	 $tools = $this->db->get();
+     
+       	 if($query->num_rows() == 0){
+       		return false;
        	 }else{  
        		$row = $query->result();
+            $row[] = $products->result();
+            $row[] = $tools->result();
+            return $row;
+            }
+    }
+    
+    public function getSpecialKitSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_kit_special_info');
+   	 $query = $this->db->get();
+     
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_kit_special_products');
+   	 $products = $this->db->get();
+     
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_kit_special_tools');
+   	 $tools = $this->db->get();
+     
+     
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{  
+       		$row = $query->result();
+            $row[] = $products->result();
+            $row[] = $tools->result();
             return $row;
             }
     }

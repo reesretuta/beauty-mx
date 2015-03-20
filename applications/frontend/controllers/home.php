@@ -46,9 +46,17 @@ class Home extends CI_Controller
         
         // $data['pageTitle']             =     '';
         // $data['pageDescription']                =    '';
-        $data['hero']     = $this->cms->getHeroSection();
-        $data['timeline'] = $this->cms->getTimelineSection();
-        $data['faqs'] = $this->cms->getFaqSection();
+        $data['hero']           = $this->cms->getHeroSection();
+        $data['timeline']       = $this->cms->getTimelineSection();
+        $data['productstolove'] = $this->cms->getProductsToLoveSection();
+        $data['decision']       = $this->cms->getDecisionSection();
+        $data['reward']         = $this->cms->getRewardSection();
+        $data['royalkit']       = $this->cms->getRoyalKitSection();
+        $data['specialkit']     = $this->cms->getSpecialKitSection();
+        $data['testimonial']    = $this->cms->getTestimonialSection();
+
+        
+        $data['faqs']     = $this->cms->getFaqSection();
         // $data['seo']                            = $this->cms->seoData('28');
         $this->load->view('homeView',$data);
         
