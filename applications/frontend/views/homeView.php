@@ -703,7 +703,7 @@
             <div class="row">
               <div class="kit-encapsulate clearfix">
                 <div class="hidden-md hidden-lg col-md-6">
-                    <img class="img-responsive" src="/media/JAFRA_files/99kit-2x.jpg">
+                    <img class="img-responsive" src="<?= $royalkit[0]->path; ?>">
                 </div>
                 <div class="col-md-6">
                     <div class="section-copy">
@@ -784,7 +784,7 @@
         <div class="container subcontainer">
             <div class="row mobile_tablet_centerfix">
                 <div class="col-md-5">
-                    <img class="img-responsive" src="/media/JAFRA_files/49kit-2x.jpg">
+                    <img class="img-responsive" src="<?= $specialkit[0]->path; ?>">
                 </div>
                 <div class="col-md-6">
                     <div class="section-copy">
