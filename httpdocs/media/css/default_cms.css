@@ -204,6 +204,7 @@ div.sitesearch{
     background: url("../images/Arrow_static.png") no-repeat scroll 125px center transparent;
     text-transform: capitalize;
     margin-left:-3px;
+    line-height: 1.5em;
 	}
 .a_table_smaller:hover{
 	border:0;
