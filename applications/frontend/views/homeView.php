@@ -98,9 +98,9 @@
 
           <div id="navbar-sections">
           <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#starter_kits" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="https://usa.jafra.com/join#FAQs" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#starter_kits" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#FAQs" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li><!-- end ngIf: !inCheckout -->
             <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="" class="cta" data-toggle="modal" data-target=".bs-example-modal-lg" analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">ÚNETE</span></a></li><!-- end ngIf: !inCheckout -->
             <!-- <li class="contact-dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" analytics-on="click" analytics-event="Menu Contact" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV5&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a>
@@ -416,24 +416,15 @@
                     <div id="carousel-product-generic" class="carousel slide" data-ride="carousel">
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                            <div class="item">
-                                <img class="img-responsive" src="/media/JAFRA_files/products_royalJelly.jpg">
+
+                          <?php for ($i=0; $i < count($productstolove[2]); $i++): ?>
+                              <div class="item <?php echo ( $i == 2) ? 'active' : '' ?>">
+                                <img class="img-responsive" src="<?= $productstolove[2][$i]->path ?>">
                             </div>
-                            <div class="item">
-                                <img class="img-responsive" src="/media/JAFRA_files/products_PRO.jpg">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="/media/JAFRA_files/products-toiletries.jpg">
-                            </div>
-                            <div class="item active">
-                                <img class="img-responsive" src="/media/JAFRA_files/products_fragranceWomen.jpg">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="/media/JAFRA_files/products_fragranceMen.jpg">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="/media/JAFRA_files/products_color.jpg">
-                            </div>
+                          <?php endfor; ?>
+
+
+
                         </div><!-- Controls -->
                          <a class="left carousel-control" data-target="#carousel-product-generic" role="button" data-slide="prev" analytics-on="click" analytics-event="Product Carousel Prev" analytics-category="Content">
                              <span class="glyphicon glyphicon-chevron-left"></span>
@@ -452,45 +443,24 @@
                   </p>
                 </div>
 
-                <div class="row padtop padbottom subrow">
-                    <div class="col-md-3">
-                        <img src="/media/JAFRA_files/products-skincare.png" class="img-responsive">
-                    </div>
-                    <div class="col-md-8">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-SKINCARE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->first_title ?></span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-SKINCARE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->first_description ?></span></p>
-                    </div>
-                </div>
 
-                <div class="row padbottom subrow">
-                    <div class="col-md-3">
-                        <img src="/media/JAFRA_files/products-fragrance.png" class="img-responsive">
-                    </div>
-                    <div class="col-md-5">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->second_title ?></span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->second_description ?></span></p>
-                    </div>
-                </div>
 
-                <div class="row padbottom subrow">
-                    <div class="col-md-3">
-                        <img src="/media/JAFRA_files/products-color.png" class="img-responsive">
-                    </div>
-                    <div class="col-md-5">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-COLOR&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->third_title ?></span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-COLOR-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->third_description ?></span></p>
-                    </div>
-                </div>
 
-                <div class="row subrow">
-                    <div class="col-md-3">
-                        <img src="/media/JAFRA_files/products-toiletries.png" class="img-responsive">
+
+                <?php for ($i=0; $i < count($productstolove[1]); $i++): ?>
+                    <div class="row padbottom subrow">
+                        <div class="col-md-3">
+                            <img src="<?= $productstolove[1][$i]->path ?>" class="img-responsive">
+                        </div>
+                        <div class="col-md-5">
+                            <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->title ?></span></h3>
+                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span></p>
+                        </div>
                     </div>
-                    <div class="col-md-5">
-                        <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-TOILETRIES&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->fourth_title ?></span></h3>
-                        <p><span ng-bind-html="&#39;OS-PRODUCTS-TOILETRIES-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->fourth_description ?></span></p>
-                    </div>
-                </div>
+                <?php endfor; ?>
+
+
+
 
                <div class="row subrow text-center cta-section">
                     <p class="titlify color-purple DidotLTPro-Italic text-center">
@@ -647,39 +617,23 @@
                     </div>
                 </div>
                 <div class="testimonials center-block">
-                    <div class="col-md-4 text-center">
-                        <div class="testimonial center-block" style="max-width:320px">
-                            <img class="img-responsive" src="/media/JAFRA_files/lori.png" alt="Lori Duncan Photo">
-                            <h4 class="media-heading h3">
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1-NAME&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->first_name ?></span>
-                            </h4>
-                            <p>
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->first_qoute ?></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="testimonial center-block" style="max-width:320px">
-                            <img class="img-responsive center-block" src="/media/JAFRA_files/jennifer.png" alt="Jennifer Knight Photo">
-                            <h4 class="media-heading h3">
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE2-NAME&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->second_name ?></span>
-                            </h4>
-                            <p>
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE2&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->second_qoute ?></span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="testimonial center-block" style="max-width:320px">
-                            <img class="img-responsive center-block" src="/media/JAFRA_files/rossy.png" alt="Rossy Argueta Photo">
-                            <h4 class="media-heading h3">
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE3-NAME&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->third_name ?></span>
-                            </h4>
-                            <p>
-                                <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE3&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->third_qoute ?></span>
-                            </p>
-                        </div>
-                    </div>
+
+                    <?php for ($i=0; $i < count($testimonial[1]) ; $i++): ?>
+                        <div class="col-md-4 text-center">
+                          <div class="testimonial center-block" style="max-width:320px">
+                              <img class="img-responsive" src="<?= $testimonial[1][$i]->path ?>" alt="Lori Duncan Photo">
+                              <h4 class="media-heading h3">
+                                  <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1-NAME&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[1][$i]->name ?></span>
+                              </h4>
+                              <p>
+                                  <span ng-bind-html="&#39;OS-TESTIMONIAL-QUOTE1&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[1][$i]->qoute ?></span>
+                              </p>
+                          </div>
+                        </div>    
+                    <?php endfor; ?>
+
+
+
                 </div>
             </div>
             <div class="row text-center mobile_tablet_centerfix">

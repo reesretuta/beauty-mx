@@ -57,12 +57,27 @@ class Cms extends CI_Model {
    	 $this->db->select('*');
    	 $this->db->from('homepage_products_to_love');
    	 $query = $this->db->get();
+
+    $this->db->select('*');
+      $this->db->from('homepage_products_categories');
+     $products = $this->db->get();
+
+     $this->db->select('*');
+     $this->db->from('homepage_products_gallery');
+     $gallery = $this->db->get();
+
+
        	 if($query->num_rows() == 0 ){
        		return false;
        	 }else{  
-       		$row = $query->result();
+       		 $row = $query->result();
+            $row[] = $products->result();
+            $row[] = $gallery->result();
+
             return $row;
-            }
+            
+          }
+
     }
     
     public function getDecisionSection(){
@@ -81,10 +96,22 @@ class Cms extends CI_Model {
    	 $this->db->select('*');
    	 $this->db->from('homepage_testimonials');
    	 $query = $this->db->get();
+
+
+     $this->db->from('homepage_testimonials_qoutes');
+     $qoutes = $this->db->get();
+
+
+
        	 if($query->num_rows() == 0 ){
        		return false;
        	 }else{
        		$row = $query->result();
+          $row[] = $qoutes->result();
+
+          // echo "<pre>";
+          //   print_r($row);
+          //   echo "</pre>";die();
             return $row;
             }
     }
