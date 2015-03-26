@@ -63,8 +63,8 @@ define('UPLOAD_PATHS',	 			serialize(array(
 												'document_path',
 												'icon_path_hover', 
 												'icon_path_active')));
-define('NO_PREVIEW_PATHS',          serialize(array('doc_path', 'pdf_path')));      
-define('UPLOAD_PATH_LINK',          serialize(array('pdf_link', 'doc_link')));                                                
+define('NO_PREVIEW_PATHS',          serialize(array('doc_path', 'pdf_path')));
+define('UPLOAD_PATH_LINK',          serialize(array('pdf_link', 'doc_link')));
 define('UPLOAD_TABLE_PATHS', 		serialize(array('media'=>'thumbnail')));
 define('ITEMS_PER_PAGE',			50);
 define('PERMISSION_TEXT',			serialize(array(
@@ -72,6 +72,13 @@ define('PERMISSION_TEXT',			serialize(array(
 												'cru'=>'Read, Update and Add', 
 												'ru'=>'Read and Update Only', 
 												'r'=>'Read Only')));
+define('IMG_DIMENSIONS',			serialize(array(
+    'homepage_testimonials_qoutes' => '200 x 200px',
+    'homepage_hero' => 'height: 1440px / width 598 px')
+));
+
+
+
 define('EVENTRECURRING_TEXT',			serialize(array(
 												'1'=>'1', 
 												'2'=>'2', 
@@ -110,11 +117,13 @@ define('HIDE_VIEW_COLUMNS', 		serialize(array(
 												'parent_grouper', 
 												'parent_grouper_label', 
 												'parent_table', 
-												'sort_order')));
+												'sort_order',
+                                                'img_dimension')));
 define('HIDE_PREVIEW_COLUMNS', 		serialize(array(
 												'id', 
 												'__is_trash', 
-												'sort_order'
+												'sort_order',
+                                                'img_dimension'
 												)));
 define('HIDE_ADD_COLUMNS', 			serialize(array(
 												'id', 
@@ -124,12 +133,14 @@ define('HIDE_ADD_COLUMNS', 			serialize(array(
 												'sort_order', 
 												'is_voidable',  
 												'is_refundable', 
-												'is_captured')));
+												'is_captured',
+                                                'img_dimension')));
 define('HIDE_EDIT_COLUMNS', 		serialize(array(
 												'sort_order', 
 												'__is_trash',  
 												'is_refundable', 
-												'is_voidable')));
+												'is_voidable',
+                                                'img_dimension')));
 define('DATE_COLUMNS', 				serialize(array(
 												'last_updated', 
 												'date_added')));

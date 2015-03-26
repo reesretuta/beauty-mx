@@ -25,6 +25,7 @@
 			<?=validation_errors('<div class="red">', '</div>');?>
 				<table width="100%" class="borderless_td">
 					<?=form_open('content/'.$table_name.'/add', 'class="mainform_disabled"');?>
+                    <?php $img_dimensions = unserialize(IMG_DIMENSIONS); ?>
 					<? foreach ($fields as $field):?>
 						<? if($field->column_key=='PRI' && $field->column_name=='id'): //we would have used this for m2m, but meh?>
                                                 <? elseif($field->column_name=='item_url'):?>
@@ -113,7 +114,7 @@
 											<?if(in_array($field->column_name, unserialize(NO_PREVIEW_PATHS))):?>
 											<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Document</div><br/>
 											<?else:?>
-											<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image</div><br/>
+											<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image <?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></div><br/>
 											<?endif;?>
 										<? if($field->column_comment):?>
 										<span class="help_text"><?=clean_comment($field->column_comment)?></span>

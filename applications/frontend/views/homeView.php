@@ -1,12 +1,3 @@
-<?php
-
-
-// echo "<pre>";
-// print_r($timeline[0]);
-// echo "</pre>";
-// die();
-
-?>
 <!DOCTYPE html>
 <!-- saved from url=(0042)https://usa.jafra.com/join/?language=es_US -->
 <html lang="en" class="ng-scope"><script async="" src="/media/JAFRA_files/analytics.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="/media/JAFRA_files/menu174.js"></script><script type="text/javascript" src="/media/JAFRA_files/layers099.js"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
@@ -667,8 +658,8 @@
                           <h3><?= $catalog[0]->title ?></h3>
                           <p><?= $catalog[0]->description ?></p>
                           <ul>
-                              <li><a target="blank" href="<?= $catalog[0]->external_pdf_link ?>">PDF DOWNLOAD</a></li>
-                              <li><a target="blank" href="<?= $catalog[0]->flash_link ?>">INTERACTIVE (flash)</a></li>
+                              <li><a target="blank" href="<?= $catalog[0]->external_pdf_link ?>">Download PDF</a></li>
+                              <li><a target="blank" href="<?= $catalog[0]->flash_link ?>">Interactive Version (flash)</a></li>
                           </ul>
                       </div>
                 </div>
@@ -1210,15 +1201,16 @@
     </script>
     <script type="text/javascript" src="/media/JAFRA_files/conversion.js">
     </script>
-    <iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="/media/JAFRA_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/957228484/?frame=0&amp;random=1426107252235&amp;cv=7&amp;fst=1426107252235&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=900&amp;u_w=1440&amp;u_ah=877&amp;u_aw=1440&amp;u_cd=24&amp;u_his=1&amp;u_tz=-420&amp;u_java=true&amp;u_nplug=16&amp;u_nmime=42&amp;frm=0&amp;url=https%3A//usa.jafra.com/join/%3Flanguage%3Des_US&amp;vis=1" /&gt;</iframe>
+    <iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="/media/JAFRA_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"><img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/957228484/?frame=0&amp;random=1426107252235&amp;cv=7&amp;fst=1426107252235&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=900&amp;u_w=1440&amp;u_ah=877&amp;u_aw=1440&amp;u_cd=24&amp;u_his=1&amp;u_tz=-420&amp;u_java=true&amp;u_nplug=16&amp;u_nmime=42&amp;frm=0&amp;url=https%3A//usa.jafra.com/join/%3Flanguage%3Des_US&amp;vis=1" /></iframe>
     <noscript>
-    &lt;div style="display:inline;"&gt;
-    &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/957228484/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
-    &lt;/div&gt;
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/957228484/?value=0&amp;amp;guid=ON&amp;amp;script=0"/></div>
     </noscript>
 
   
 
 <script type="text/javascript">(function () {
         return window.SIG_EXT = {};
-      })()</script></body></html>
+      })()</script>
+      
+</body></html>

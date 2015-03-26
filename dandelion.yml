@@ -19,6 +19,7 @@ revision_file: .revision
 exclude:
     - .gitignore
     - dandelion.yml
+    - node_modules
 
 # These files (from your working directory) will be uploaded on every deploy
 # additional:

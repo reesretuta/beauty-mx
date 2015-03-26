@@ -1,4 +1,5 @@
 <?$tempValue='';?>
+
 <table style="width:100%" class="fullheight">
 	<tr>
 		<td style="width:140px;" class="menu">
@@ -13,8 +14,9 @@
 			$e=$this->session->userdata('user');
 			$f=$e['access'];
 			###
-			
+
 			foreach ($tables as $table):?>
+
 				<? if(in_array($table->table_name, $f)):?>
 				<a class="a_table_smaller <?=$table->table_name==$table_name?'a_table_smaller_active':''?>" href="<?=base_url()?>content/<?=$table->table_name?>"><?=humanizer($table->table_name)?></a>
 				<? endif;?>
@@ -30,7 +32,9 @@
 			<? $count_i=0;?>
 
 			<table width="100%" class="borderless_td">
+
 					<?=form_open('content/'.$table_name.'/update', 'class="mainform_disabled" id="contenteditform"');?>
+                    <?php $img_dimensions = unserialize(IMG_DIMENSIONS); ?>
 					<? foreach ($fields as $field):?>
 						<? if($field->column_key=='PRI' && $field->column_name=='id'):?>
 						<?=form_hidden('id', $content->id);?>
@@ -104,6 +108,7 @@
 						<? $disabled=preg_match('/{{noedit}}/', $field->column_comment)?'disabled':''?>
 						
 						<? $c=$content->$column_name;?>
+
 						<? $c=str_replace('images/', '/images/', $c);?>			
 						<? $c=str_replace('//images/', '/images/', $c);?>
 						
@@ -133,12 +138,12 @@
 							 <?if($field->column_name=='pdf_link' && $content->pdf_path){$field_structure['value']=$content->pdf_path;}?>
 							 <?=@call_user_func('form_'.convertDataType($field->data_type), $field_structure )?><br/><span class="help_text"><?=clean_comment($field->column_comment)?><?= $field->is_nullable=='YES'?'':'<span class="red">&nbsp;(required)</span>'?></span>
 							<? elseif(in_array($field->column_name, unserialize(UPLOAD_PATHS))):?>
-							
+
 									<? if($content->$column_name):?>
 									
-                                       <?
+                                    <?
                                     $path = $content->$column_name;
-                                    
+
 									$ext = strrev(substr(strrev($path),0,strpos(strrev($path),'.')));
 									if(strtolower($ext) == 'pdf')
 									{ ?>
@@ -154,20 +159,26 @@
                                     <? } ?>
 									<!-- <div class="file_uploader"></div> -->
 									<br/>
-									<?if (in_array($column_name, unserialize(NO_PREVIEW_PATHS))):?>
+									<?if (in_array($column_name, unserialize(NO_PREVIEW_PATHS))):  //if image ALREADY exists ?>
 									   <div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Document</div>
 									<?else:?>
-    									<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image</div>
+
+    									<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image <?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></div>
     								<?endif;?>
+                                    
+                                    
+                                    
 									<br/>
 <!--									<a class="remove_image" style="font-size: 11px;" href="#">Remove<br/></a>-->
                                         <?if (!in_array($column_name, unserialize(NO_PREVIEW_PATHS))):?>
                                         <a class="crop_image" style="font-size: 11px;" href="#">Crop<br/></a>
                                         <?endif;?>
-									<? else:?>
+                                        
+                                        
+									<? else: //if image is NULL?>
 									<img class="uploaded_image" id="<?=$field->column_name?>" style="display:none" src=""/><br/>
     									<?if (!in_array($column_name, unserialize(NO_PREVIEW_PATHS))):?>
-    									<br/><div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image</div><br/>
+    									<br/><div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image <?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></div><br/>
     									<?else:?>
     									   <br/><div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Document</div><br/>
     									<?endif;?>
