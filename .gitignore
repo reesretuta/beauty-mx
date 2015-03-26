@@ -1,1 +1,3 @@
 dandelion.yml
+applications/frontend/logs
+applications/cms/logs
