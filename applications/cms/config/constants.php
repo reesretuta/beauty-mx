@@ -73,8 +73,12 @@ define('PERMISSION_TEXT',			serialize(array(
 												'ru'=>'Read and Update Only', 
 												'r'=>'Read Only')));
 define('IMG_DIMENSIONS',			serialize(array(
-    'homepage_testimonials_qoutes' => '200 x 200px',
-    'homepage_hero' => 'height: 1440px / width 598 px')
+    'homepage_products_gallery' => 'height: 570px / width: 380px',
+    'homepage_products_categories' => 'height: 190px / width: 285px',
+    'homepage_rewards' => 'height: 684px / width: 570px',
+    'homepage_testimonials_qoutes' => 'height: 238px / width: 209px',
+    'homepage_catalogs' => 'height: 320px / width: 263px',
+    'homepage_hero' => 'height: 1440px / width: 598px')
 ));
 
 
