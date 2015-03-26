@@ -244,15 +244,19 @@ function browser($table='media'){
                                         $outputFunction		= 'ImagePng';
                                         $mime				= 'image/png'; // We need to convert GIFs to PNGs
                                         $doSharpen			= FALSE;
-                                        $quality			= round(10 - ($quality / 10)); // We are converting the GIF to a PNG and PNG needs a compression level of 0 (no compression) through 9
+                                        // $quality            = round(10 - ($quality / 10)); // We are converting the GIF to a PNG and PNG needs a compression level of 0 (no compression) through 9
+                                        $quality = 9;
                                 break;
 
                                 case 'image/x-png':
                                 case 'image/png':
+                                    error_log(print_r($quality,true),0);
                                         $creationFunction	= 'ImageCreateFromPng';
                                         $outputFunction		= 'ImagePng';
-                                        $doSharpen			= FALSE;
-                                        $quality			= round(10 - ($quality / 10)); // PNG needs a compression level of 0 (no compression) through 9
+                                        $doSharpen          = FALSE;
+                                        // $quality            = round(10 - ($quality / 10)); // PNG needs a compression level of 0 (no compression) through 9
+                                        $quality = 9;
+                                        
                                 break;
 
                                 default:
