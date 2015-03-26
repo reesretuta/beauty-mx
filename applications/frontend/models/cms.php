@@ -92,6 +92,30 @@ class Cms extends CI_Model {
             }
     }
 
+    public function getContactSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_contact_buy');
+   	 $query = $this->db->get();
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{
+       		$row = $query->result();
+            return $row;
+            }
+    }
+    
+    public function getCatalogSection(){
+   	 $this->db->select('*');
+   	 $this->db->from('homepage_catalogs');
+   	 $query = $this->db->get();
+       	 if($query->num_rows() == 0 ){
+       		return false;
+       	 }else{
+       		$row = $query->result();
+            return $row;
+            }
+    }
+
     public function getTestimonialSection(){
    	 $this->db->select('*');
    	 $this->db->from('homepage_testimonials');

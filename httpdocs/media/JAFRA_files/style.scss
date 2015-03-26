@@ -1,0 +1,1375 @@
+.navbar-brand {
+  height: 50px;
+}
+
+/* custom fonts */
+
+.HelveticaNeueLTStd-Th { 
+  font-family: HelveticaNeueLTStd-Th;
+  font-weight: normal;
+  font-style: normal;
+}
+.HelveticaNeueLTStd-Md { 
+  font-family: HelveticaNeueLTStd-Md;
+  font-weight: normal;
+  font-style: normal;
+}
+.DidotLTPro-Roman { 
+  font-family: DidotLTPro-Roman;
+  font-weight: normal;
+  font-style: normal;
+}
+.DidotLTPro-Italic { 
+  font-family: DidotLTPro-Italic;
+  font-weight: normal;
+  font-style: normal;
+}
+.HelveticaNeueLTStd-BdCn { 
+  font-family: HelveticaNeueLTStd-BdCn;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: -0.02em;
+}
+
+/* end custom fonts */
+
+
+html,body {
+  height: 100%;
+}
+body {
+  padding-top: 50px;
+  position: relative; /* needed for scrollspy */
+  /*overflow-x: hidden; this breaks printing in firefox, why is it here? */
+}
+body.landing-page {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+body.join .nav .open>a.language_dropdown, .nav .open>a.language_dropdown:hover, .nav .open>a.language_dropdown:focus {
+background-color: #c3002f;
+border-color: #c3002f;
+}
+a.watch-video-link{
+  color: #877650;
+  float: right;
+  font-weight: bold;
+}
+a.watch-video-link:hover {
+  color: #b51a8a;
+  text-decoration: none;
+}
+
+a.watch-video-link span.glyphicon-play {
+color: #460d66;
+}
+
+a:link.text-underline {
+  text-decoration: underline;
+}
+
+a {
+  position: relative;
+}
+
+.btn {
+/*font-size: 1.2em;
+padding: 0.5em 1.5em;*/
+background: #c3002f;
+/*opacity: 0.7;*/
+text-transform: uppercase;
+font-weight: normal;/*bold;*/
+/*letter-spacing: 0.2em;*/
+box-shadow: inset 0 2px 0 0 rgba(255,255,255,.4), 0 2px 0 0 rgba(0,0,0,.4);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  background: #a5001b;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: DidotLTPro-Roman, serif;
+  font-weight: 400;
+  color: #460d66;
+  letter-spacing: -0.02em;
+}
+.biggify{
+  font-size: 18px;
+  font-weight: 400;
+}
+.titlify{
+  font-size: 48px;
+  letter-spacing: -0.02em;
+}
+.enlarge {
+  font-size: 1.5em;
+  line-height: 1em;
+}
+#content {
+  background-color: #ededed;
+  width: 100%;
+}
+.contact-description{
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.bg-color-honeyflower{background-color:#5A376F;}
+.color-black{color:#000000;}
+.color-bostonblue{color:#4E9FAD;}
+.color-cesoir{color:#937BA0;}
+.color-chatelle{color:#AFA8B4;}
+.color-grey{color: #777777;}
+.color-gold{color:#867527;}
+.color-husk{color:#B29F50;}
+.color-purple{color: #460d66;}
+.color-red{color: #c3002f;}
+.color-violet{color: #9659B7;}
+.footer-links{
+  background-color: rgb(131,104,137);;
+  padding: 2em;
+}
+.footer-links a {
+  font-size: 18px;
+  color: #fff;
+}
+/*this is to allow Placeholder text fade to lighter shade of grey text when input box is selected */
+input::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+    color: #e1e1e1;
+}
+/* Firefox < 19 */
+input:-moz-placeholder,
+input:focus:-moz-placeholder {
+    color: #e1e1e1;
+}
+/* Firefox > 19 */
+input::-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: #e1e1e1;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder,
+input:focus:-ms-input-placeholder {
+    color: #e1e1e1;
+}
+
+#logo img {
+  max-width: 70px;
+}
+ul.modal_lists {
+list-style-type: none;
+padding-left: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+  color:#fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: #fff;
+border-radius: 0px;
+background-color: #c3002f;
+}
+.navbar-joinstyle {
+background-color: #1cc3d6;
+border-radius: 0px;
+}
+.navbar-toggle,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus,
+.navbar-nav>li.active>a {
+  /*margin-right: 15px;*/
+}
+.navbar-toggle,
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background: transparent;
+  border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+
+.navbar-nav{
+    li.social{
+        width:150px;
+        margin:0 12px;
+        a{
+            padding:0;
+            display:inline-block;
+        }
+    }
+}
+
+.well {
+  background:none;
+  border:none;
+  box-shadow:none;
+}
+
+.jafrabiz-well {min-height: 20px;
+padding: 19px;
+margin-bottom: 20px;
+background-color: #E5E2E9;
+border: 1px solid #e3e3e3;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+.thanks-well {min-height: 20px;
+padding: 19px;
+margin-bottom: 20px;
+background-color: #f5f5f5;
+border: 1px solid #e3e3e3;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+.product-action {
+/*margin-top: 1.5em;*/
+}
+.product-highlighter {
+  border: 5px solid #AA7F9E;
+  position: relative;
+  background-color: #E9E8E9;
+}
+#pagenav {
+  margin-bottom: 0;
+  background: none;
+  border-bottom: none;
+  margin-top: -50px;
+  background: #460d66;
+  box-shadow: 0 2px 8px rgba(31,0,60,.4);
+}
+
+#pagenav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0;
+  z-index: 100;
+}
+#pagenav .navbar-default .navbar-nav>.active>a, 
+#pagenav .navbar-default .navbar-nav>.active>a:hover, 
+#pagenav .navbar-default .navbar-nav>.active>a:focus {
+  background: none;
+}
+.jumbotron {
+/*  padding-top: 20vh;
+  padding-bottom: 20vh;*/
+  background: #fff url(/media/JAFRA_files/img/jumbotron_bg-1.jpg);
+  background-size: cover;
+  background-position: 50% top;
+  box-shadow: inset 0 0 16px 4px rgba(31,0,60,.4);
+}
+.jumbotron .btn {
+  font-size: 1.2em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.jumbo-row{
+background: rgba(44, 33, 50, .7);
+margin-left: -30px;
+margin-right: -30px;
+}
+.jumbo-row .container {
+  padding: 30px;
+}
+.jumbo-title{
+line-height: 0.8;
+}
+.jumbo-description {
+color: #fff;
+font-size: 22px;
+line-height: 1.6em;
+}
+.jumbo-title-span-1 {
+  color: #FFFFFF;
+  font-size: 126px; 
+}
+.jumbo-title-span-2 {
+color: #DBC572;
+background: rgba(105, 0, 0, 0.4);
+padding: 0 .2em;
+font-size: 76px;
+}
+.jumbo-title-span-3 {
+color: #DBC572;
+background: rgba(105, 0, 0, 0.4);
+line-height: 0.8;
+padding: 0 .2em;
+margin-left: 1em;
+font-size: 76px;
+}
+.jumbo-title-span-4 {
+  color: #FFFFFF;
+  font-size: 75px;
+  line-height: 0.8;
+  font-size: 105px;
+}
+.jumbo-videobg {
+  background: none;
+  height: 100%;
+}
+
+#royal_starter_kit .kit-value {
+font-size: 48px;
+}
+
+/*section#why_jafra_products, section#why_jafra_lifestyle, section#why_jafra_rewards, section#why_jafra_testimonials, section#royal_starter_kit, section#skincare_starter_kit, section#faqs{
+  background-color: #fff;
+  margin-right: 0px;
+  margin-left: 0px;
+}*/
+
+/*.subsection {
+  margin-bottom: 55px;
+}*/
+
+.subcontainer {
+  background: #fff;
+}
+.subcontainer {
+  position: relative;
+}
+.subcontainer:before {
+  content:" ";
+  display: block;
+  position: absolute;
+  bottom: -18px;
+  width: 100%;
+  height: 18px;
+  /*left: -10%;
+  background: -webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.25), rgba(97, 97, 97, 0.0) 40%);
+  background:      radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.25), rgba(97, 97, 97, 0.0) 40%);*/
+}
+.subcontainer .row {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.section-copy {
+  padding: 0 15px 30px 30px;
+}
+
+.promo_free_shipping, #myPromoModal .modal-dialog {
+  margin-top: 20px;
+  border-radius: 9px;
+  background-color: #E5E2E9;
+  /*box-shadow: 4px 4px 0 0 rgba(0,0,0,.2);*/
+  border: 1px solid #e3e3e3;
+  padding: 0.5em;
+}
+#myPromoModal .modal-dialog {
+  padding: 1.5em;
+}
+.promo_free_shipping span, #myPromoModal .modal-dialog span {
+  text-transform: uppercase;
+  color: #c3002f;
+  font-family: DidotLTPro-Roman, serif;
+  font-size: 20px;
+}
+.promo_free_shipping p, #myPromoModal .modal-dialog p {
+  color: #222;
+}
+ /*DECEMBER PROMO*/
+.promo {
+  width: 260px;
+  height: 260px;
+  z-index: 2;
+  border-radius: 50%;
+  padding: 1.75em 8.5em;
+  background: url(/media/JAFRA_files/img/jan2015-promo.png) no-repeat 42% 70%;
+  background-color: #006B77;
+  background-size: 150px;
+  position: absolute;
+  bottom: -170px;
+  left: -12vw;
+  box-shadow: 4px 4px 0 0 rgba(0,0,0,.2);
+}
+.promo span {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  display: block;
+  color: #fff;
+  font-family: HelveticaNeueLTStd-BdCn;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  writing-mode: lr-tb;
+  width: 140px;
+}
+
+.promo span strong{
+  font-size: 32px;
+  font-weight: 400;
+}
+.promo a.more-link {
+  margin: 0;
+  position: absolute;
+  right: 61px;
+  top: 98px;
+  color: #A28F40;
+  font-family: HelveticaNeueLTStd-BdCn;
+}
+.promo .more-link:after {
+  top: 5px;
+}
+
+section .cta-section {
+  padding: 50px 0px;
+}
+section#freedom_flexibility_section{
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+section#freedom_flexibility_section .legacy_wrapper{
+  background: url(/media/JAFRA_files/img/timeline-bg.png) repeat-x 50% 50%;
+  background-size: 184px;
+}
+
+section#freedom_flexibility_section .legacy_wrapper br.hidden-xs{
+  padding-bottom: 100px;
+}
+section#freedom_flexibility_section div.subcontainer {
+  background-color: #EDEDED;
+  border: 1px solid #7D5B92;
+  margin-bottom: 50px;
+}
+section#freedom_flexibility_section .timeline-description{
+  margin-top: 125px;
+}
+section#freedom_flexibility_section .section-copy_bound_box {
+  background: url(/media/JAFRA_files/img/worldmap_bg.jpg) no-repeat bottom;
+    background-attachment: fixed;
+background-size: 81.5%;
+}
+section#freedom_flexibility_section .btn-lg {
+margin: 50px 0px -25px;
+}
+
+section#why_jafra_products {
+  background: #e0dbcf;
+}
+section#why_jafra_products span.to_love{
+  font-size: 72px;
+}
+section#why_jafra_products #more_products {
+  background: url(/media/JAFRA_files/img/labgirl_bg01.jpg) no-repeat bottom;
+  background-size: 97.5%;
+}
+section#why_jafra_products #more_products img.products-offleft {
+  margin-left: -35px;
+  padding-right: 25px;
+}
+
+section#why_jafra_lifestyle {
+  background: #380A52;
+  color: #FFFFFF;
+}
+section#why_jafra_lifestyle img.fpo-itsyourcall{
+  width: 204px;
+  height: 136px;
+margin-right: -50px;
+margin-top: -92px;
+}
+section#why_jafra_lifestyle .invest-icons-bg{
+background: url(/media/JAFRA_files/img/invest-icons.png) no-repeat 50% -4%;
+line-height: 2em;
+}
+
+section#why_jafra_lifestyle .training-icons-bg{
+background:url(/media/JAFRA_files/img/training-icons.png) no-repeat 50% -8%;
+line-height: 2em;
+}
+section#why_jafra_lifestyle .invest {
+  font-size: 60px;
+  font-family: HelveticaNeueLTStd-BdCn;
+  color: #9659B7;
+  text-transform:uppercase;
+}
+section#why_jafra_lifestyle .yourself {
+  font-size: 48px;
+  font-family: DidotLTPro-Italic;
+  color: #A28F40;
+}
+section#why_jafra_lifestyle .subcontainer {
+  background-color: #380A52;
+}
+section#why_jafra_lifestyle .sales-equation {
+  width: 90%;
+line-height: 1.7em;
+padding: 3em 5em 2em 4.2em;
+min-height: 200px;
+position: relative;
+margin-bottom: 45px;
+left: 45px;
+/*width: 677px;*/
+}
+section#why_jafra_lifestyle .business-right-col{
+  border-left: 1px solid #5A376F;
+}
+section#why_jafra_lifestyle .business-right-col .row{
+  padding-bottom: 20px;
+}
+
+section#why_jafra_lifestyle span.you_choose {
+color: #ffffff;
+font-size: 48px;
+text-transform:uppercase
+}
+
+section#why_jafra_lifestyle span.how_to {
+font-family: DidotLTPro-Italic;
+color: #C83B53;
+font-size: 48px;
+position: relative;
+right: -2em;
+}
+
+section#why_jafra_lifestyle span.business {
+font-family: HelveticaNeueLTStd-BdCn;
+color: #867527;
+font-size: 72px;
+text-transform: uppercase;
+position: relative;
+right: -3.5em;
+z-index: 2;
+}
+
+section#why_jafra_lifestyle .percent {
+  font-size: 72px;
+  line-height: 0.8em;
+}
+section#why_jafra_lifestyle .plus {
+  position: relative;
+  top: 30px;
+  right: 51px;
+  font-size: 72px;
+}
+
+section#why_jafra_lifestyle .leaders_col {
+  position: relative;
+  top: 5px;
+} 
+body.es section#why_jafra_lifestyle .leaders_col {
+position: relative;
+top: -23px;
+}
+
+section#why_jafra_lifestyle .team_sales {
+  font-size:30px;
+}
+
+section#why_jafra_lifestyle .subcontainer ul.golden_bullets {
+  font-family: DidotLTPro-Italic;
+  font-size: 30px;
+  list-style: none;
+  color: #ffffff;
+background: #620747;
+padding: 2em 1.2em 2em 4.2em;
+top: -1.25em;
+left: -4.2em;
+position: relative;
+max-width: 23em;
+line-height: 3em;
+z-index: 0;
+}
+
+section#why_jafra_lifestyle .subcontainer ul.golden_bullets li:before { 
+  content: "\25BA";
+  color: #867527;
+  padding-right: 25px;
+}
+
+section#why_jafra_lifestyle .subcontainer .more-link:after {
+  color: #C3002F;
+}
+section#why_jafra_lifestyle .subcontainer .more-link span {
+  color: #9659B7;
+}
+
+section#why_jafra_rewards {
+  background: #faebe6;
+}
+
+section#why_jafra_testimonials {
+  background: transparent;  /* -- body background color -- */
+  padding: 0px 15px; /* responsive padding */
+}
+
+section#royal_starter_kit {
+  padding: 0px 15px; /* responsive padding */
+}
+section#FAQs_section {
+padding: 0px 15px;
+}
+section h3.hero-header-title {
+font-size: 81px;
+font-family: HelveticaNeueLTStd-BdCn;
+font-weight: normal;
+font-style: normal;
+line-height: 0.9;
+color: #8B7B5B;
+}
+
+section h3.hero-header-title-freedom_flexibility{
+  font-size: 36px;
+  color: #460D66;
+  margin-top: -16px;
+background-color: #EDEDED;
+display: inline-block;
+}
+section h3.hero-header-title-freedom_flexibility span {
+  padding: 0px 10px;
+}
+
+section h3.hero-header-title span.serif-title, span.serif-title-alt {
+font-size: 55px;
+font-family: DidotLTPro-Italic;
+font-weight: normal;
+font-style: normal;
+color: #460d66;
+letter-spacing: normal;
+}
+
+span.serif-title-alt {
+  color: #8B7B5B;
+  font-size: 42px;
+  display: block;
+  line-height: 44px;
+}
+.testimonials {
+  width: 80%;
+}
+.testimonial {
+  padding: 0 40px 40px;
+}
+.testimonial .media-heading {
+margin: 8px 0 5px;
+}
+
+
+/*section#FAQs .section-copy_bound_box,
+section#FAQs div.subsection {
+  background: none;
+  border-color: #460d66;
+}*/
+#FAQs_section .container h2 {
+margin-bottom: -33px;
+  font-size: 36px;
+  color: #460D66;
+background-color: #EDEDED;
+display: inline-block;
+position: relative;
+bottom: -17px;
+}
+#FAQs_section .container hr {
+  border-top: 1px solid #D7D7D7;
+}
+#FAQs_section .subsection .container {
+  background: none;
+  border: 1px solid #460d66;  
+margin-bottom: 50px;
+padding-top: 50px;
+}
+section#FAQs_section .btn-lg {
+  margin: 50px 0px -55px;
+}
+.faqs-item-question {
+  font-family: DidotLTPro-Roman;
+  font-size: 24px;
+  color: #460D66;
+width: 475px;
+}
+
+.faqs-item .faqs-item-question a {
+  color: #421F5D;
+  display: block;
+  margin-top: 30px;
+  margin-right: 0;
+  padding: 0 50px 0 0;
+  font-size: 24px;
+  line-height: 1.4;
+  position: relative;
+  top: -70px;
+  left: 45px;
+}
+
+.faqs-item-question span {
+  cursor: pointer;
+}
+
+.faqs-item .faqs-item-question a:after {
+  top: 0;
+  right: 10px;
+}
+
+/* more links */
+body.es div.modal-content section.royal_kit .more-link, body.es div.modal-content section.royal_kit .more-link.collapsed {
+  width: 70px;
+}
+
+.more-link, .more-link.collapsed {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.more-link span {
+  color: #877650;
+  /*font-family: HelveticaNeueLTStd-Md;
+  font-size: 13px;*/
+}
+.more-link:hover, .more-link:active, a.collapsed {
+  color: #b51a8a;
+  text-decoration: none;
+}
+
+.more-link:after {
+  content: "+";
+  font-family: HelveticaNeueLTStd-Th;
+  font-size: 63px;
+  line-height: 20px;
+  display: block;
+  position: absolute;
+  z-index: 99;
+  top: -25px;
+  right: -30px;
+  width: 33px;
+  height: 33px;
+  color: #460d66;
+  /*background: url(/media/JAFRA_files/img/plus-icon2x.png);
+  background-size: 100% 100%;*/
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform-origin: 55% 50%;
+  -o-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 55% 50%;
+}
+
+.faqs-item-question:not(.collapsed) .more-link:after, .more-link-alt:after {
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.faqs-item-question .more-link:after, .more-link-alt.collapsed:after {
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.social-media-icons a  i.fa{
+  color: rgba(74,13,102,1);
+}
+.starter_kits-title {
+margin-top: 10px;
+line-height: 1.2em;
+}
+.starter_kits-price{
+  font-family: DidotLTPro-Roman;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10em;
+  color: #460d66;
+line-height: 1.2em; /*0.8em;*/
+}
+.modal_starter_kits-price{
+  font-size: 6em;
+}
+.starter_kits-label_title{
+  font-family: HelveticaNeueLTStd-BdCn;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.65em;
+  color: #58585A;
+  line-height: 0.8em;
+}
+.starter_kits-retail_value{
+  font-family: DidotLTPro-Italic;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  color: #C32337;
+  line-height: 2em; /*0.8em;*/
+}
+
+.agreement-content {
+  border: 1px solid #f5f5f5;
+  box-shadow: inset 0 0 15px 0 rgba(0,0,0,.2);
+  padding: 20px;
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.section-title{
+  text-align: center;
+  font-family: DidotLTPro-Roman;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #460d66;
+}
+
+.cardImg 
+{
+	max-height:40px; 
+	float:left; 
+}
+
+/* join jafra page nav styles */ 
+.join_nav  > li > a
+{
+	text-shadow:none; 
+	margin:5px; 
+	border-radius: 0px;
+	padding: 5px 16px;
+}
+
+.join_nav  > li > a:hover , .join_nav  > li > a:focus
+{
+  background-color: #5b3570 !important;
+  cursor: pointer;
+} 
+.join_nav  > li > a.cta,
+.join_nav  > li > a.cta:hover , .join_nav  > li > a.cta:focus
+{
+  background-color:#c3002f !important; 
+  color:#fff !important;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,.4), 0 1px 0 0 rgba(0,0,0,.4);
+} 
+
+.navbar-language > li > a
+{
+	text-shadow:none; 
+	margin:5px;
+	border-radius: 0px; 
+	
+}
+.navbar-language > li > a:hover , .navbar-language > li > a:hover
+{
+	text-shadow:none; 
+	margin:5px;
+	border-radius: 0px; 
+	background-color:#c3002f !important; 
+	color:#fff !important;
+}
+.navbar-language  .dropdown-menu > li > a
+{
+	color: #aa73b1 ;
+}
+
+.navbar-language  .dropdown-menu > li > a:hover
+{
+	color: #000 ;
+	background:#FAEBE6; 
+}
+
+.kit-select > li > a
+{
+	color: #aa73b1 ;
+	font-weight:bold; 
+}
+.kit-select > li > a:hover
+{
+	background:#FAEBE6;
+}
+/*.dropdown-menu > .contact-description 
+{
+	color: #aa73b1 !important;
+	font-weight:normal; 
+  text-align: center;
+}*/
+.dropdown_jafra {
+width: 200px;
+}
+ .navbar-language > .open > a,  .navbar-language > .open > a:hover,  .navbar-language > .open > a:focus 
+{
+    background-color: #c3002f !important;
+    color: #fff !important;
+}
+
+.navbar-language .dropdown-menu 
+{
+margin-right:5px; 
+min-width:131px;
+}
+
+.contact-header
+{
+	min-width:120px; 
+}
+.contact-header .social_dropdown
+{
+    max-width: 200px;/* 100px;*/
+    margin-left:30px; 
+}
+.contact-info-well {
+padding-top: 5px;
+}
+.spacer{
+	height:55px;
+	width:100%;
+}
+
+.join #content.checkout {
+  background: #fff;
+  margin-top: 50px;
+}
+
+.join li.active a{
+  background-image: none!important;
+}
+
+
+.glyphicon-chevron-right:before 
+{
+     content: " ";
+       
+       display:block;
+       
+       background:url('/media/img/right-angle-icon2x.png') center center no-repeat;
+       background-size: contain;
+       
+      width:30px;
+       height:50px;
+}
+.glyphicon-chevron-left:before 
+{
+   content: " ";
+      
+       display:block;
+       
+       background:url('/media/img/lef-angle-icon2x.png') center center no-repeat;
+       background-size: contain;
+      
+       width:30px;
+       height:50px;
+      }
+      
+.carousel-control.right
+{
+  background-image:none;
+}
+
+.carousel .left
+{
+  background-image:none;
+}
+
+.carousel .left .glyphicon {
+  cursor: pointer;
+}
+.carousel .right {
+  cursor: pointer;
+}
+.carousel-control 
+{
+  opacity:.5 ; 
+  text-decoration:none; 
+  outline:0 none; 
+  color:#fff;   
+
+}
+
+/*
+ * Join Styles
+ */
+
+#ctavid{
+  padding:22px 2px 0px 36px;
+}
+.why-section-title{
+  text-align:center;
+  color:#472264!important;
+}
+#lipsticksmear{
+  position: absolute;
+  left: -84px;
+  bottom: 70px;
+}
+#testimonials-brush {
+  max-width:375px;
+  position: absolute;
+  left: -70px;
+}
+#pastelpatches {
+  max-width:340px;
+  position: absolute;
+  top: 10px;
+  right: -10px;
+}
+#liner_black {
+  position: absolute;
+  right: -60px; 
+  top: -50px;
+}
+.start_inside{
+	width:50%; 
+	float:left;
+padding: 20px;
+}
+.steps-indicator {
+  top: 0;
+}
+.store-checkout h1 {
+  margin-top: 80px;
+}
+
+.store-checkout input[type=number]::-webkit-inner-spin-button,
+.store-checkout input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body.incheckout .navbar-fixed-top, 
+body.incheckout #pagenav.affix {
+    min-height: 50px !important;
+    position: relative !important;
+    top: auto !important;
+}
+body.incheckout {
+    margin: 0 !important;
+    padding-top: 0 !important;
+}
+.whats_inside_button{
+	float:right;
+}
+@media (max-width:990px) {
+	.prod_more_link
+	{
+		text-align:left; 
+	}
+}
+
+/*  ------ RESPONSIVE BREAKPOINTS ------  */
+
+/* Extra-Small screens like handheld devices (iPhone/Android/etc) */
+@media (max-width:400px) {
+    .jumbo-title-span-1 {
+      font-size: 50px; 
+    }
+    .jumbo-title-span-2,
+    .jumbo-title-span-3 {
+      font-size: 24px;
+      white-space: nowrap;
+    }
+    .jumbo-title-span-4 {
+      font-size: 37px;
+    }
+    .jumbo-videobg {
+      background: none;
+      height: 100%;
+    }
+    p.jumbo-description {
+      font-size: 14px;
+    }
+    p.jumbo-description br {
+      display: none;
+    }
+    
+    .jumbotron p.jumboget {
+    text-align: center;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+
+    .btn-lg, .btn-group-lg > .btn 
+    {
+     font-size:12px; 
+    }
+    
+    .checkout-card .btn 
+    {
+      font-size:8px; 
+    }
+    .mobile_tablet_centerfix {
+      margin:0px !important;
+    }
+    section#royal_starter_kit .kit-encapsulate, section#skincare_starter_kit .kit-encapsulate {
+    margin: 0px -45px 0px 15px; /* margin fix to center kit in mobile; TODO refactor this later */
+    }
+    span.serif-title {
+      font-size: 28px;
+    }
+    section h3.hero-header-title {
+      font-size: 43px;
+    }
+    span.serif-title-alt {
+      font-size: 33px;
+      line-height: 36px;
+    }
+      
+  	.start_inside{
+  		width:100%; 
+  	}
+    ul.menu_language li a {
+      color: #fff;
+    }
+    
+	.social-media-icons .fa{
+		font-size:30px;
+		text-align:center;
+	}
+	.contact-header .social_dropdown{
+		width:100%;
+		max-width: 100%;
+	}
+	
+	.whats_inside_button{
+		float:none;
+	}
+  .timeline-photo {
+    max-width: 80px !important;
+  }
+
+  #freedom_flexibility_section .subrow {
+    margin: 0em !important;
+  }
+  .agreement-content {
+    max-height: 200px;
+  }
+
+}
+@media (min-width:400px) and (max-width:767px) {
+/*	.jumbo-title-span-1 {
+	    font-size: 85px;
+	}
+	.jumbo-title-span-4 {
+	    font-size: 60px;
+	}*/
+
+  .jumbo-title-span-1 {
+      font-size: 85px;
+  }
+  .jumbo-title-span-2, .jumbo-title-span-3 {
+    font-size: 40px
+  }
+  .jumbo-title-span-4 {
+      font-size: 60px;
+  }
+  p.jumbo-description br {
+      display: none;
+    }
+
+    ul.menu_language li a {
+      color: #fff;
+    }
+    .mobile_tablet_centerfix {
+      margin:0px !important;
+    }
+  section#royal_starter_kit .kit-encapsulate, section#skincare_starter_kit .kit-encapsulate {
+  margin: 0px -45px 0px 15px; /* margin fix to center kit in mobile; TODO refactor this later */
+  }
+	.social-media-icons .fa{
+		font-size:30px;
+		text-align:center;
+	}
+  .timeline-photo {
+    max-width: 150px !important;
+  }
+	.contact-header .social_dropdown{
+		width:100%;
+		max-width: 100%;
+	}
+	footer .nav .open>a{
+		background-color:#460d66!important;
+	}
+
+  #freedom_flexibility_section .subrow {
+    margin: 0em !important;
+  }
+
+}
+@media (max-width: 767px) {
+    .navbar-fixed-top, #pagenav.affix {
+        min-height: 50px;
+        position: relative;
+        top: auto;
+    }
+    /*.navbar-collapse {
+        max-height: none;
+    }*/
+    body {
+        margin: 0;
+        padding-top: 0;
+        -webkit-overflow-scrolling: touch;
+    }	
+    .start_inside{
+		width:100%; 
+	}
+	footer .navbar-nav .open .dropdown-menu{
+		background-color:#460d66!important;
+	}
+    .subcontainer:before {
+    width: 90%; /*changed from 120% to 90% due to broken width in tablet layout */
+  }
+  .subcontainer .row {
+    width: 100%;
+  }
+  #freedom_flexibility_section .subcontainer .row {
+    margin: 0em;
+  }
+  .contact-description, .language-dropdown>ul>li>a {
+    color: #fff;
+  }
+  .contact-header .social_dropdown {
+    margin-left: 0;
+  }
+  li.open>a span {
+    color: #222;
+  }
+}
+
+/* Small screens like netbooks and tablets (iPad/iPad mini/etc) */
+@media (min-width:768px) {
+	
+    .jumbotron {
+        padding-top: 60px;
+    }
+    footer .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+    p.jumbo-description br {
+      display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .freedom_flexibility_description {
+    margin: 0em 3em;
+  }
+  #freedom_flexibility_section .subcontainer .row {
+    margin: 0em;
+  }
+  body.es #pagenav #navbar-sections ul.join_nav {
+    font-size: 73%; /*Fixing overflowing navbar text for Spanish navigation*/
+  }
+}
+
+/* Medium screens like laptops and smaller desktop monitors */
+@media (min-width:992px) {
+    .jumbotron {
+        padding-top: 100px;
+    }
+    p.jumbo-description br {
+      display: inline;
+    }
+    section#why_jafra_testimonials span.is_everything {
+      padding-right: 400px;
+    }
+    section#why_jafra_testimonials span.and_more {
+      padding-left: 400px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  /*section#why_jafra_lifestyle .sales-equation {
+    width: 629px !important;
+  }*/
+}
+
+/* Large screens like HDTVs and modern desktop monitors */
+@media (min-width:1200px) {
+    .jumbotron {
+      padding-top: 180px;
+    }
+
+    section#why_jafra_lifestyle .subcontainer ul.golden_bullets {
+      width: 23.6em;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+  #pastelpatches {
+right: -36px;
+}
+	#lipsticksmear{
+		left:-120px;
+	}
+
+  section#why_jafra_lifestyle .subcontainer ul.golden_bullets {
+    width: 20.6em;
+  }
+
+  span.your_call {
+    font-size: 65px;
+  }
+  span.product-title1 {
+    line-height: 0.6 !important;
+    font-size: 30px !important;
+  }
+  span.product-title2 {
+    font-size: 40px !important;
+  }
+  h3.royal_starter_titles {
+    line-height: 0.5 !important;
+  }
+  h3.starter_kits-price {
+    font-size: 5em;
+  }
+  h3.skincare_header_title {
+    margin-top: -39px;
+    height: 86px;
+  }
+  h3.skincare_price {
+    height: 77px;
+  }
+  body.es p.precio_al_publico{
+    font-size: 1.9em;
+  }
+  section#why_jafra_lifestyle .sales-equation {
+    width: 101.2%;
+  }
+  /*section#why_jafra_lifestyle .sales-equation {
+    /width: 546px;/
+    max-width: 565px !important;
+    padding: 3em 0em 0em 2em;
+    min-width: 446px !important;
+    width: 100%;
+  }*/
+}
+
+/* addthis cutoff fix */
+.at-share-btn {
+  display: inline-block;
+}
+
+
+
+
+
+
+#contact{}

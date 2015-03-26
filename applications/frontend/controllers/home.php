@@ -51,10 +51,14 @@ class Home extends CI_Controller
         $data['productstolove'] = $this->cms->getProductsToLoveSection();
         $data['decision']       = $this->cms->getDecisionSection();
         $data['reward']         = $this->cms->getRewardSection();
-        $data['royalkit']       = $this->cms->getRoyalKitSection();
-        $data['specialkit']     = $this->cms->getSpecialKitSection();
+        $data['catalog']         = $this->cms->getCatalogSection();
+        $data['contact']         = $this->cms->getContactSection();
         $data['testimonial']    = $this->cms->getTestimonialSection();
 
+        //destroy
+        // $data['royalkit']       = $this->cms->getRoyalKitSection();
+        // $data['specialkit']     = $this->cms->getSpecialKitSection();
+        //destroy
         
         $data['faqs']     = $this->cms->getFaqSection();
         // $data['seo']                            = $this->cms->seoData('28');

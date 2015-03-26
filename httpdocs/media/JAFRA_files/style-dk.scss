@@ -1,0 +1,475 @@
+/* style-dk.css */
+
+a:link { text-decoration: none; } /* internet explorer is dumb */
+
+.nav li a {
+	letter-spacing: normal;
+}
+
+/* beauty of jafra section */
+.timeline-photo {
+	max-width: 192px;
+	margin-top: -84px;
+}
+.timeline-photo img {
+	border-radius: 50%;
+	border: 4px solid #c2c2c2;
+}
+.timeline-description {
+	width: 50%;
+	margin: 0 auto !important;
+	margin-top: 26px !important;
+}
+.legacy_wrapper {
+	height: 20px;
+	margin-top: 20px;
+}
+#more_freedom {
+	margin-top: 20px;
+}
+.hero-header-title-freedom_flexibility {
+	text-transform: uppercase;
+}
+section#freedom_flexibility_section .section-copy_bound_box,
+section#freedom_flexibility_section div.subcontainer {
+	background: none;
+	border-color: #460d66;
+}
+.freedom_flexibility_description {
+	font-size: 22px;
+	line-height: 1.6em;
+	color: #787878;
+}
+.freedom_flexibility_description b {
+	font-weight: normal;
+	color: #222;
+}
+#freedom_flexibility_section {
+	background-image: url(/media/JAFRA_files/img/worldmap_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 200px;
+	background-size: 1260px;
+	margin-top: 40px;
+}
+#freedom_flexibility_section .more-link {
+	margin-bottom: 25px
+}
+section#freedom_flexibility_section.expanded .more-link {
+	margin-bottom: 0px;
+}
+
+section#freedom_flexibility_section div.subcontainer {
+	margin-bottom: -1px;
+}
+section#freedom_flexibility_section.expanded div.subcontainer {
+	margin-bottom: 50px;
+}
+
+/* products section */
+section#why_jafra_products #more_products {
+	background-size: 931px;
+	background-position: 254px 60%;
+}
+section#why_jafra_products {
+	z-index: 1;
+}
+
+/* testimonials section */
+#why_jafra_testimonials .subcontainer {
+	background: none;
+	border: 1px solid #460d66;
+	border-top-color: #ededed;
+	margin-top: -1px;
+	margin-bottom: 50px;
+}
+section#why_jafra_testimonials .btn-lg {
+	margin: 50px 0px -25px;
+	position: relative; /* since parent is relative, so shall you be! */
+}
+
+/* starter kits section */
+#contact_section {
+	background: #fff;
+	padding-top: 86px;
+}
+#contact_section h2, .kit-modal h2 {
+	color: #d998fb;
+	border: none;
+}
+
+
+.contact-encapsulate{
+    border: 1px solid #460d66;
+    margin: 50px 15px;
+    padding: 30px 0;
+//    background: url('http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/contacto/zones/Zone2/zoneContents/default/content/es_MX/resources/supported[6]/file/zone1-bg.png');
+//  background-position: top right;
+//  background-repeat: no-repeat;
+//  background-size: contain;
+}
+
+#catalog_section{
+    background:#fff;
+    padding: 30px 0;
+    ul{
+        margin:0;
+        padding:0;
+        li{
+           float:left;
+           list-style:none;
+           margin-right:20px;
+        }
+    }
+}
+
+
+.kit-heading-wrapper {
+	background-color: #460d66;
+}
+#contact_section .subcontainer {
+	background: none;
+}
+#royal_starter_kit {
+	margin: 50px 0;
+}
+#royal_starter_kit .kit-desc,
+#royal_starter_kit .kit-value,
+.royal_kit .kit-desc,
+.royal_kit .kit-value {
+	line-height: 1em;
+}
+.royal_kit .kit-desc,
+#royal_starter_kit .kit-desc {
+	font-size: 52px;
+	white-space: nowrap;
+}
+.royal_kit .kit-value,
+#royal_starter_kit .kit-desc {
+	font-size: 48px;
+	position: relative;
+	z-index: 1;
+}
+.royal_kit .kit-desc {
+	font-size: 36px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.royal_kit .kit-value, #royal_starter_kit .kit-desc {
+		font-size: 40px;
+	}
+}
+.royal_kit .kit-value {
+	font-size: 28px;
+}
+.royal_kit img.img-responsive {
+	margin-top: 20px;
+}
+.product-price {
+	display: inline-block;
+	position: relative;
+	background: #fff;
+	border: 1px solid #460d66;
+	border-right: transparent;
+	font-family: HelveticaNeueLTStd-BdCn;
+	font-size: 32px;
+	color: #c3002f;
+	line-height: 30px;
+	height: 41px;
+	padding: 7px;
+	vertical-align: middle;
+	margin-right: -4px;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,.4);
+}
+.product-price small {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #460d66;
+	text-transform: uppercase;
+	font-size: 9px;
+	position: absolute;
+	display: block;
+	top: -9px;
+	left: 6px;
+}
+.btn small {
+	text-transform: none;
+}
+.royal_kit .product-action,
+#royal_starter_kit .product-action {
+	margin-top: -50px;
+	margin-right: 30px;
+}
+.royal_kit .product-action {
+	margin-right: 0;
+}
+.kit-encapsulate {
+	border: 1px solid #460d66;
+	margin: 0 15px;
+	padding: 30px 0;
+}
+#skincare_starter_kit {
+	padding-bottom: 30px;
+}
+.skincare_kit .kit-desc,
+.skincare_kit .kit-value,
+#skincare_starter_kit .kit-desc,
+#skincare_starter_kit .kit-value {
+	line-height: 1em;
+}
+#skincare_starter_kit .kit-desc {
+	font-size: 52px;
+	white-space: nowrap;
+}
+#skincare_starter_kit .kit-value {
+	font-size: 48px;
+}
+.skincare_kit .kit-desc {
+	font-size: 42px;
+}
+.skincare_kit .kit-value {
+	font-size: 24px;
+}
+#skincare_starter_kit .product-action,
+.skincare_kit .product-action {
+	margin-top: 30px;
+}
+#more_royal, #more_skincare,
+#more_royal_2, #more_skincare_2 {
+	margin-top: 20px;
+}
+#more_royal .section-copy p li, #more_skincare .section-copy p li,
+#more_royal_2 .section-copy p li, #more_skincare_2 .section-copy p li  {
+	float: left;
+	width: 33%;
+	min-height: 2em;
+	padding: 0 1em .5em 0;
+}
+#more_royal .section-copy p h4, #more_skincare .section-copy p h4,
+#more_royal_2 .section-copy p h4, #more_skincare_2 .section-copy p h4 {
+	clear: both;
+	display: block;
+	padding: 30px 30px 10px;
+	text-transform: uppercase;
+}
+.modal .subcontainer {
+	background: transparent;
+}
+
+/* your call section */
+section#why_jafra_lifestyle #more_call p {
+	line-height: 1.6em;
+	padding-top: 10px;
+}
+.es section#why_jafra_lifestyle .business {
+	right: -1em;
+}
+.es section#why_jafra_lifestyle .invest {
+	font-size: 43px;
+}
+section#why_jafra_lifestyle .subcontainer ul.golden_bullets {
+	padding-left: 6em;
+	line-height: 1.2em;
+}
+section#why_jafra_lifestyle .subcontainer ul.golden_bullets li {
+	padding: 1em 0;
+}
+section#why_jafra_lifestyle .subcontainer ul.golden_bullets li:before {
+	margin-left: -1.8em;	
+}
+
+/* checkout styles */
+.store-checkout a[data-toggle="modal"] {
+	white-space: nowrap;
+}
+.checkout-address a > span {
+	display: inline-block;
+}
+
+/* helpers */
+.padbottom { padding-bottom: 30px; }
+.padtop { padding-top: 30px; }
+.padleft { padding-left: 30px; }
+.padright { padding-right: 30px; }
+
+.btn-link {
+  background: transparent;
+  box-shadow: none;
+  color: #ccabd0;
+}
+.btn-link:hover {
+	text-decoration: underline;
+}
+
+/* responsive overides */
+@media (max-width: 767px) {
+	section h3.hero-header-title-freedom_flexibility {
+		font-size: 23px;
+	}
+	.freedom_flexibility_description {
+		padding: 0 25px;
+		font-size: 15px;
+	}
+	#more_freedom .titlify {
+		display: block;
+		font-size: 35px;
+	}
+	.legacy_wrapper {
+		margin: 90px 0;
+	}
+	.timeline-description {
+		padding-top: 63px;
+		width: 72%;
+		font-size: 13px;
+	}
+	.subrow {
+		margin: 0 20px !important;
+	}
+	section#why_jafra_lifestyle span.you_choose,
+	section#why_jafra_lifestyle span.how_to,
+	section#why_jafra_lifestyle span.business {
+		position: relative;
+		left: 0;
+		font-size: 30px;
+	}
+	section#why_jafra_lifestyle .subcontainer ul.golden_bullets {
+		font-size: 17px;
+		width: 140%;
+	}
+	section#why_jafra_lifestyle .business-right-col {
+		border-left: none;
+	}
+	section#why_jafra_lifestyle .sales-equation {
+		padding: 1em;
+		height: auto;
+		left: 0;
+		width: 100%;
+	}
+	section#why_jafra_lifestyle .leaders_col {
+		/*top: -10px; REMOVED FOR RESPONSIVENESS*/
+		margin-right: -10px;
+	}
+	section#why_jafra_lifestyle .plus {
+		display: inline-block;
+		/*top: -76px; 
+		left: 140px; REMOVED FOR RESPONSIVENESS*/
+	}
+	#why_jafra_testimonials .titlify {
+		font-size: 36px;
+	}
+	#why_jafra_testimonials .titlify span {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	#contact_section .titlify {
+		font-size: 36px;
+	}
+	.royal_kit .kit-value, #royal_starter_kit .kit-desc, #skincare_starter_kit .kit-desc {
+		white-space: normal;
+		font-size: 38px;
+	}
+	#royal_starter_kit .kit-value, #skincare_starter_kit .kit-value {
+		font-size: 28px;
+	}
+	.royal_kit .product-action, #royal_starter_kit .product-action,
+	#skincare_starter_kit .product-action, .skincare_kit .product-action {
+		margin-top: 20px;
+		float:none !important;
+	}
+	#skincare_starter_kit .product-action a {
+		display: block;
+		margin: 15px 0;
+	}
+	#skincare_starter_kit .product-action button,
+	#royal_starter_kit .product-action button {
+		font-size: 18px;
+	}
+	.faqs-item-question {
+		width: 90%;
+		font-size: 18px;
+	}
+	#more_royal .section-copy p li, #more_skincare .section-copy p li,
+	#more_royal_2 .section-copy p li, #more_skincare_2 .section-copy p li  {
+		float: none;
+		width: 100%;
+	}
+	.promo span, .promo span strong {
+		font-size: 20px !important;
+		top: 16px;
+	}
+
+}
+@media (min-width: 768px) { /* Added for responsiveness */
+	section#why_jafra_lifestyle .plus {
+		display: inline-block;
+		/*top: -76px; 
+		left: 140px; REMOVED FOR RESPONSIVENESS*/
+	}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.subrow {
+		margin: 0 20px !important;
+	}
+	section#why_jafra_lifestyle span.you_choose,
+	section#why_jafra_lifestyle span.how_to,
+	section#why_jafra_lifestyle span.business {
+		font-size: 48px;
+	}
+	section#why_jafra_lifestyle .subcontainer ul.golden_bullets {
+		font-size: 32px;
+	}
+	section#why_jafra_lifestyle .business-right-col {
+		border-left: none;
+	}
+	section#why_jafra_lifestyle .sales-equation {
+		padding: 1em;
+		height: auto;
+		left: 0;
+		width: 100%;
+	}
+	section#why_jafra_lifestyle .plus {
+		display: inline-block;
+		/*top: -76px;
+		left: 140px; REMOVED FOR RESPONSIVENESS*/
+	}
+	section#why_jafra_lifestyle .leaders_col {
+		/*	top: -10px; REMOVED FOR RESPONSIVENESS*/
+	}
+	#more_royal .section-copy p li, #more_skincare .section-copy p li,
+	#more_royal_2 .section-copy p li, #more_skincare_2 .section-copy p li  {
+		width: 50%;
+	}
+}
+@media (max-width: 1200px) {
+	.faqs-item-question {
+		width: 90%;
+		font-size: 18px;
+	}
+}
+@media (max-width: 1366px) {
+	.promo {
+		bottom: -30px;
+		left: 5%;
+		height: 60px;
+		width: 90%;
+		border-radius: 30px;
+		background-position: 5% 50%;
+		background-size: 10%;
+	}
+	.promo span {
+	  top: 13px;
+	  font-size: 32px;
+	  left: 16%;
+	  width: auto;
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	}
+	.promo span br {
+		display: none;
+	}
+	.promo a.more-link {
+	  right: 44px;
+	  top: 7px;
+	}
+	.promo .more-link:after {
+	  top: 5px;
+	}
+}

@@ -679,3 +679,179 @@ ERROR - 2015-03-24 09:53:31 --> Severity: Notice  --> Undefined variable: last_l
 ERROR - 2015-03-24 09:53:31 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
 ERROR - 2015-03-24 09:53:31 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
 ERROR - 2015-03-24 09:53:31 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:44:40 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:44:40 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:44:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:44:41 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:44:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:44:41 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:44:41 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:44:41 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:44:41 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:44:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:44:43 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:44:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:44:43 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:44:43 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:12 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:12 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:13 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:13 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:14 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:14 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:14 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:14 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:16 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:18 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:18 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:19 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:19 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:19 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:20 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:22 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:22 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:23 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:23 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:24 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:24 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:24 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:25 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:25 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:25 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:25 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:25 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:51:26 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:51:26 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:26 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:51:26 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:56:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:06 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:06 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:06 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:08 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:08 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:09 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:09 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:09 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:56:09 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:56:09 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:56:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:11 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:11 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:11 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:56:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:56:39 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:56:39 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:57:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:57:06 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:57:06 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:57:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:57:10 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:57:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:57:10 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:57:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:57:10 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:34 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:34 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:35 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:35 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:36 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:36 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:36 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:36 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:36 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:58:36 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:58:36 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:58:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:37 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:37 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:37 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 11:58:40 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:40 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:55 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:58:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:58:59 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:59:36 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:59:36 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:59:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:59:51 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 11:59:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 11:59:53 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 12:01:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 12:01:42 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 12:02:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 12:02:13 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 12:02:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 12:02:14 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 12:02:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 12:02:41 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 12:02:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 12:02:42 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 12:02:45 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 12:02:45 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 13:00:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 13:00:32 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 13:00:33 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 13:00:33 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 13:00:33 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:00:33 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:00:33 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:00:33 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:00:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 13:00:35 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 13:00:35 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:00:36 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 13:00:36 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 13:00:36 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:00:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 13:00:37 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 13:00:37 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/ci2.0.2/database/drivers/mysql/mysql_driver.php 88
+ERROR - 2015-03-24 13:38:20 --> Memcached Library: Failed to load Memcached or Memcache Class
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
+ERROR - 2015-03-24 13:38:20 --> Severity: Notice  --> Undefined variable: last_label /Users/reesretuta/Sites/LAVISUAL/videra-jafra/videra-jafra/applications/cms/views/contentview.php 186
