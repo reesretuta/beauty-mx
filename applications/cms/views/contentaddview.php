@@ -114,7 +114,7 @@
 											<?if(in_array($field->column_name, unserialize(NO_PREVIEW_PATHS))):?>
 											<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Document</div><br/>
 											<?else:?>
-											<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image <?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></div><br/>
+											<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image</div> <small><?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?><br/>
 											<?endif;?>
 										<? if($field->column_comment):?>
 										<span class="help_text"><?=clean_comment($field->column_comment)?></span>

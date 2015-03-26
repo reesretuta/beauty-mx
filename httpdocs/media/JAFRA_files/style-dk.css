@@ -69,6 +69,8 @@ section#why_jafra_products #more_products {
 
 section#why_jafra_products {
   z-index: 1; }
+  section#why_jafra_products #carousel-product-generic {
+    padding-top: 20px; }
 
 /* testimonials section */
 #why_jafra_testimonials .subcontainer {

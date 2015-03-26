@@ -95,11 +95,18 @@ class Cms extends CI_Model {
     public function getContactSection(){
    	 $this->db->select('*');
    	 $this->db->from('homepage_contact_buy');
-   	 $query = $this->db->get();
+     $query = $this->db->get();
+     
+     $this->db->select('*');
+     $this->db->from('homepage_contact_join');
+     $join = $this->db->get();
+     
        	 if($query->num_rows() == 0 ){
        		return false;
        	 }else{
-       		$row = $query->result();
+       		$row = $query->result(); //left column
+            $a = $join->result();
+            $row[] = $a[0]; //right column
             return $row;
             }
     }

@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title ng-bind-html="&#39;JOIN_JAFRA_TITLE&#39; | translate | unsafe" class="ng-binding">Ingresa a JAFRA</title>
+    <title class="ng-binding">Ingresa a JAFRA</title>
 
     <link type="image/x-icon" href="https://usa.jafra.com/img/favicon.ico" rel="shortcut icon">
 
@@ -315,7 +315,92 @@
 
 
 <section id="why_jafra" class="ng-scope">
-  <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/about.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/about.html&#39;" analytics-on="scrollby" analytics-event="About" analytics-category="Scrolled To" class="ng-scope"><!-- about.html -->
+    
+<!-- products.html -->
+<div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/products.html&#39;" analytics-on="scrollby" analytics-event="Products" analytics-category="Scrolled To" class="ng-scope">
+<section class="subsection ng-scope expanded" id="why_jafra_products">
+        <div class="container subcontainer">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-copy">
+                        <h3 class="titlify color-purple DidotLTPro-Italic">
+                            <span ng-bind-html="&#39;OS-SECTION2-TITLE1&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->header1 ?></span><br><span class="color-gold HelveticaNeueLTStd-BdCn to_love"><span ng-bind-html="&#39;OS-SECTION2-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->header2 ?></span></span>
+                        </h3>
+                        <p>
+                            <span ng-bind-html="&#39;OS-SECTION2-BODY&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->description ?></span>
+                        </p>
+                        <!-- collapsed section toggle (default collapsed) -->
+                        <p class="text-right prod_more_link"><a style="display:none" class="more-link more-link-alt collapsed" data-toggle="collapse" data-target="#more_products" analytics-on="click" analytics-event="Expand Products" analytics-category="Content"><span><span ng-bind-html="&#39;OUR-PRODUCTS&#39; | translate | unsafe" class="ng-binding">Nuestros Productos</span></span></a></p>
+                    </div><!-- /.section-copy -->
+                </div><!-- /.col -->
+                <div class="col-md-6">
+                    <div id="carousel-product-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+
+                          <?php for ($i=0; $i < count($productstolove[2]); $i++): ?>
+                              <div class="item <?php echo ( $i == 2) ? 'active' : '' ?>">
+                                <img class="img-responsive" src="<?= $productstolove[2][$i]->path ?>">
+                            </div>
+                          <?php endfor; ?>
+                        </div><!-- Controls -->
+                         <a class="left carousel-control" data-target="#carousel-product-generic" role="button" data-slide="prev" analytics-on="click" analytics-event="Product Carousel Prev" analytics-category="Content">
+                             <span class="glyphicon glyphicon-chevron-left"></span>
+                         </a>
+                        <a class="right carousel-control" data-target="#carousel-product-generic" role="button" data-slide="next" analytics-on="click" analytics-event="Product Carousel Next" analytics-category="Content">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div><!-- /.carousel -->
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+            <div id="more_products" class="row collapse in">
+                <div class="col-md-10 col-md-offset-1">
+                  <h3 class="titlify text-center section-title"><span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle ?></span></h3>
+                  <p class="freedom_flexibility_description text-center padbottom">
+                      <span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle_description ?></span>
+                  </p>
+                </div>
+
+
+
+
+
+                <?php for ($i=0; $i < count($productstolove[1]); $i++): ?>
+                    <div class="row padbottom subrow">
+                        <div class="col-md-3">
+                            <img src="<?= $productstolove[1][$i]->path ?>" class="img-responsive">
+                        </div>
+                        <div class="col-md-5">
+                            <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->title ?></span></h3>
+                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span><a target="_blank" href="<?= $productstolove[1][$i]->learn_more_link ?>">&nbsp;...learn more</a></p>
+                        </div>
+                    </div>
+                <?php endfor; ?>
+
+
+
+
+               <div class="row subrow text-center cta-section">
+                    <p class="titlify color-purple DidotLTPro-Italic text-center">
+
+                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART1&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro1 ?></span> 
+
+                        <span class="color-red HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro2 ?></span></span>. 
+
+                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART3&#39; | translate | unsafe" class="ng-binding"><br><?= $productstolove[0]->outro3 ?></span>
+
+                    </p>
+
+                    <p><br><br> <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" data-toggle="modal" data-target=".bs-example-modal-lg" role="button" href=""><span ng-bind-html="&#39;OS-PRODUCTS-GET-YOUR-STARTER-KIT&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->buynow_button ?></span></a></p>
+               </div>
+            </div>
+        </div><!-- /.container -->
+    </section></div>
+    <!-- end product-->
+    
+    
+<!-- about.html -->
+<div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/about.html&#39;" analytics-on="scrollby" analytics-event="About" analytics-category="Scrolled To" class="ng-scope">
 <span id="freedom_flexibility" style="position:relative; float: left; top:-65px;" class="ng-scope"></span>
 <section class="subsection ng-scope" id="freedom_flexibility_section">
         <div class="container subcontainer">
@@ -394,89 +479,11 @@
 
       });
     </script>
-</div><!-- end ngIf: session.language -->
-  <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/products.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/products.html&#39;" analytics-on="scrollby" analytics-event="Products" analytics-category="Scrolled To" class="ng-scope"><!-- products.html -->
-<section class="subsection ng-scope expanded" id="why_jafra_products">
-        <div class="container subcontainer">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-copy">
-                        <h3 class="titlify color-purple DidotLTPro-Italic">
-                            <span ng-bind-html="&#39;OS-SECTION2-TITLE1&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->header1 ?></span><br><span class="color-gold HelveticaNeueLTStd-BdCn to_love"><span ng-bind-html="&#39;OS-SECTION2-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->header2 ?></span></span>
-                        </h3>
-                        <p>
-                            <span ng-bind-html="&#39;OS-SECTION2-BODY&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->description ?></span>
-                        </p>
-                        <!-- collapsed section toggle (default collapsed) -->
-                        <p class="text-right prod_more_link"><a style="display:none" class="more-link more-link-alt collapsed" data-toggle="collapse" data-target="#more_products" analytics-on="click" analytics-event="Expand Products" analytics-category="Content"><span><span ng-bind-html="&#39;OUR-PRODUCTS&#39; | translate | unsafe" class="ng-binding">Nuestros Productos</span></span></a></p>
-                    </div><!-- /.section-copy -->
-                </div><!-- /.col -->
-                <div class="col-md-6">
-                    <div id="carousel-product-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-
-                          <?php for ($i=0; $i < count($productstolove[2]); $i++): ?>
-                              <div class="item <?php echo ( $i == 2) ? 'active' : '' ?>">
-                                <img class="img-responsive" src="<?= $productstolove[2][$i]->path ?>">
-                            </div>
-                          <?php endfor; ?>
-
-
-
-                        </div><!-- Controls -->
-                         <a class="left carousel-control" data-target="#carousel-product-generic" role="button" data-slide="prev" analytics-on="click" analytics-event="Product Carousel Prev" analytics-category="Content">
-                             <span class="glyphicon glyphicon-chevron-left"></span>
-                         </a>
-                        <a class="right carousel-control" data-target="#carousel-product-generic" role="button" data-slide="next" analytics-on="click" analytics-event="Product Carousel Next" analytics-category="Content">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div><!-- /.carousel -->
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-            <div id="more_products" class="row collapse in">
-                <div class="col-md-10 col-md-offset-1 padtop">
-                  <h3 class="titlify text-center section-title"><span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle ?></span></h3>
-                  <p class="freedom_flexibility_description text-center padbottom">
-                      <span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle_description ?></span>
-                  </p>
-                </div>
-
-
-
-
-
-                <?php for ($i=0; $i < count($productstolove[1]); $i++): ?>
-                    <div class="row padbottom subrow">
-                        <div class="col-md-3">
-                            <img src="<?= $productstolove[1][$i]->path ?>" class="img-responsive">
-                        </div>
-                        <div class="col-md-5">
-                            <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->title ?></span></h3>
-                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span><a target="_blank" href="<?= $productstolove[1][$i]->learn_more_link ?>">&nbsp;...learn more</a></p>
-                        </div>
-                    </div>
-                <?php endfor; ?>
-
-
-
-
-               <div class="row subrow text-center cta-section">
-                    <p class="titlify color-purple DidotLTPro-Italic text-center">
-
-                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART1&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro1 ?></span> 
-
-                        <span class="color-red HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro2 ?></span></span>. 
-
-                        <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART3&#39; | translate | unsafe" class="ng-binding"><br><?= $productstolove[0]->outro3 ?></span>
-
-                    </p>
-
-                    <p><br><br> <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" data-toggle="modal" data-target=".bs-example-modal-lg" role="button" href=""><span ng-bind-html="&#39;OS-PRODUCTS-GET-YOUR-STARTER-KIT&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->buynow_button ?></span></a></p>
-               </div>
-            </div>
-        </div><!-- /.container -->
-    </section></div><!-- end ngIf: session.language -->
+</div>
+<!-- end about-->
+    
+    
+    
   <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/business-'+session.language+'.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/business-&#39;+session.language+&#39;.html&#39;" analytics-on="scrollby" analytics-event="Opportunity" analytics-category="Scrolled To" class="ng-scope"><!-- business.html -->
 <section class="subsection ng-scope" id="why_jafra_lifestyle">
         <div class="container subcontainer">
@@ -691,7 +698,8 @@
                     <div class="col-md-6">
                         <div class="section-copy">
                             <h3 class="titlify color-gold">ME QUIERO UNIR</h3>
-                            <?= $contact[0]->content ?>
+                            <?php error_log(print_r($contact,true),0); ?>
+                            <?= $contact[1]->content ?>
                         </div>
                     </div>
                     

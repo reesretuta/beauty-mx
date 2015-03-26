@@ -44,23 +44,16 @@ class Home extends CI_Controller
 	public function index()
 	{
         
-        // $data['pageTitle']             =     '';
-        // $data['pageDescription']                =    '';
         $data['hero']           = $this->cms->getHeroSection();
         $data['timeline']       = $this->cms->getTimelineSection();
         $data['productstolove'] = $this->cms->getProductsToLoveSection();
         $data['decision']       = $this->cms->getDecisionSection();
         $data['reward']         = $this->cms->getRewardSection();
-        $data['catalog']         = $this->cms->getCatalogSection();
-        $data['contact']         = $this->cms->getContactSection();
+        $data['catalog']        = $this->cms->getCatalogSection();
+        $data['contact']        = $this->cms->getContactSection();
         $data['testimonial']    = $this->cms->getTestimonialSection();
+        $data['faqs']           = $this->cms->getFaqSection();
 
-        //destroy
-        // $data['royalkit']       = $this->cms->getRoyalKitSection();
-        // $data['specialkit']     = $this->cms->getSpecialKitSection();
-        //destroy
-        
-        $data['faqs']     = $this->cms->getFaqSection();
         // $data['seo']                            = $this->cms->seoData('28');
         $this->load->view('homeView',$data);
         

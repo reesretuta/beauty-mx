@@ -163,7 +163,7 @@
 									   <div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Document</div>
 									<?else:?>
 
-    									<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image <?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></div>
+    									<div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image</div> <small><?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></small>
     								<?endif;?>
                                     
                                     
@@ -178,7 +178,8 @@
 									<? else: //if image is NULL?>
 									<img class="uploaded_image" id="<?=$field->column_name?>" style="display:none" src=""/><br/>
     									<?if (!in_array($column_name, unserialize(NO_PREVIEW_PATHS))):?>
-    									<br/><div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image <?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></div><br/>
+    									<br/><div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Image</div> <small><?= isset($img_dimensions[$table_name]) ? "(" . $img_dimensions[$table_name]. ")" : '' ?></small>
+                                        <br/>
     									<?else:?>
     									   <br/><div class="file_uploader_redux" ffield="<?=$field->column_name?>">Upload / Choose Document</div><br/>
     									<?endif;?>
