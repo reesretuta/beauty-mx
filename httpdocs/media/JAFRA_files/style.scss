@@ -1401,4 +1401,14 @@ right: -36px;
     padding-top:7px;
 }
 
-#contact{}
+#contact{
+    
+}
+
+
+@include breakpoint('mobile'){
+    #jafra-u, #jafra-mia{
+        display:none;
+        
+    }
+}

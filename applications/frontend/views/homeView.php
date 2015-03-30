@@ -84,8 +84,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" id="logo" href="/"><img src="/media/JAFRA_files/logo.png" alt="logo"></a>
-          <a class="navbar-brand" id="logo" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-mia.png" alt="logo"></a>
-          <a class="navbar-brand" id="logo" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-u.png" alt="logo"></a>
+          <a class="navbar-brand" id="jafra-mia" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-mia.png" alt="logo"></a>
+          <a class="navbar-brand" id="jafra-u" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-u.png" alt="logo"></a>
         </div>
         
         

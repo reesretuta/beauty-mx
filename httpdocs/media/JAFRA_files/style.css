@@ -1188,3 +1188,6 @@ body.incheckout {
 .navbar-brand {
   padding-top: 7px; }
 
+@media screen and (max-width: 420px) {
+  #jafra-u, #jafra-mia {
+    display: none; } }
