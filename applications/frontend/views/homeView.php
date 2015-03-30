@@ -9,7 +9,7 @@
 
     <title class="ng-binding">Ingresa a JAFRA</title>
 
-    <link type="image/x-icon" href="https://usa.jafra.com/img/favicon.ico" rel="shortcut icon">
+    <link type="image/x-icon" href="/media/JAFRA_files/favicon.png" rel="shortcut icon">
 
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap-theme.min.css">
@@ -83,16 +83,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" id="logo" href="https://usa.jafra.com/join"><img src="/media/JAFRA_files/logo-join.png" alt="logo"></a>
+          <a class="navbar-brand" id="logo" href="/"><img src="/media/JAFRA_files/logo.png" alt="logo"></a>
+          <a class="navbar-brand" id="logo" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-mia.png" alt="logo"></a>
+          <a class="navbar-brand" id="logo" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-u.png" alt="logo"></a>
         </div>
+        
+        
+        
         <div class="navbar-collapse collapse">
 
           <div id="navbar-sections">
           <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
             <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#starter_kits" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#why_jafra" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li><!-- end ngIf: !inCheckout -->
             <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#catalog_section" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#starter_kits_section" class="cta"  analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li><!-- end ngIf: !inCheckout -->
+            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#contact_section" class="cta"  analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li><!-- end ngIf: !inCheckout -->
             <li class="social">
                 <a href="http://facebook.com/jaframxoficial/" target="_blank"><img align="absmiddle" alt="Facebook" src="/media/JAFRA_files/img/social/facebook.png" border="0"></a>
                 <a href="https://twitter.com/jaframexico/" target="_blank"><img align="absmiddle" alt="Twitter" src="/media/JAFRA_files/img/social/twitter.png" border="0"></a>
@@ -814,11 +819,9 @@
         	<div class="container text-center">
         		<div class="center-block">
         	   <ul class="nav navbar-nav HelveticaNeueLTStd-BdCn">
-		       	<!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope">
-		            <a href="" role="button" data-toggle="modal" data-target=".bs-example-modal-lg" analytics-on="click" analytics-event="Footer CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-JOIN-BTN&#39; | translate | unsafe" class="ng-binding">¡Únete ahora!</span></a>
-		        </li><!-- end ngIf: !inCheckout -->
-		  		 <li class="dropup"><a href="" class="dropdown-toggle dropup" data-toggle="dropdown"><span ng-bind-html="&#39;OS-NAV5&#39; | translate | unsafe" class="ng-binding">Contacto</span></a>
-		              <ul class="dropdown-menu dropdown_jafra">
+		  		 <li>
+                     <a href="#contact_section" class=""><span ng-bind-html="&#39;OS-NAV5&#39; | translate | unsafe" class="ng-binding">Contacto</span></a>
+                     <ul class="dropdown-menu dropdown_jafra">
                     <li class="contact-description ng-binding" ng-bind-html="&#39;CONTACT-INFO&#39; | translate | unsafe">1 (800) 551-2345<br>Abierto: L-V 8:30am-5:30pm<br>Hora del Pacífico</li>
                     <li>
                       <!-- ngIf: !inCheckout --><div class="social-media-icons center-block ng-scope" ng-if="!inCheckout">

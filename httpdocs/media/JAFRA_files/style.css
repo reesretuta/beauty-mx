@@ -166,9 +166,6 @@ input::-moz-placeholder, input:focus::-moz-placeholder {
 input:-ms-input-placeholder, input:focus:-ms-input-placeholder {
   color: #e1e1e1; }
 
-#logo img {
-  max-width: 70px; }
-
 ul.modal_lists {
   list-style-type: none;
   padding-left: 0px; }
@@ -1187,4 +1184,7 @@ body.incheckout {
 /* addthis cutoff fix */
 .at-share-btn {
   display: inline-block; }
+
+.navbar-brand {
+  padding-top: 7px; }
 

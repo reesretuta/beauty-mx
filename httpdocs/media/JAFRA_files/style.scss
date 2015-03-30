@@ -162,7 +162,7 @@ input:focus:-ms-input-placeholder {
 }
 
 #logo img {
-  max-width: 70px;
+//  max-width: 70px;
 }
 ul.modal_lists {
 list-style-type: none;
@@ -1395,6 +1395,10 @@ right: -36px;
 
 
 
-
+.navbar-brand{
+    
+    
+    padding-top:7px;
+}
 
 #contact{}
