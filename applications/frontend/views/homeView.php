@@ -9,7 +9,7 @@
 
     <title class="ng-binding">Ingresa a JAFRA</title>
 
-    <link type="image/x-icon" href="/media/JAFRA_files/favicon.png" rel="shortcut icon">
+    <link type="image/x-icon" href="https://usa.jafra.com/img/favicon.ico" rel="shortcut icon">
 
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap-theme.min.css">
