@@ -57,7 +57,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = '../ci2.0.2';
+	$system_path = '../ci2.0.3';
 
 /*
  *---------------------------------------------------------------
@@ -203,7 +203,7 @@ if (defined('ENVIRONMENT'))
  */
     
 error_log("loading codeigniter");
-require_once BASEPATH.'core/CodeIgniter'.EXT;
+require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
 /* Location: ./index.php */

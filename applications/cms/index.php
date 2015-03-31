@@ -24,7 +24,7 @@ ini_set('display_errors', 1);
  * as this file.
  *
  */
-	$system_path = "../../ci2.0.2";
+	$system_path = "../../ci2.0.3";
 
 /*
  *---------------------------------------------------------------
@@ -162,7 +162,7 @@ ini_set('display_errors', 1);
  * And away we go...
  *
  */
-require_once BASEPATH.'core/CodeIgniter'.EXT;
+require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
 /* Location: ./index.php */
