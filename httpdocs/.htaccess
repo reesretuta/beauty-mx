@@ -9,6 +9,3 @@ RewriteCond %{HTTP_HOST} ^farmersmarketla.com
 RewriteRule (.*) http://www.farmersmarketla.com/$1 [R=301,L]
 
 Redirect 301 /index.php?/merchant/default.asp&id=26 http://www.farmersmarketla.com
-
-php_value open_basedir "/app/:/tmp/"
-php_value short_open_tag 1
