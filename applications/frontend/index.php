@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', '0');
+ini_set('display_errors', '1');
 
 
 /*
@@ -12,7 +12,7 @@ ini_set('display_errors', '0');
  * For more info visit:  http://www.php.net/error_reporting
  *
  */
- error_reporting(0);
+ error_reporting(E_ALL);
 	//error_reporting(E_ALL);
 	 //error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 
