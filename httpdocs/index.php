@@ -72,7 +72,8 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = 'application';
+    $e=str_replace('httpdocs', 'applications', getcwd()).'/frontend';
+    $application_folder = $e;
 
 /*
  * --------------------------------------------------------------------
