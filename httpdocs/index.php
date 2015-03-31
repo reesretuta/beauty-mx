@@ -202,8 +202,8 @@ if (defined('ENVIRONMENT'))
  *
  */
     
+error_log("loading codeigniter");
 require_once BASEPATH.'core/CodeIgniter'.EXT;
 
 /* End of file index.php */
 /* Location: ./index.php */
-error_log("loading codeigniter");
