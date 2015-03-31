@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) { error_log("No direct script access allowed"); exit('No direct script access allowed') };
+<?php  if ( ! defined('BASEPATH')) { error_log("No direct script access allowed"); exit('No direct script access allowed'); }
 /**
  * CodeIgniter
  *
