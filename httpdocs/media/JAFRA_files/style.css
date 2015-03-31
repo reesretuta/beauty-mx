@@ -192,16 +192,6 @@ ul.modal_lists {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff; }
 
-.navbar-nav li.social {
-  width: 150px;
-  margin: 0 12px; }
-  @media screen and (max-width: 420px) {
-    .navbar-nav li.social {
-      margin: 0 auto; } }
-  .navbar-nav li.social a {
-    padding: 0;
-    display: inline-block; }
-
 .well {
   background: none;
   border: none;
@@ -447,14 +437,14 @@ section#why_jafra_products {
 
 section#why_jafra_products span.to_love {
   font-size: 72px; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     section#why_jafra_products span.to_love {
       font-size: 40px; } }
 
 section#why_jafra_products #more_products {
   background: url(/media/JAFRA_files/img/labgirl_bg01.jpg) no-repeat bottom;
   background-size: 97.5%; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     section#why_jafra_products #more_products .titlify {
       font-size: 18px; } }
 
@@ -1188,6 +1178,56 @@ body.incheckout {
 .navbar-brand {
   padding-top: 7px; }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   #jafra-u, #jafra-mia {
     display: none; } }
+
+.join_nav {
+  clear: right; }
+
+ul.secondarynav {
+  padding-top: 10px;
+  float: right; }
+  @media screen and (max-width: 768px) {
+    ul.secondarynav {
+      width: 350px;
+      margin: 0 auto;
+      float: none;
+      padding: 0;
+      padding-top: 4px; } }
+  ul.secondarynav li {
+    display: inline-block; }
+    ul.secondarynav li #jafra-mia {
+      background: url(/media/JAFRA_files/jafra-mia.png);
+      display: block;
+      height: 14px;
+      width: 74px;
+      background-position-x: -89px; }
+    ul.secondarynav li #jafra-u {
+      background: url(/media/JAFRA_files/jafra-mia.png);
+      display: block;
+      height: 14px;
+      width: 76px; }
+    ul.secondarynav li.social {
+      width: 88px;
+      margin: 0 12px; }
+      @media screen and (max-width: 768px) {
+        ul.secondarynav li.social {
+          margin: 0 10px; } }
+      ul.secondarynav li.social a {
+        padding: 0;
+        display: inline-block; }
+        ul.secondarynav li.social a img {
+          width: 19px; }
+
+.join_nav {
+  margin-bottom: 10px; }
+
+.navbar-brand {
+  padding-top: 12px; }
+  @media screen and (max-width: 768px) {
+    .navbar-brand img {
+      height: 32px; } }
+
+.middle {
+  margin: 0 auto !important; }

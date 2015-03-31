@@ -197,20 +197,6 @@ border-radius: 0px;
 }
 
 
-.navbar-nav{
-    li.social{
-        width:150px;
-        margin:0 12px;
-        @include breakpoint('mobile'){
-            margin:0 auto;
-        }
-        a{
-            padding:0;
-            display:inline-block;
-        }
-    }
-}
-
 .well {
   background:none;
   border:none;
@@ -1411,4 +1397,84 @@ right: -36px;
         display:none;
         
     }
+}
+
+.join_nav{
+    clear:right;
+}
+
+ul.secondarynav{
+    padding-top: 10px;
+    float:right;
+    @include breakpoint('mobile'){
+        width:350px;
+        margin:0 auto;
+        float:none;
+        padding:0;
+        padding-top:4px;
+    }
+    
+    li{
+        display:inline-block;
+        #jafra-mia{
+            background: url(/media/JAFRA_files/jafra-mia.png);
+            display:block;
+            height:14px;
+            width: 74px;
+            background-position-x: -89px;
+        }
+        
+        #jafra-u{
+            background: url(/media/JAFRA_files/jafra-mia.png);
+            display:block;
+            height:14px;
+            width:76px;
+        }
+        
+        
+        &.social{
+            width:88px;
+            margin:0 12px;
+            @include breakpoint('mobile'){
+                margin:0 10px;
+            }
+            a{
+                padding:0;
+                display:inline-block;
+                img{
+                    width:19px;
+                
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+.join_nav{
+    margin-bottom:10px;
+}
+
+
+
+.navbar-brand{
+    padding-top:12px;
+    img{
+        @include breakpoint('mobile'){
+            height:32px
+        }
+        
+    }
+
+}
+
+.middle{
+    margin:0 auto !important;
 }

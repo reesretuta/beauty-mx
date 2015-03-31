@@ -58,26 +58,22 @@ class Cms extends CI_Model {
    	 $this->db->from('homepage_products_to_love');
    	 $query = $this->db->get();
 
-    $this->db->select('*');
-      $this->db->from('homepage_products_categories');
+     $this->db->select('*');
+     $this->db->from('homepage_products_categories');
      $products = $this->db->get();
 
      $this->db->select('*');
      $this->db->from('homepage_products_gallery');
      $gallery = $this->db->get();
-
-
        	 if($query->num_rows() == 0 ){
        		return false;
        	 }else{  
        		 $row = $query->result();
             $row[] = $products->result();
             $row[] = $gallery->result();
-
             return $row;
             
           }
-
     }
     
     public function getDecisionSection(){
@@ -135,14 +131,10 @@ class Cms extends CI_Model {
 
 
        	 if($query->num_rows() == 0 ){
-       		return false;
+             return false;
        	 }else{
-       		$row = $query->result();
-          $row[] = $qoutes->result();
-
-          // echo "<pre>";
-          //   print_r($row);
-          //   echo "</pre>";die();
+             $row = $query->result();
+             $row[] = $qoutes->result();
             return $row;
             }
     }
@@ -171,52 +163,7 @@ class Cms extends CI_Model {
             }
     }
     
-    public function getRoyalKitSection(){
-   	 $this->db->select('*');
-   	 $this->db->from('homepage_kit_royal_info');
-   	 $query = $this->db->get();
-     
-   	 $this->db->select('*');
-   	 $this->db->from('homepage_kit_royal_products');
-   	 $products = $this->db->get();
-     
-   	 $this->db->select('*');
-   	 $this->db->from('homepage_kit_royal_tools');
-   	 $tools = $this->db->get();
-     
-       	 if($query->num_rows() == 0){
-       		return false;
-       	 }else{  
-       		$row = $query->result();
-            $row[] = $products->result();
-            $row[] = $tools->result();
-            return $row;
-            }
-    }
     
-    public function getSpecialKitSection(){
-   	 $this->db->select('*');
-   	 $this->db->from('homepage_kit_special_info');
-   	 $query = $this->db->get();
-     
-   	 $this->db->select('*');
-   	 $this->db->from('homepage_kit_special_products');
-   	 $products = $this->db->get();
-     
-   	 $this->db->select('*');
-   	 $this->db->from('homepage_kit_special_tools');
-   	 $tools = $this->db->get();
-     
-     
-       	 if($query->num_rows() == 0 ){
-       		return false;
-       	 }else{  
-       		$row = $query->result();
-            $row[] = $products->result();
-            $row[] = $tools->result();
-            return $row;
-            }
-    }
     
     private function splitWords($str){
         $array = explode(' ',$str);
