@@ -81,7 +81,7 @@
                   
                   <ul class="secondarynav">
                       <li><a id="jafra-mia" href="http://jaframia.com/"></a></li>
-                      <li><a id="jafra-u" href="http://jaframia.com/"></a></li>
+                      <li><a id="jafra-u" href="http://jafrau.com.mx/"></a></li>
                     <li class="social">
                         <a href="http://facebook.com/jaframxoficial/" target="_blank"><img align="absmiddle" alt="Facebook" src="/media/JAFRA_files/img/social/facebook.png" border="0"></a>
                         <a href="https://twitter.com/jaframexico/" target="_blank"><img align="absmiddle" alt="Twitter" src="/media/JAFRA_files/img/social/twitter.png" border="0"></a>
