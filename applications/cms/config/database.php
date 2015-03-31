@@ -50,12 +50,12 @@ if (isset($clearDbUrl)) {
     $server = $clearDbUrl["host"];
     $username = $clearDbUrl["user"];
     $password = $clearDbUrl["pass"];
-    $db = substr($clearDbUrl["path"], 1);
+    $database = substr($clearDbUrl["path"], 1);
 
     $db['heroku']['hostname'] = $server;
     $db['heroku']['username'] = $username;
     $db['heroku']['password'] = $password;
-    $db['heroku']['database'] = $db;
+    $db['heroku']['database'] = $database;
     $db['heroku']['dbdriver'] = 'mysql';
     $db['heroku']['dbprefix'] = '';
     $db['heroku']['pconnect'] = TRUE;
