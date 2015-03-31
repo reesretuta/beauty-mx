@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  if ( ! defined('BASEPATH')) { error_log("No direct script access allowed"); exit('No direct script access allowed') };
 /**
  * CodeIgniter
  *
@@ -192,6 +192,7 @@
 	{
 		if ($OUT->_display_cache($CFG, $URI) == TRUE)
 		{
+            error_log("codeigniter: have valid cache");
 			exit;
 		}
 	}
@@ -380,4 +381,4 @@
 
 /* End of file CodeIgniter.php */
 /* Location: ./system/core/CodeIgniter.php */
-error_log("loaded codeigniter");
+error_log("codeigniter: loaded");
