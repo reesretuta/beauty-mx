@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) { error_log("No direct script access allowed"); exit('No direct script access allowed'); }
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * CodeIgniter
  *
@@ -33,6 +33,7 @@
  * ------------------------------------------------------
  */
 	define('CI_VERSION', '2.0.2');
+error_log("codeigniter: DEBUG1");
 
 /*
  * ------------------------------------------------------
@@ -40,6 +41,7 @@
  * ------------------------------------------------------
  */
 	define('CI_CORE', FALSE);
+error_log("codeigniter: DEBUG2");
 
 /*
  * ------------------------------------------------------
@@ -47,6 +49,7 @@
  * ------------------------------------------------------
  */
 	require(BASEPATH.'core/Common'.EXT);
+error_log("codeigniter: DEBUG3");
 
 /*
  * ------------------------------------------------------
@@ -61,6 +64,7 @@
 	{
 		require(APPPATH.'config/constants'.EXT);
 	}
+error_log("codeigniter: DEBUG4");
 
 /*
  * ------------------------------------------------------
@@ -73,6 +77,7 @@
 	{
 		@set_magic_quotes_runtime(0); // Kill magic quotes
 	}
+error_log("codeigniter: DEBUG5");
 
 /*
  * ------------------------------------------------------
@@ -94,6 +99,7 @@
 	{
 		get_config(array('subclass_prefix' => $assign_to_config['subclass_prefix']));
 	}
+error_log("codeigniter: DEBUG6");
 
 /*
  * ------------------------------------------------------
@@ -104,6 +110,7 @@
 	{
 		@set_time_limit(300);
 	}
+error_log("codeigniter: DEBUG7");
 
 /*
  * ------------------------------------------------------
@@ -113,6 +120,7 @@
 	$BM =& load_class('Benchmark', 'core');
 	$BM->mark('total_execution_time_start');
 	$BM->mark('loading_time:_base_classes_start');
+error_log("codeigniter: DEBUG8");
 
 /*
  * ------------------------------------------------------
@@ -120,6 +128,7 @@
  * ------------------------------------------------------
  */
 	$EXT =& load_class('Hooks', 'core');
+error_log("codeigniter: DEBUG9");
 
 /*
  * ------------------------------------------------------
@@ -127,6 +136,7 @@
  * ------------------------------------------------------
  */
 	$EXT->_call_hook('pre_system');
+error_log("codeigniter: DEBUG10");
 
 /*
  * ------------------------------------------------------
@@ -140,6 +150,7 @@
 	{
 		$CFG->_assign_to_config($assign_to_config);
 	}
+error_log("codeigniter: DEBUG11");
 
 /*
  * ------------------------------------------------------
@@ -154,6 +165,7 @@
  */
 
 	$UNI =& load_class('Utf8', 'core');
+error_log("codeigniter: DEBUG12");
 
 /*
  * ------------------------------------------------------
@@ -161,6 +173,7 @@
  * ------------------------------------------------------
  */
 	$URI =& load_class('URI', 'core');
+error_log("codeigniter: DEBUG13");
 
 /*
  * ------------------------------------------------------
@@ -175,6 +188,7 @@
 	{
 		$RTR->_set_overrides($routing);
 	}
+error_log("codeigniter: DEBUG14");
 
 /*
  * ------------------------------------------------------
@@ -182,6 +196,7 @@
  * ------------------------------------------------------
  */
 	$OUT =& load_class('Output', 'core');
+error_log("codeigniter: DEBUG15");
 
 /*
  * ------------------------------------------------------
@@ -196,6 +211,7 @@
 			exit;
 		}
 	}
+error_log("codeigniter: DEBUG16");
 
 /*
  * -----------------------------------------------------
@@ -203,6 +219,7 @@
  * -----------------------------------------------------
  */
 	$SEC =& load_class('Security', 'core');
+error_log("codeigniter: DEBUG17");
 
 /*
  * ------------------------------------------------------
@@ -210,6 +227,7 @@
  * ------------------------------------------------------
  */
 	$IN	=& load_class('Input', 'core');
+error_log("codeigniter: DEBUG18");
 
 /*
  * ------------------------------------------------------
@@ -217,6 +235,7 @@
  * ------------------------------------------------------
  */
 	$LANG =& load_class('Lang', 'core');
+error_log("codeigniter: DEBUG19");
 
 /*
  * ------------------------------------------------------
@@ -250,6 +269,7 @@
 
 	// Set a mark point for benchmarking
 	$BM->mark('loading_time:_base_classes_end');
+error_log("codeigniter: DEBUG20");
 
 /*
  * ------------------------------------------------------
@@ -270,6 +290,7 @@
 	{
 		show_404("{$class}/{$method}");
 	}
+error_log("codeigniter: DEBUG21");
 
 /*
  * ------------------------------------------------------
@@ -343,6 +364,7 @@
 
 	// Mark a benchmark end point
 	$BM->mark('controller_execution_time_( '.$class.' / '.$method.' )_end');
+error_log("codeigniter: DEBUG22");
 
 /*
  * ------------------------------------------------------
@@ -367,6 +389,7 @@
  * ------------------------------------------------------
  */
 	$EXT->_call_hook('post_system');
+error_log("codeigniter: DEBUG23");
 
 /*
  * ------------------------------------------------------
