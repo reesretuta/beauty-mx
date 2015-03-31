@@ -1201,13 +1201,13 @@ ul.secondarynav {
       background: url(/media/JAFRA_files/jafra-mia.png);
       display: block;
       height: 14px;
-      width: 76px; }
+      width: 74px;
+      background-position-x: -89px; }
     ul.secondarynav li #jafra-u {
       background: url(/media/JAFRA_files/jafra-mia.png);
       display: block;
       height: 14px;
-      width: 74px;
-      background-position-x: -89px; }
+      width: 76px; }
     ul.secondarynav li.social {
       width: 88px;
       margin: 0 12px; }
