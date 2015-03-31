@@ -517,7 +517,7 @@
     
     <section id="contact" class="subsection">
         <div class="container subcontainer">
-            <div class="row">
+            <div class="row middle">
                 <div class="contact-encapsulate clearfix">
                     <div class="col-md-6">
                         <div class="section-copy">

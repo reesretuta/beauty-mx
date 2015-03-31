@@ -1228,3 +1228,6 @@ ul.secondarynav {
   @media screen and (max-width: 768px) {
     .navbar-brand img {
       height: 32px; } }
+
+.middle {
+  margin: 0 auto !important; }
