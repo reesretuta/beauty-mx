@@ -1,5 +1,4 @@
 <?php
-date_default_timezone_set('America/Los_Angeles');
 
 /*
  *---------------------------------------------------------------
@@ -45,7 +44,7 @@ if (defined('ENVIRONMENT'))
 		default:
 			exit('The application environment is not set correctly.');
 	}
-} 
+}
 
 /*
  *---------------------------------------------------------------
@@ -57,7 +56,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = '../ci2.0.3';
+	$system_path = '../ci2.1.4';
 
 /*
  *---------------------------------------------------------------
@@ -73,9 +72,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$e=str_replace('httpdocs', 'applications', getcwd()).'/frontend';
-	//$e="/var/www/vhosts/authorbucket.com/subdomains/abf/applications/frontend";
-	$application_folder = $e;
+	$application_folder = 'application';
 
 /*
  * --------------------------------------------------------------------
@@ -101,7 +98,7 @@ if (defined('ENVIRONMENT'))
 	// if your controller is not in a sub-folder within the "controllers" folder
 	// $routing['directory'] = '';
 
-	// The controller class file name.  Example:  Mycontroller.php
+	// The controller class file name.  Example:  Mycontroller
 	// $routing['controller'] = '';
 
 	// The controller function you wish to be called.
@@ -166,6 +163,7 @@ if (defined('ENVIRONMENT'))
 	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
 	// The PHP file extension
+	// this global constant is deprecated.
 	define('EXT', '.php');
 
 	// Path to the system folder
@@ -201,8 +199,6 @@ if (defined('ENVIRONMENT'))
  * And away we go...
  *
  */
-    
-error_log("loading codeigniter");
 require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
