@@ -15,7 +15,7 @@
 |
 */
 #$config['base_url'] = "http".((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "s" : "")."://".$_SERVER['HTTP_HOST'].str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-$config['base_url'] = "http://jafra-mx.herokuapp.com/"
+$config['base_url'] = "http://jafra-mx.herokuapp.com/";
 
 /*
 |--------------------------------------------------------------------------
