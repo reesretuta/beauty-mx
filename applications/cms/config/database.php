@@ -44,7 +44,7 @@ else
     
 $clearDbUrl = parse_url(getenv("CLEARDB_DATABASE_URL"));
     
-if ($clearDbUrl) {
+if (isset($clearDbUrl)) {
     $active_group = 'heroku';
 
     $server = $clearDbUrl["host"];
