@@ -84,69 +84,34 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" id="logo" href="/"><img src="/media/JAFRA_files/logo.png" alt="logo"></a>
-          <a class="navbar-brand" id="jafra-mia" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-mia.png" alt="logo"></a>
-          <a class="navbar-brand" id="jafra-u" href="http://jaframia.com/"><img src="/media/JAFRA_files/jafra-u.png" alt="logo"></a>
         </div>
         
         
         
         <div class="navbar-collapse collapse">
 
-          <div id="navbar-sections">
-          <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#why_jafra" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#catalog_section" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li><!-- end ngIf: !inCheckout -->
-            <!-- ngIf: !inCheckout --><li ng-if="!inCheckout" class="ng-scope"><a href="#contact_section" class="cta"  analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li><!-- end ngIf: !inCheckout -->
-            <li class="social">
-                <a href="http://facebook.com/jaframxoficial/" target="_blank"><img align="absmiddle" alt="Facebook" src="/media/JAFRA_files/img/social/facebook.png" border="0"></a>
-                <a href="https://twitter.com/jaframexico/" target="_blank"><img align="absmiddle" alt="Twitter" src="/media/JAFRA_files/img/social/twitter.png" border="0"></a>
-                <a href="http://www.youtube.com/user/JAFRAMEXICO" target="_blank"><img align="absmiddle" alt="YouTube" src="/media/JAFRA_files/img/social/youtube.png" border="0"></a>
-                <a href="http://pinterest.com/jaframexico/" target="_blank"><img align="absmiddle" alt="Pinterest" src="/media/JAFRA_files/img/social/pinterest.png" border="0"></a>
-            </li>
+              <div id="navbar-sections">
+                  
+                  <ul class="secondarynav">
+                      <li><a id="jafra-mia" href="http://jaframia.com/"></a></li>
+                      <li><a id="jafra-u" href="http://jaframia.com/"></a></li>
+                    <li class="social">
+                        <a href="http://facebook.com/jaframxoficial/" target="_blank"><img align="absmiddle" alt="Facebook" src="/media/JAFRA_files/img/social/facebook.png" border="0"></a>
+                        <a href="https://twitter.com/jaframexico/" target="_blank"><img align="absmiddle" alt="Twitter" src="/media/JAFRA_files/img/social/twitter.png" border="0"></a>
+                        <a href="http://www.youtube.com/user/JAFRAMEXICO" target="_blank"><img align="absmiddle" alt="YouTube" src="/media/JAFRA_files/img/social/youtube.png" border="0"></a>
+                        <a href="http://pinterest.com/jaframexico/" target="_blank"><img align="absmiddle" alt="Pinterest" src="/media/JAFRA_files/img/social/pinterest.png" border="0"></a>
+                    </li>
             
-            <!-- <li class="contact-dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" analytics-on="click" analytics-event="Menu Contact" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV5&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a>
-              <ul class="dropdown-menu dropdown_jafra contact-header" role="menu">
-                <li class="contact-description ng-binding" ng-bind-html="&#39;CONTACT-INFO&#39; | translate | unsafe">1 (800) 551-2345<br>Abierto: L-V 8:30am-5:30pm<br>Hora del Pacífico</li>
-                <li class="social_dropdown ng-scope" ng-if="!inCheckout">
-                      <div class="social-media-icons center-block">
-                        <a target="_blank" href="http://www.facebook.com/JafraWorldwide" analytics-on="click" analytics-event="Menu JAFRA Facebook" analytics-category="External Link"><i class="fa fa-facebook-square"></i></a>
-                        &nbsp;
-                        <a target="_blank" href="https://plus.google.com/102586203009783197974" analytics-on="click" analytics-event="Menu JAFRA Google+" analytics-category="External Link"><i class="fa fa-google-plus-square"></i></a>
-                        &nbsp;
-                        <a target="_blank" href="https://www.linkedin.com/company/3077948" analytics-on="click" analytics-event="Menu JAFRA LinkedIn" analytics-category="External Link"><i class="fa fa-linkedin-square"></i></a>
-                        &nbsp;
-                        <a target="_blank" href="https://www.twitter.com/JAFRAWorldwide" analytics-on="click" analytics-event="Menu JAFRA Twitter" analytics-category="External Link"><i class="fa fa-twitter-square"></i></a>
-                        &nbsp;
-                        <a target="_blank" href="http://www.youtube.com/user/JAFRACorporate?feature=watch" analytics-on="click" analytics-event="Menu JAFRA YouTube" analytics-category="External Link"><i class="fa fa-youtube-square"></i></a>
-                        &nbsp;
-                        <a target="_blank" href="http://pinterest.com/jafracosmetics/" analytics-on="click" analytics-event="Menu JAFRA Pinterest" analytics-category="External Link"><i class="fa fa-pinterest-square"></i></a>
-                        &nbsp;
-                        <a target="_blank" href="http://instagram.com/jafracosmeticsint" analytics-on="click" analytics-event="Menu JAFRA Instagram" analytics-category="External Link"><i class="fa fa-instagram"></i></a>
-                        &nbsp;
-                      </div>
-
-                </li>
-              </ul>
-            </li> -->
-            <!-- <li class="language-dropdown ng-scope" ng-controller="LanguageSwitcherController">
-                <a class="dropdown-toggle" data-toggle="dropdown" style="white-space: nowrap"><span ng-bind-html="getCurrentLanguage() | translate | unsafe" class="ng-binding">CONTACTO</span> <span class="caret"></span></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a ng-click="setLanguage(&#39;en_US&#39;)" analytics-on="click" analytics-event="Language English" analytics-category="Content"><span ng-bind-html="&#39;LAN01&#39; | translate | unsafe" class="ng-binding">Quiero Comprar</span></a></li>
-                                <li><a ng-click="setLanguage(&#39;es_US&#39;)" analytics-on="click" analytics-event="Language Spanish" analytics-category="Content"><span ng-bind-html="&#39;LAN02&#39; | translate | unsafe" class="ng-binding">Me Quiero Unir</span></a></li>
-                            </ul>
-            </li>
-             -->
-            <li class="language-dropdown ng-scope" ng-controller="LanguageSwitcherController">
-                
-                <img style="padding-top:3px" src="/media/JAFRA_files/img/mexico-flag.jpg">
-              <!-- <a class="dropdown-toggle" data-toggle="dropdown" style="white-space: nowrap"><span ng-bind-html="getCurrentLanguage() | translate | unsafe" class="ng-binding">Español</span> <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a ng-click="setLanguage(&#39;en_US&#39;)" analytics-on="click" analytics-event="Language English" analytics-category="Content"><span ng-bind-html="&#39;LAN01&#39; | translate | unsafe" class="ng-binding">Inglés</span></a></li>
-                <li><a ng-click="setLanguage(&#39;es_US&#39;)" analytics-on="click" analytics-event="Language Spanish" analytics-category="Content"><span ng-bind-html="&#39;LAN02&#39; | translate | unsafe" class="ng-binding">Español</span></a></li>
-              </ul> -->
-            </li>
+            
+                    <li class="language-dropdown ng-scope" ng-controller="LanguageSwitcherController">
+                        <img style="padding-top:3px" src="/media/JAFRA_files/mexico-flag.png">
+                    </li>
+                  </ul>
+              <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
+                <li ng-if="!inCheckout" class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li>
+                <li ng-if="!inCheckout" class="ng-scope"><a href="#why_jafra" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li>
+                <li ng-if="!inCheckout" class="ng-scope"><a href="#catalog_section" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li>
+                <li ng-if="!inCheckout" class="ng-scope"><a href="#contact_section" class="cta"  analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li>
           </ul>
 			</div>
         </div><!--/.navbar-collapse -->
@@ -1143,7 +1108,7 @@
     <script src="/media/JAFRA_files/util.js"></script>
     <script src="/media/JAFRA_files/pgp_key.js"></script>
 
-    <script src="/media/JAFRA_files/controllers.js"></script>
+    <!--<script src="/media/JAFRA_files/controllers.js"></script>
     <script src="/media/JAFRA_files/TopController.js"></script>
     <script src="/media/JAFRA_files/LanguageSwitcherController.js"></script>
     <script src="/media/JAFRA_files/MainController.js"></script>
@@ -1163,13 +1128,15 @@
     <script src="/media/JAFRA_files/EditCreditCardModalController.js"></script>
     <script src="/media/JAFRA_files/ScrollController.js"></script>
     <script src="/media/JAFRA_files/ContactEditModalController.js"></script>
-    <script src="/media/JAFRA_files/AddressEditModalController.js"></script>
+    <script src="/media/JAFRA_files/AddressEditModalController.js"></script>-->
+        
+        
     <!-- online sponsoring home controller -->
-    <script src="/media/JAFRA_files/OnlineSponsorLandingController.js"></script>
-    <script src="/media/JAFRA_files/services.js"></script>
-    <script src="/media/JAFRA_files/filters.js"></script>
-    <script src="/media/JAFRA_files/directives.js"></script>
-    <script src="/media/JAFRA_files/app.js"></script>
+    <!-- // <script src="/media/JAFRA_files/OnlineSponsorLandingController.js"></script> -->
+    <!-- // <script src="/media/JAFRA_files/services.js"></script> -->
+    <!-- // <script src="/media/JAFRA_files/filters.js"></script> -->
+    <!-- // <script src="/media/JAFRA_files/directives.js"></script> -->
+    <!-- // <script src="/media/JAFRA_files/app.js"></script> -->
     <script>
       $(function(){ 
 
