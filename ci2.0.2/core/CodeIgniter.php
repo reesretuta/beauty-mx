@@ -380,3 +380,4 @@
 
 /* End of file CodeIgniter.php */
 /* Location: ./system/core/CodeIgniter.php */
+error_log("loaded codeigniter");
