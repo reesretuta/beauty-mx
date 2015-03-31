@@ -43,8 +43,31 @@ else
     $active_group = 'local';
     
 
-if ($_SERVER['HTTP_HOST'] == 'peaceful-dusk-5744.herokuapp.com') {
+$clearDbUrl = $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    
+if ($clearDbURL) {
     $active_group = 'heroku';
+
+    $server = $clearDbUrl["host"];
+    $username = $clearDbUrl["user"];
+    $password = $clearDbUrl["pass"];
+    $db = substr($clearDbUrl["path"], 1);
+
+    $db['heroku']['hostname'] = $server;
+    $db['heroku']['username'] = $username;
+    $db['heroku']['password'] = $password;
+    $db['heroku']['database'] = $db;
+    $db['heroku']['dbdriver'] = 'mysql';
+    $db['heroku']['dbprefix'] = '';
+    $db['heroku']['pconnect'] = TRUE;
+    $db['heroku']['db_debug'] = TRUE;
+    $db['heroku']['cache_on'] = FALSE;
+    $db['heroku']['cachedir'] = '';
+    $db['heroku']['char_set'] = 'utf8';
+    $db['heroku']['dbcollat'] = 'utf8_general_ci';
+    $db['heroku']['swap_pre'] = '';
+    $db['heroku']['autoinit'] = TRUE;
+    $db['heroku']['stricton'] = FALSE;
 }
 
 if ($_SERVER['HTTP_HOST'] == 'mexico.lavisual.com') {
