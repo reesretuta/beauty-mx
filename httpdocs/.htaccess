@@ -7,4 +7,4 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
 #PassEnv FASTLY_CDN_URL
 
-Substitute "s|/\"/%{env:FASTLY_CDN_URL}/|e"
+Substitute "s|\"/|\"http://%{env:FASTLY_CDN_URL}/|e"
