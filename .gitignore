@@ -1,3 +1,5 @@
 dandelion.yml
 applications/frontend/logs
 applications/cms/logs
+vendor
+node_modules
