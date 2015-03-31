@@ -640,15 +640,6 @@
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
       <div class="addthis_sharing_toolbox" data-url="http://www.jafra.com.mx" data-title="JAFRA_MEXICO"></div>
       
-      <!-- <div class="addthis_sharing_toolbox" data-url="https://usa.jafra.com/join/?language=es_US" data-title="JOIN_JAFRA_TITLE">
-          <div id="atstbx" class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
-              <a class="at-share-btn at-svc-facebook"><span class="at4-icon aticon-facebook" title="Facebook"></span></a>
-              <a class="at-share-btn at-svc-twitter"><span class="at4-icon aticon-twitter" title="Twitter"></span></a>
-              <a class="at-share-btn at-svc-pinterest_share"><span class="at4-icon aticon-pinterest_share" title="Pinterest"></span></a>
-              <a class="at-share-btn at-svc-email"><span class="at4-icon aticon-email" title="Email"></span></a>
-              <a class="at-share-btn at-svc-compact"><span class="at4-icon aticon-compact" title="More"></span></a>
-          </div>
-      </div> -->
     </div>
   </div>
 </section>
@@ -938,19 +929,8 @@
     
     
     <script src="/media/JAFRA_files/bootstrap.min.js"></script>
-
-    
-    <!-- // <script src="http://s7.addthis.com/js/300/addthis_widget.js#async=1" type="text/javascript"></script>
-    // <script type="text/javascript">
-    //
-    // function loadAddThis() {
-    //     addthis.init()
-    // }
-    // </script> -->
-    
-
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script src="/media/JAFRA_files/addthis.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551adcbe3655bbf7" async="async"></script>
     
     
     <script>
