@@ -5,7 +5,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
-RewriteCond %{HTTP_HOST} ^farmersmarketla.com
-RewriteRule (.*) http://www.farmersmarketla.com/$1 [R=301,L]
+#PassEnv FASTLY_CDN_URL
 
-Redirect 301 /index.php?/merchant/default.asp&id=26 http://www.farmersmarketla.com
+Substitute "s|/\"/%{env:FASTLY_CDN_URL}/|e"

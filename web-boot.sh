@@ -30,6 +30,9 @@ sed -i 's/^session.cookie_httponly =/session.cookie_httponly = On/' /app/vendor/
 # sed -i 's/^session.use_trans_sid = 0/session.use_trans_sid = 0/' /app/vendor/heroku/heroku-buildpack-php/conf/php/php.ini
 echo "ignore_user_abort = On" >> /app/vendor/heroku/heroku-buildpack-php/conf/php/php.ini
 
+# override the apache settings, to get mod_substitute enabled
+cp httpd.conf.override /app/.heroku/php/etc/apache2/httpd.conf
+
 # Launch Apache with PHP
 # Set web root to folder public_html
 vendor/bin/heroku-php-apache2 -F fpm_custom.conf httpdocs
