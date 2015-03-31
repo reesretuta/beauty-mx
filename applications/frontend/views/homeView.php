@@ -8,36 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title class="ng-binding">Ingresa a JAFRA</title>
-    <link type="image/x-icon" href="https://usa.jafra.com/img/favicon.ico" rel="shortcut icon">
+    <link type="image/x-icon" href="/media/JAFRA_files/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://usa.jafra.com/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://usa.jafra.com/lib/animate.css/animate.css">
-    <link rel="stylesheet" href="https://usa.jafra.com/lib/angular-wizard/dist/angular-wizard.css">
-    <!-- <link rel="stylesheet" href="/styles/offcanvas.css"> -->
-    <link rel="stylesheet" href="https://usa.jafra.com/styles/animate.css">
-    <link rel="stylesheet" href="https://usa.jafra.com/lib/allmighty-autocomplete/style/autocomplete.css">
-
     <!-- Google Font News Cycle (Similar to News Gothic) -->
     <link href="https://fonts.googleapis.com/css?family=News+Cycle:400,700" rel="stylesheet">
 
     <!-- JAFRA Custom CSS -->
-    <link rel="stylesheet" href="https://usa.jafra.com/styles/style.css">
+    <link rel="stylesheet" href="/media/JAFRA_files/usa-style.css">
 
     <!-- Prevent flickering by including angular here and ensure jquery is loaded beforehand to prevent memory leaks-->
     <script src="/media/JAFRA_files/jquery.min.js"></script>
     <script src="/media/JAFRA_files/jquery-migrate.min.js"></script>
     <script src="/media/JAFRA_files/jquery-ui.js"></script>
     <script src="/media/JAFRA_files/purl.js"></script>
-
-    <!-- AddThis widgets for social media sharing -->
-    <script type="text/javascript">
-      var addthis_config = {
-         data_ga_property: 'UA-7560748-27'
-      };
-    </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -79,13 +64,8 @@
           </button>
           <a class="navbar-brand" id="logo" href="/"><img src="/media/JAFRA_files/logo.png" alt="logo"></a>
         </div>
-        
-        
-        
         <div class="navbar-collapse collapse">
-
               <div id="navbar-sections">
-                  
                   <ul class="secondarynav">
                       <li><a id="jafra-mia" href="http://jaframia.com/"></a></li>
                       <li><a id="jafra-u" href="http://jaframia.com/"></a></li>
@@ -95,8 +75,6 @@
                         <a href="http://www.youtube.com/user/JAFRAMEXICO" target="_blank"><img align="absmiddle" alt="YouTube" src="/media/JAFRA_files/img/social/youtube.png" border="0"></a>
                         <a href="http://pinterest.com/jaframexico/" target="_blank"><img align="absmiddle" alt="Pinterest" src="/media/JAFRA_files/img/social/pinterest.png" border="0"></a>
                     </li>
-            
-            
                     <li class="language-dropdown ng-scope" ng-controller="LanguageSwitcherController">
                         <img style="padding-top:3px" src="/media/JAFRA_files/mexico-flag.png">
                     </li>
@@ -114,7 +92,8 @@
 
     <div id="content" ng-class="{checkout: inCheckout}">
     <!-- begin content area -->
-      <!-- ngView:  --><div ng-view="" class="ngview ng-scope" autoscroll="true">
+      
+      <div ng-view="" class="ngview ng-scope" autoscroll="true">
 <section id="top" class="ng-scope">
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron" style="background-image:url('<?= $hero[0]->path ?>')">
