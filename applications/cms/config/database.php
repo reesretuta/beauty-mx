@@ -42,7 +42,7 @@ if($_SERVER['HTTP_HOST']=='')
 else
     $active_group = 'local';
     
-$clearDbUrl = $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$clearDbUrl = parse_url(getenv("CLEARDB_DATABASE_URL"));
     
 if ($clearDbURL) {
     $active_group = 'heroku';
