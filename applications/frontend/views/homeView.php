@@ -950,9 +950,8 @@
     
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551adcbe3655bbf7" async="async"></script>
+    <script src="/media/JAFRA_files/addthis.js"></script>
     
-
     
     <script>
       $(function(){ 
