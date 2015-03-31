@@ -301,6 +301,7 @@ error_log("codeigniter: DEBUG21");
  * ------------------------------------------------------
  */
 	$EXT->_call_hook('pre_controller');
+error_log("codeigniter: DEBUG21.1");
 
 /*
  * ------------------------------------------------------
@@ -311,6 +312,7 @@ error_log("codeigniter: DEBUG21");
 	$BM->mark('controller_execution_time_( '.$class.' / '.$method.' )_start');
 
 	$CI = new $class();
+error_log("codeigniter: DEBUG21.2");
 
 /*
  * ------------------------------------------------------
@@ -318,6 +320,7 @@ error_log("codeigniter: DEBUG21");
  * ------------------------------------------------------
  */
 	$EXT->_call_hook('post_controller_constructor');
+error_log("codeigniter: DEBUG21.3");
 
 /*
  * ------------------------------------------------------
@@ -363,6 +366,7 @@ error_log("codeigniter: DEBUG21");
 		// Any URI segments present (besides the class/function) will be passed to the method for convenience
 		call_user_func_array(array(&$CI, $method), array_slice($URI->rsegments, 2));
 	}
+error_log("codeigniter: DEBUG21.4");
 
 
 	// Mark a benchmark end point
