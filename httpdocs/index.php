@@ -149,8 +149,7 @@ if (defined('ENVIRONMENT'))
 	}
 
 	// ensure there's a trailing slash
-    $system_path = rtrim($system_path, '/').'/';
-    error_log("using system path: ".$system_path);
+	$system_path = rtrim($system_path, '/').'/';
 
 	// Is the system path correct?
 	if ( ! is_dir($system_path))
@@ -171,7 +170,6 @@ if (defined('ENVIRONMENT'))
 
 	// Path to the system folder
 	define('BASEPATH', str_replace("\\", "/", $system_path));
-    error_log("using BASEPATH: ".BASEPATH);
 
 	// Path to the front controller (this file)
 	define('FCPATH', str_replace(SELF, '', __FILE__));
