@@ -281,13 +281,16 @@ error_log("codeigniter: DEBUG20");
  *  controller functions that begin with an underscore
  */
 	$class  = $RTR->fetch_class();
+error_log("codeigniter: DEBUG20.1");
 	$method = $RTR->fetch_method();
+error_log("codeigniter: DEBUG20.2");
 
 	if ( ! class_exists($class)
 		OR strncmp($method, '_', 1) == 0
 		OR in_array(strtolower($method), array_map('strtolower', get_class_methods('CI_Controller')))
 		)
 	{
+error_log("codeigniter: DEBUG20.3");
 		show_404("{$class}/{$method}");
 	}
 error_log("codeigniter: DEBUG21");
