@@ -1,1 +1,1 @@
-DEBUG=false;CDN_URL='https://jafra-prod-herokuapp-com.global.ssl.fastly.net';
+DEBUG=false;CDN_URL='https://jafra-mx-herokuapp-com.global.ssl.fastly.net';
