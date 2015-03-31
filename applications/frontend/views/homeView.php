@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <!-- saved from url=(0042)https://usa.jafra.com/join/?language=es_US -->
-<html lang="en" class="ng-scope"><script async="" src="/media/JAFRA_files/analytics.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="/media/JAFRA_files/menu174.js"></script><script type="text/javascript" src="/media/JAFRA_files/layers099.js"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
-    <!--<base href="/join">--><base href=".">
+<html lang="en" class="ng-scope"><script async="" src="/media/JAFRA_files/analytics.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <base href=".">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title class="ng-binding">Ingresa a JAFRA</title>
-
     <link type="image/x-icon" href="https://usa.jafra.com/img/favicon.ico" rel="shortcut icon">
-
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://usa.jafra.com/lib/font-awesome/css/font-awesome.min.css">
@@ -30,20 +30,14 @@
     <script src="/media/JAFRA_files/jquery.min.js"></script>
     <script src="/media/JAFRA_files/jquery-migrate.min.js"></script>
     <script src="/media/JAFRA_files/jquery-ui.js"></script>
-    <script src="/media/JAFRA_files/angular.js"></script>
     <script src="/media/JAFRA_files/purl.js"></script>
 
     <!-- AddThis widgets for social media sharing -->
-    <script type="text/javascript" src="/media/JAFRA_files/addthis_widget.js"></script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh189" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" src="/media/JAFRA_files/sh200.html"></iframe></div><script type="text/javascript" src="/media/JAFRA_files/core201.js"></script>
     <script type="text/javascript">
       var addthis_config = {
          data_ga_property: 'UA-7560748-27'
-      }; 
+      };
     </script>
-    <!-- ShareThis Widgets for social media sharing >
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="/js/sharethis/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "c8038861-a8d1-41ca-9a64-7db4f5d4f0b9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -73,7 +67,7 @@
 
   <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/widget020.top.svg.css" media="all"><link rel="stylesheet" type="text/css" href="/media/JAFRA_files/layers077.css" media="all"></head>
 
-  <body class="join translate-cloak es" ng-class="{incheckout: inCheckout, es: session.language == &#39;es_US&#39;}" style="">
+  <body class="join translate-cloak es">
     <div id="pagenav" class="navbar navbar-static-top affix" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -108,10 +102,10 @@
                     </li>
                   </ul>
               <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
-                <li ng-if="!inCheckout" class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li>
-                <li ng-if="!inCheckout" class="ng-scope"><a href="#why_jafra" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li>
-                <li ng-if="!inCheckout" class="ng-scope"><a href="#catalog_section" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li>
-                <li ng-if="!inCheckout" class="ng-scope"><a href="#contact_section" class="cta"  analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li>
+                <li class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li>
+                <li class="ng-scope"><a href="#why_jafra" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li>
+                <li class="ng-scope"><a href="#catalog_section" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li>
+                <li class="ng-scope"><a href="#contact_section" class="cta"  analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li>
           </ul>
 			</div>
         </div><!--/.navbar-collapse -->
@@ -145,7 +139,7 @@
 
             <p class="jumboget">
               <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-med" role="button" href="https://usa.jafra.com/join#" data-toggle="modal" data-target=".bs-example-modal-lg" analytics-on="click" analytics-event="Hero CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-SECTION1-BTN&#39; | translate | unsafe" class="ng-binding"><?php echo $hero[0]->start_button ?></span></a>
-              <!--a data-target="#" class="watch-video-link" data-toggle="modal" data-target=".bs-video-modal-lg"><span class="glyphicon glyphicon-play"></span> WATCH VIDEO</a-->
+
             </p>
           </div>
         </div>
@@ -155,133 +149,6 @@
   
 </section>
 
-
-<!-- <div class="modal fade bs-example-modal-lg kit-modal ng-scope" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content clearfix">
-
-      <div class="modal-header tex-center">
-        <button type="button" class="close" data-dismiss="modal">
-          <span aria-hidden="true">×</span><span class="sr-only"><span ng-bind-html="&#39;BTN_CLOSE&#39; | translate | unsafe" class="ng-binding">Cerrar</span></span>
-        </button>
-        <h4 class="modal-title text-center ng-binding" ng-bind-html="&#39;OS-KIT-MODAL-TITLE&#39; | translate | unsafe">Selecciona tu Kit de Inicio</h4>
-      </div>
-
-      <section class="subsection royal_kit">
-        <div class="subcontainer">
-          <div class="">
-            <div class="clearfix">
-              <div class="hidden-md hidden-lg col-md-6">
-                <img class="img-responsive" src="/media/JAFRA_files/99kit-2x.jpg">
-              </div>
-              <div class="col-md-6">
-                <div class="section-copy">
-                  <h3 class="titlify DidotLTPro-Roman kit-title">
-                    <small class="color-purple ng-binding" ng-bind-html="&#39;OS-KIT-PRODUCT1-NAME&#39; | translate | unsafe">Kit Royal del Negocio</small>
-                  </h3>
-
-                  <p class="color-gold HelveticaNeueLTStd-BdCn kit-desc">
-                    <span ng-bind-html="&#39;OS-KIT-PRODUCT1-TITLE1&#39; | translate | unsafe" class="ng-binding">Obtén todo lo</span>
-                    <br class="visible-xs-*">
-                    <span ng-bind-html="&#39;OS-KIT-PRODUCT1-TITLE2&#39; | translate | unsafe" class="ng-binding">QUE NECESITAS</span>
-                  </p>
-
-                  <p class="HelveticaNeueLTStd-Th kit-value ng-binding" ng-bind-html="&#39;OS-KIT-PRODUCT1-VALUE&#39; | translate | unsafe">Precio al público: $490+</p>
-
-                  <p ng-bind-html="&#39;OS-KIT-PRODUCT1-TAG&#39; | translate | unsafe" class="ng-binding">Alegra tus fiestas con el Kit Royal del Negocio. Incluye todo lo necesario para iniciar tu nuevo negocio de inmediato.</p>
-
-                  <p>
-                    <a data-target="#more_royal_2" data-toggle="collapse" class="more-link more-link-alt collapsed" analytics-on="click" analytics-event="Modal $99 Kit Details" analytics-category="Content"><span ng-bind-html="&#39;KIT-DETAILS-TOGGLE&#39; | translate | unsafe" class="ng-binding">Mira lo que Incluye</span></a>
-                  </p>
-
-                  <div class="product-action pull-right">
-                    <span class="product-price"><small>Only<br></small> $99</span>
-                    <span ng-if="session.language==&#39;es_US&#39;" class="ng-scope">
-                      <button type="button" class="btn btn-primary btn-lg" ng-click="join(&#39;20495&#39;)" analytics-on="click" analytics-event="Modal Buy $99" analytics-category="Buttons">
-                        Cómpralo <small>(Español)</small>
-                      </button>
-                      <a data-target="#" ng-click="join(&#39;20494&#39;)" class="color-red text-center" style="display:block; margin-top:15px;">
-                        Compra el Kit de $99 en Inglés
-                      </a>
-                    </span>
-                  </div>
-
-                </div>
-              </div>
-              <div class="hidden-xs hidden-sm col-md-6">
-                <img class="img-responsive" src="/media/JAFRA_files/99kit-2x.jpg">
-                <span class="pull-right color-gold" style="margin-right: 15px;"><span style="text-decoration:none; margin-right: 10px;"><img src="/media/JAFRA_files/icons-video.gif" width="25px"> <img src="/media/JAFRA_files/icons-booklets.gif" width="25px"></span> <span ng-bind-html="&#39;OS-TRAINING-INCLUDED&#39; | translate | unsafe" class="ng-binding">Incluye Capacitación!</span></span>
-              </div>
-
-              <div id="more_royal_2" class="col-md-12 collapse">
-                <div class="section-copy">
-                  <p ng-bind-html="&#39;OS-KIT-PRODUCT1-DESCRIPTION&#39; | translate | unsafe" class="ng-binding"><ul><li>Advanced Dynamics Limpiador Facial Equilibrante</li><li>Advanced Dynamics Loción Facial Equilibrante</li><li>Advanced Dynamics Crema Facial Equilibrante de Día </li><li>Advanced Dynamics Crema Facial Humectante Equilibrante de Noche</li><li>Royal Jelly Milk Balm Advanced</li><li>Gel Facial Reafirmante + con Complejo Firmiplex</li><li>Gel Humectante para el Contorno de los Ojos</li><li>Gel Facial Limpiador y Refrescante</li><li>Crema Facial Hidratante de Noche</li><li>Crema Facial Hidratante de Día con FPS 15</li><li>Mascarilla Facial Exfoliante Suave</li><li>Aceite para el Cuerpo Royal Almond</li><li>LEGEND EDT</li><li>Vesen EDT</li><li>Eau d'Arômes Spray Revitalizante</li><li>Skid EDT</li></ul><h4>Además recibes ¡HERRAMIENTAS DINÁMICAS!</h4><ul><li>Bolso JAFRA Negro</li><li>Estuche JAFRA Transparente</li><li>Juego de Material Impreso Bienvenida a JAFRA</li><li>Catálogo de Productos (5)</li><li>Folleto de Temporada (10)</li><li>Folleto de la Anfitriona</li><li>Tarjetas de Presentación (50)</li><li>Forma de Pedido del Cliente (10)</li></ul></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr>
-
-      <section class="subsection skincare_kit">
-        <div class="subcontainer">
-          <div class="">
-            <div class="col-md-5">
-              <img class="img-responsive" src="/media/JAFRA_files/49kit-2x.jpg">
-            </div>
-            <div class="col-md-6">
-              <div class="section-copy">
-                <h3 class="titlify DidotLTPro-Roman kit-title">
-                  <small class="color-purple ng-binding" ng-bind-html="&#39;OS-KIT-PRODUCT2-NAME&#39; | translate | unsafe">Kit Especial del Negocio</small>
-                </h3>
-
-                <p class="color-gold HelveticaNeueLTStd-BdCn kit-desc">
-                  <span ng-bind-html="&#39;OS-KIT-PRODUCT2-TITLE1&#39; | translate | unsafe" class="ng-binding">Comienza</span>
-                  <span ng-bind-html="&#39;OS-KIT-PRODUCT2-TITLE2&#39; | translate | unsafe" class="ng-binding">RAPIDAMENTE</span>
-                </p>
-
-                <p class="HelveticaNeueLTStd-Th kit-value ng-binding" ng-bind-html="&#39;OS-KIT-PRODUCT2-VALUE&#39; | translate | unsafe">Precio al público: $290</p>
-
-                <p ng-bind-html="&#39;OS-KIT-PRODUCT2-TAG&#39; | translate | unsafe" class="ng-binding">Inicia una nueva temporada de ingresos con este Kit Especial del Negocio. Ideal para Consultoras con un presupuesto limitado que desean incrementarlo.</p>
-
-                <span class="pull-right color-gold" style="margin: 30px 15px 0 0;"><span style="text-decoration:none; margin-right: 10px;"><img src="/media/JAFRA_files/icons-video.gif" width="25px"> <img src="/media/JAFRA_files/icons-booklets.gif" width="25px"></span> <span ng-bind-html="&#39;OS-TRAINING-INCLUDED&#39; | translate | unsafe" class="ng-binding">Incluye Capacitación!</span></span>
-
-                <a data-target="#more_skincare_2" data-toggle="collapse" class="more-link more-link-alt collapsed" style="margin-top: 30px;" analytics-on="click" analytics-event="Modal $49 Kit Details" analytics-category="Content"><span ng-bind-html="&#39;KIT-DETAILS-TOGGLE2&#39; | translate | unsafe" class="ng-binding">Mira Adentro</span></a>
-
-
-                <p class="starter_kits-retail_value"></p>
-
-                <div class="product-action">
-                  <span class="product-price"><small>Only<br></small> $49</span>
-                    <span ng-if="session.language==&#39;es_US&#39;" class="ng-scope">
-                    <button type="button" class="btn btn-primary btn-lg" ng-click="join(&#39;20499&#39;)" analytics-on="click" analytics-event="Modal Buy $49" analytics-category="Buttons">
-                      Cómpralo <small>(Español)</small>
-                    </button>
-                    <a data-target="#" ng-click="join(&#39;20498&#39;)" class="color-red text-center" style="margin-left: 20px">
-                      Compra el Kit de $49 en Inglés
-                    </a>
-                  </span>
-                </div>
-
-              </div>
-            </div>
-
-
-            <div id="more_skincare_2" class="col-md-12 collapse">
-              <div class="section-copy">
-                <p ng-bind-html="&#39;OS-KIT-PRODUCT2-DESCRIPTION&#39; | translate | unsafe" class="ng-binding"><ul><li>Advanced Dynamics Limpiador Facial Equilibrante</li><li>Advanced Dynamics Loción Facial Equilibrante</li><li>Advanced Dynamics Crema Facial Equilibrante de Día </li><li>Advanced Dynamics Crema Facial Humectante Equilibrante de Noche</li><li>Royal Jelly Milk Balm Advanced</li><li>Gel Humectante para el Contorno de los Ojos</li></ul><h4>Además recibes ¡HERRAMIENTAS DINÁMICAS!</h4><ul><li>Bolso ROJO de Negocios</li><li>Juego de Material Impreso Bienvenida a JAFRA</li><li>Catálogo de Productos (5)</li><li>Folleto de Temporada (10)</li><li>Folleto de la Anfitriona</li><li>Forma de Pedido del Cliente (10)</li></ul></p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-    </div>
-  </div>
-</div> -->
 
 
 <section id="why_jafra" class="ng-scope">
@@ -454,7 +321,7 @@
     
     
     
-  <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/business-'+session.language+'.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/business-&#39;+session.language+&#39;.html&#39;" analytics-on="scrollby" analytics-event="Opportunity" analytics-category="Scrolled To" class="ng-scope"><!-- business.html -->
+<div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/business-&#39;+session.language+&#39;.html&#39;" analytics-on="scrollby" analytics-event="Opportunity" analytics-category="Scrolled To" class="ng-scope"><!-- business.html -->
 <section class="subsection ng-scope" id="why_jafra_lifestyle">
         <div class="container subcontainer">
             <!--img class="hidden-xs hidden-sm" src="/img/liner_black.png" id="liner_black" style="max-width:170px;"-->
@@ -770,7 +637,18 @@
       <p class="h4">
         Share This Page:
       </p><!-- addthis sharing tools -->
-      <div class="addthis_sharing_toolbox" data-url="https://usa.jafra.com/join/?language=es_US" data-title="JOIN_JAFRA_TITLE"><div id="atstbx" class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show"><a class="at-share-btn at-svc-facebook"><span class="at4-icon aticon-facebook" title="Facebook"></span></a><a class="at-share-btn at-svc-twitter"><span class="at4-icon aticon-twitter" title="Twitter"></span></a><a class="at-share-btn at-svc-pinterest_share"><span class="at4-icon aticon-pinterest_share" title="Pinterest"></span></a><a class="at-share-btn at-svc-email"><span class="at4-icon aticon-email" title="Email"></span></a><a class="at-share-btn at-svc-compact"><span class="at4-icon aticon-compact" title="More"></span></a></div></div>
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div class="addthis_sharing_toolbox" data-url="http://www.jafra.com.mx" data-title="JAFRA_MEXICO"></div>
+      
+      <!-- <div class="addthis_sharing_toolbox" data-url="https://usa.jafra.com/join/?language=es_US" data-title="JOIN_JAFRA_TITLE">
+          <div id="atstbx" class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
+              <a class="at-share-btn at-svc-facebook"><span class="at4-icon aticon-facebook" title="Facebook"></span></a>
+              <a class="at-share-btn at-svc-twitter"><span class="at4-icon aticon-twitter" title="Twitter"></span></a>
+              <a class="at-share-btn at-svc-pinterest_share"><span class="at4-icon aticon-pinterest_share" title="Pinterest"></span></a>
+              <a class="at-share-btn at-svc-email"><span class="at4-icon aticon-email" title="Email"></span></a>
+              <a class="at-share-btn at-svc-compact"><span class="at4-icon aticon-compact" title="More"></span></a>
+          </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -1057,86 +935,25 @@
 </div>
 
     </div> <!-- /div #content -->
-
-    <!-- JavaScript -->
-    <script src="/media/JAFRA_files/newrelic-timing.min.js"></script>
-    <script src="/media/JAFRA_files/newrelic-timing-angular.min.js"></script>
-    <script src="/media/JAFRA_files/jquery.ba-resize.min.js"></script>
-
-    <script src="/media/JAFRA_files/bindonce.js"></script>
-    <script src="/media/JAFRA_files/moment.js"></script>
-    <script src="/media/JAFRA_files/angular-route.min.js"></script>
-    <script src="/media/JAFRA_files/angular-animate.js"></script>
-    <script src="/media/JAFRA_files/angular-sanitize.min.js"></script>
-    <script src="/media/JAFRA_files/angular-resource.min.js"></script>
-    <script src="/media/JAFRA_files/angular-cookies.min.js"></script>
-    <script src="/media/JAFRA_files/angular-cache.min.js"></script>
-    <script src="/media/JAFRA_files/angular-animate.min.js"></script>
-    <script src="/media/JAFRA_files/growl-notifications.js"></script>
-    <script src="/media/JAFRA_files/angular-translate.js"></script>
-    <script src="/media/JAFRA_files/angular-translate-loader-static-files.js"></script>
-    <script src="/media/JAFRA_files/angular-scroll.js"></script>
-    <script src="/media/JAFRA_files/angular-local-storage.min.js"></script>
-    <script src="/media/JAFRA_files/ng-infinite-scroll.min.js"></script>
-
-    <!-- angular wizard -->
-    <script src="/media/JAFRA_files/lodash.js"></script>
-    <script src="/media/JAFRA_files/angular-wizard.js"></script>
-
+    
+    
     <script src="/media/JAFRA_files/bootstrap.min.js"></script>
-    <script src="/media/JAFRA_files/ui-bootstrap-tpls.min.js"></script>
-    <script src="/media/JAFRA_files/autocomplete.js"></script>
 
-    <script src="/media/JAFRA_files/mask.js"></script>
-    <script src="/media/JAFRA_files/keypress.js"></script>
-    <script src="/media/JAFRA_files/jq.js"></script>
-    <script src="/media/JAFRA_files/event.js"></script>
-    <script src="/media/JAFRA_files/validate.js"></script>
+    
+    <!-- // <script src="http://s7.addthis.com/js/300/addthis_widget.js#async=1" type="text/javascript"></script>
+    // <script type="text/javascript">
+    //
+    // function loadAddThis() {
+    //     addthis.init()
+    // }
+    // </script> -->
+    
 
-    <script src="/media/JAFRA_files/angulartics.min.js"></script>
-    <script src="/media/JAFRA_files/angulartics-ga.min.js"></script>
-    <script src="/media/JAFRA_files/angulartics-gtm.min.js"></script>
-    <script src="/media/JAFRA_files/angulartics-scroll.min.js"></script>
-    <script src="/media/JAFRA_files/angulartics-debug.min.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551adcbe3655bbf7" async="async"></script>
+    
 
-    <script src="/media/JAFRA_files/hash-key-copier.js"></script>
-    <script src="/media/JAFRA_files/string.min.js"></script>
-    <script src="/media/JAFRA_files/xml2json.js"></script>
-    <script src="/media/JAFRA_files/require.js"></script>
-
-    <script src="/media/JAFRA_files/config.js"></script>
-    <script src="/media/JAFRA_files/util.js"></script>
-    <script src="/media/JAFRA_files/pgp_key.js"></script>
-
-    <!--<script src="/media/JAFRA_files/controllers.js"></script>
-    <script src="/media/JAFRA_files/TopController.js"></script>
-    <script src="/media/JAFRA_files/LanguageSwitcherController.js"></script>
-    <script src="/media/JAFRA_files/MainController.js"></script>
-    <script src="/media/JAFRA_files/CategoriesController.js"></script>
-    <script src="/media/JAFRA_files/HomeController.js"></script>
-    <script src="/media/JAFRA_files/ObjectsController.js"></script>
-    <script src="/media/JAFRA_files/ProductsController.js"></script>
-    <script src="/media/JAFRA_files/ProductDetailsController.js"></script>
-    <script src="/media/JAFRA_files/CartController.js"></script>
-    <script src="/media/JAFRA_files/CheckoutController.js"></script>
-    <script src="/media/JAFRA_files/AddressCorrectionModalController.js"></script>
-    <script src="/media/JAFRA_files/RecentlyViewedController.js"></script>
-    <script src="/media/JAFRA_files/ConfigureKitModalController.js"></script>
-    <script src="/media/JAFRA_files/ZoomImageModalController.js"></script>
-    <script src="/media/JAFRA_files/ShippingSpeedModalController.js"></script>
-    <script src="/media/JAFRA_files/TaxSelectionModalController.js"></script>
-    <script src="/media/JAFRA_files/EditCreditCardModalController.js"></script>
-    <script src="/media/JAFRA_files/ScrollController.js"></script>
-    <script src="/media/JAFRA_files/ContactEditModalController.js"></script>
-    <script src="/media/JAFRA_files/AddressEditModalController.js"></script>-->
-        
-        
-    <!-- online sponsoring home controller -->
-    <!-- // <script src="/media/JAFRA_files/OnlineSponsorLandingController.js"></script> -->
-    <!-- // <script src="/media/JAFRA_files/services.js"></script> -->
-    <!-- // <script src="/media/JAFRA_files/filters.js"></script> -->
-    <!-- // <script src="/media/JAFRA_files/directives.js"></script> -->
-    <!-- // <script src="/media/JAFRA_files/app.js"></script> -->
+    
     <script>
       $(function(){ 
 
@@ -1177,14 +994,7 @@
     var google_remarketing_only = true;
     
     </script>
-    <script type="text/javascript" src="/media/JAFRA_files/conversion.js">
-    </script>
-    <iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="/media/JAFRA_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"><img height="1" width="1" border="0" alt="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/957228484/?frame=0&amp;random=1426107252235&amp;cv=7&amp;fst=1426107252235&amp;num=1&amp;fmt=1&amp;guid=ON&amp;u_h=900&amp;u_w=1440&amp;u_ah=877&amp;u_aw=1440&amp;u_cd=24&amp;u_his=1&amp;u_tz=-420&amp;u_java=true&amp;u_nplug=16&amp;u_nmime=42&amp;frm=0&amp;url=https%3A//usa.jafra.com/join/%3Flanguage%3Des_US&amp;vis=1" /></iframe>
-    <noscript>
-    <div style="display:inline;">
-    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/957228484/?value=0&amp;amp;guid=ON&amp;amp;script=0"/></div>
-    </noscript>
-
+    
   
 
 <script type="text/javascript">(function () {
