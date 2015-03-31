@@ -73,8 +73,8 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$e=str_replace('httpdocs', 'applications', getcwd()).'/frontend';
-	//$e="/var/www/vhosts/authorbucket.com/subdomains/abf/applications/frontend";
+	#$e=str_replace('httpdocs', 'applications', getcwd()).'/frontend';
+	$e="/app/applications/frontend";
 	$application_folder = $e;
 
 /*
