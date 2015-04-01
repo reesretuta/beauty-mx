@@ -5,5 +5,26 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
-AddOutputFilterByType SUBSTITUTE,DEFLATE text/html text/plain text/xml text/javascript text/css 
+# substitute URL prefixes to auto-CDNify them
+AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
 Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
+
+# Declare a filter, which runs after all internal filters like PHP or SSI
+FilterDeclare  gzip CONTENT_SET
+
+# The "gzip" filter can change "Content-Length", can not be used with range requests
+FilterProtocol gzip change=yes;byteranges=no
+
+# Enable "gzip" filter if "Content-Type" contains Text, HTML , JS, CSS, XML:
+FilterProvider gzip DEFLATE resp=Content-Type $text/plain
+FilterProvider gzip DEFLATE resp=Content-Type $text/html
+FilterProvider gzip DEFLATE resp=Content-Type $text/css
+FilterProvider gzip DEFLATE resp=Content-Type $text/javascript
+FilterProvider gzip DEFLATE resp=Content-Type $application/javascript
+FilterProvider gzip DEFLATE resp=Content-Type $application/x-javascript
+FilterProvider gzip DEFLATE resp=Content-Type $application/xhtml+xml
+FilterProvider gzip DEFLATE resp=Content-Type $application/rss+xml
+FilterProvider gzip DEFLATE resp=Content-Type $application/xml
+
+# Add "gzip" filter to the chain of filters
+FilterChain    gzip
