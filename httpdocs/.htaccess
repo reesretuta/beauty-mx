@@ -6,7 +6,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
 # substitute URL prefixes to auto-CDNify them
-<If "%{REQUEST_URI} !~ /\/cms.*/">
+<If "%{REQUEST_URI} !~ m#^/cms.*#">
     AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
     Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
 </If>
