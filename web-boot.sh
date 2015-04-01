@@ -4,8 +4,8 @@ echo "ServerSignature Off" >> /app/vendor/heroku/heroku-buildpack-php/conf/apach
 echo "ServerTokens Prod" >> /app/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf
 echo "HostnameLookups Off" >> /app/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf
 echo "TraceEnable Off" >> /app/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf
-echo "ServerLimit 32" >> /app/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf
-echo "MaxClients 32" >> /app/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf
+echo "ServerLimit 256" >> /app/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf
+echo "MaxClients 256" >> /app/vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf
 
 # PHP configuration
 # Modifications to conf/php/php.ini from the Heroku PHP buildpack
