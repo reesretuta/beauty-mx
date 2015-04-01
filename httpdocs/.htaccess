@@ -5,8 +5,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
-PassEnv FASTLY_CDN_URL
-
 AddOutputFilterByType SUBSTITUTE text/html
-#Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
-Substitute "s|/media/|http://$FASTLY_CDN_URL/media/|n"
+Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
