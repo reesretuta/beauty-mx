@@ -507,7 +507,7 @@
                     <div class="col-md-6">
                         <div class="section-copy">
                             <h3 class="titlify color-gold">ME QUIERO UNIR</h3>
-                            <?php error_log(print_r($contact,true),0); ?>
+                            <?php #error_log(print_r($contact,true),0); ?>
                             <?= $contact[1]->content ?>
                         </div>
                     </div>
