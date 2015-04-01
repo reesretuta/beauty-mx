@@ -288,15 +288,6 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section>
-    <script class="ng-scope">
-      $(function(){ 
-
-        $('a.more-link').on('click', function() {
-          $(this).closest('section').toggleClass('expanded');
-        });
-
-      });
-    </script>
 </div>
 <!-- end about-->
     
@@ -920,11 +911,19 @@
          data_ga_property: 'UA-7560748-27'
       };
     </script>
-
     <script src="/media/JAFRA_files/bootstrap.min.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551adcbe3655bbf7" async="async"></script>
     
+    <script class="ng-scope">
+      $(function(){ 
+
+        $('a.more-link').on('click', function() {
+          $(this).closest('section').toggleClass('expanded');
+        });
+
+      });
+    </script>
     
     <script>
       $(function(){ 
