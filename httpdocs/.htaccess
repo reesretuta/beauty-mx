@@ -1,10 +1,10 @@
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond $1 !^(index\.php|resources|robots\.txt|Sitemap\.xml|test\.php)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+#Options +FollowSymLinks
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|resources|robots\.txt|Sitemap\.xml|test\.php)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+#
+#PassEnv FASTLY_CDN_URL
 
-PassEnv FASTLY_CDN_URL
-
-Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/|i"
+Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
