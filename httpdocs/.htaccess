@@ -16,15 +16,15 @@ FilterDeclare  gzip CONTENT_SET
 FilterProtocol gzip change=yes;byteranges=no
 
 # Enable "gzip" filter if "Content-Type" contains Text, HTML , JS, CSS, XML:
-FilterProvider gzip DEFLATE resp=Content-Type $text/plain
-FilterProvider gzip DEFLATE resp=Content-Type $text/html
-FilterProvider gzip DEFLATE resp=Content-Type $text/css
-FilterProvider gzip DEFLATE resp=Content-Type $text/javascript
-FilterProvider gzip DEFLATE resp=Content-Type $application/javascript
-FilterProvider gzip DEFLATE resp=Content-Type $application/x-javascript
-FilterProvider gzip DEFLATE resp=Content-Type $application/xhtml+xml
-FilterProvider gzip DEFLATE resp=Content-Type $application/rss+xml
-FilterProvider gzip DEFLATE resp=Content-Type $application/xml
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/plain'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/html'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/css'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/javascript'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/javascript'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/x-javascript'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/xhtml+xml'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/rss+xml'"
+FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/xml'"
 
 # Add "gzip" filter to the chain of filters
 FilterChain    gzip
