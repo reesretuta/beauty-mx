@@ -1,5 +1,15 @@
 <?php
 
+require '../../vendor/autoload.php';
+
+use Aws\Common\Aws;
+
+// Create a service builder using a configuration file
+$aws = Aws::factory("aws.config");
+
+// Get the client from the builder by namespace
+$client = $aws->get('S3');
+
 /**
  * Handle file uploads via XMLHttpRequest
  */
@@ -161,5 +171,23 @@ $sizeLimit = 10 * 1024 * 1024;
 
 $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
 $result = $uploader->handleUpload('files/');
+
+// do the s3 upload here
+// Upload an object by streaming the contents of a file
+// $pathToFile should be absolute path to a file on disk
+$result = $client->putObject(array(
+    'Bucket'     => "jaframx",
+    'Key'        => $filename . '.' . $ext,
+    'SourceFile' => $result["filename"]
+));
+
+// We can poll the object until it is accessible
+$client->waitUntil('ObjectExists', array(
+    'Bucket' => "jaframx",
+    'Key'    => $filename . '.' . $ext
+));
+
+// {"success":true,"fileName":"files\/d34a853b0444ca91677ed3d850b8a768.png","filename":"files\/d34a853b0444ca91677ed3d850b8a768.png"}
+
 // to pass data through iframe you will need to encode all html tags
 echo htmlspecialchars(json_encode($result), ENT_NOQUOTES);
