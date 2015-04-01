@@ -47,6 +47,7 @@ ExpiresByType image/png "access plus 5 minutes"
 ExpiresByType application/x-font-ttf "access plus 5 minutes"
 ExpiresByType application/x-font-woff "access plus 5 minutes"
 
-
+# CORS, keeps CDN from being mad
+Header set Access-Control-Allow-Origin "*"
 
 
