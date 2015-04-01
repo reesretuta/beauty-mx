@@ -7,4 +7,4 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
 PassEnv FASTLY_CDN_URL
 
-Substitute "s|/media/|http://%{env:FASTLY_CDN_URL}/|i"
+Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/|i"
