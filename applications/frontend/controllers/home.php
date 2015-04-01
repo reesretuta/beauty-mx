@@ -53,9 +53,39 @@ class Home extends CI_Controller
         $data['contact']        = $this->cms->getContactSection();
         $data['testimonial']    = $this->cms->getTestimonialSection();
         $data['faqs']           = $this->cms->getFaqSection();
-
-        // $data['seo']                            = $this->cms->seoData('28');
+        
+        $lastUpdated = array();
+        foreach ($data as $key => $value) {
+            if (count($value) > 1) {
+                //array made of objects or more arrays
+                foreach ($value as $k => $v) {
+                    if (is_object($v)) {
+                        //object
+                        $lastUpdated[] = $v->last_updated;
+                    }else{
+                        //array
+                        for ($i=0; $i < count($v); $i++) { 
+                            $lastUpdated[] = $v[$i]->last_updated;
+                        }
+                    }
+                }
+            }else{
+                //array with length 1
+                $lastUpdated[] = $value[0]->last_updated;
+            }
+        }
+        rsort($lastUpdated);
+        header('Last-Modified: '. $lastUpdated[0] .' GMT');
+        //CodeIgnitor: $this->output->set_header('Last-Modified: '.gmdate('Y-M-d H:i:s', time($lastUpdated[0])).' GMT');
+        
+        if (date('Y-m-d H:i:s') > $lastUpdated[0]) {
+           header("HTTP/1.1 304 Not Modified");
+           exit;
+        }
+        
         $this->load->view('homeView',$data);
+
+        
         
 	}
 	/**************************************
