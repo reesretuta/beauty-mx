@@ -1,0 +1,3 @@
+PassEnv FASTLY_CDN_URL
+
+Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/|i"
