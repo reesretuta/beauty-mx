@@ -19,18 +19,6 @@
 
     <!-- JAFRA Custom CSS -->
     <link rel="stylesheet" href="/media/JAFRA_files/usa-style.css" >
-    <!-- Prevent flickering by including angular here and ensure jquery is loaded beforehand to prevent memory leaks-->
-    <script src="/media/JAFRA_files/jquery.min.js"></script>
-    <script src="/media/JAFRA_files/jquery-migrate.min.js"></script>
-    <script src="/media/JAFRA_files/jquery-ui.js"></script>
-    <script src="/media/JAFRA_files/purl.js"></script>
-
-    <!-- AddThis widgets for social media sharing -->
-    <script type="text/javascript">
-      var addthis_config = {
-         data_ga_property: 'UA-7560748-27'
-      };
-    </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -921,6 +909,18 @@
     </div> <!-- /div #content -->
     
     
+    <script src="/media/JAFRA_files/jquery.min.js"></script>
+    <script src="/media/JAFRA_files/jquery-migrate.min.js"></script>
+    <script src="/media/JAFRA_files/jquery-ui.js"></script>
+    <script src="/media/JAFRA_files/purl.js"></script>
+
+    <!-- AddThis widgets for social media sharing -->
+    <script type="text/javascript">
+      var addthis_config = {
+         data_ga_property: 'UA-7560748-27'
+      };
+    </script>
+
     <script src="/media/JAFRA_files/bootstrap.min.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551adcbe3655bbf7" async="async"></script>
