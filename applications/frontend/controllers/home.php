@@ -76,17 +76,22 @@ class Home extends CI_Controller
         }
         rsort($lastUpdated);
         header('Last-Modified: '. $lastUpdated[0] .' GMT');
-        //CodeIgnitor: $this->output->set_header('Last-Modified: '.gmdate('Y-M-d H:i:s', time($lastUpdated[0])).' GMT');
+        header("Pragma:");
+        header("Cache-Control:");
+        header("Expires:");
         
-        if (date('Y-m-d H:i:s') > $lastUpdated[0]) {
-           header("HTTP/1.1 304 Not Modified");
-           exit;
+        // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
+        if(array_key_exists("HTTP_IF_MODIFIED_SINCE",$_SERVER)){
+                $if_modified_since = strtotime(preg_replace('/;.*$/','',$_SERVER["HTTP_IF_MODIFIED_SINCE"]));
+                if($if_modified_since >= $lastUpdated[0])
+                {
+                    header("HTTP/1.0 304 Not Modified");
+                    exit();
+                }
         }
         
         $this->load->view('homeView',$data);
 
-        
-        
 	}
 	/**************************************
 	@Function Name 	 : privacyPolicy
