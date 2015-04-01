@@ -2,6 +2,7 @@
   "require": {
     "php": "~5.5.0",
     "ext-mbstring": "*",
-    "ext-mysql": "*"
+    "ext-mysql": "*",
+    "ext-gd": "*"
   }
 } 
