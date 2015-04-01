@@ -1,6 +1,13 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
+// load from the environment if available
+// pub-memcache-11042.us-east-1-4.1.ec2.garantiadata.com:11042
+$user = getenv("MEMCACHEDCLOUD_USERNAME");
+$pass = getenv("MEMCACHEDCLOUD_PASSWORD");
+$hostport = explode(":", getenv("MEMCACHEDCLOUD_SERVERS"));
+$host = $hostport[0] ? "$user:$pass@$hostport[0]" || "localhost";
+$port = $hostport[1] ? $hostport[1] : "11211";
 
 // --------------------------------------------------------------------------
 // Servers
@@ -9,8 +16,8 @@ $memcached['servers'] = array(
 
 	'default' => array(
 
-			'host'			=> 'localhost',
-			'port'			=> '11211',
+			'host'			=> $host,
+			'port'			=> $port,
 			'weight'		=> '1',
 			'persistent'	=> FALSE
 						
