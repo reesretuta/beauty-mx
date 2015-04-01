@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0042)https://usa.jafra.com/join/?language=es_US -->
-<html lang="en" class="ng-scope"><script async="" src="/media/JAFRA_files/analytics.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+<html lang="en" class="ng-scope"><script async="" src="//www.google-analytics.com/analytics.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <base href=".">
