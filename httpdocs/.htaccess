@@ -7,4 +7,5 @@
 #
 #PassEnv FASTLY_CDN_URL
 
+AddOutputFilterByType SUBSTITUTE text/html
 Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
