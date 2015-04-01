@@ -5,5 +5,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
-AddOutputFilterByType SUBSTITUTE text/html
+AddOutputFilterByType SUBSTITUTE,DEFLATE text/html text/plain text/xml text/javascript text/css 
 Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
