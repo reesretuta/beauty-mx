@@ -8,6 +8,7 @@ $pass = getenv("MEMCACHEDCLOUD_PASSWORD");
 $hostport = explode(":", getenv("MEMCACHEDCLOUD_SERVERS"));
 $host = $hostport[0] ? "$user:$pass@$hostport[0]" || "localhost";
 $port = $hostport[1] ? $hostport[1] : "11211";
+error_log("memcache: " . $host . ":" . $port);
 
 // --------------------------------------------------------------------------
 // Servers
