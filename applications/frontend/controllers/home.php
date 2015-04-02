@@ -80,12 +80,13 @@ class Home extends CI_Controller
         }
         rsort($lastUpdated);
 
-        error_log("lastUpdated array ".print_r( $lastUpdated, true ));
+        $lastModifiedDate = $lastUpdated[0] . ' GMT';
+        error_log("lastUpdated array " . $lastModifiedDate);
 
-        header('Last-Modified: '. $lastUpdated[0] .' GMT');
-        header("Pragma:");
-        header("Cache-Control:");
-        header("Expires:");
+        header('Last-Modified: '. $lastModifiedDate);
+        header_remove("Pragma");
+        header_remove("Cache-Control");
+        header_remove("Expires");
         
         // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
         if(array_key_exists("HTTP_IF_MODIFIED_SINCE",$_SERVER)){
