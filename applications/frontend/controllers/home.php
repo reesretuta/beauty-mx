@@ -95,7 +95,9 @@ class Home extends CI_Controller
                 exit();
             }
         }
-        
+
+        error_log("headers: ".print_t(getallheaders(), trye));
+
         $this->load->view('homeView',$data);
 
         header("Content-Type: text/html", true);
