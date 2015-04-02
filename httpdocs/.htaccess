@@ -11,14 +11,13 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
     Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
 </If>
 
-AddType test/html .map
-
 # unset 
-#<Files ~ \.map$>
-#   Header unset Cache-Control
-#   Header unset Pragma
-#   Expires text/html "access plus 15 minutes"
-#</Files>
+<Filesmatch "\.map$">
+    ExpiresActive on
+    ExpiresDefault "access plus 15 minutes"
+    Header unset Cache-Control
+    Header unset Pragma
+</Filesmatch>
 
 # Declare a filter, which runs after all internal filters like PHP or SSI
 FilterDeclare  gzip CONTENT_SET
