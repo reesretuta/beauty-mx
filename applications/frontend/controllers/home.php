@@ -98,14 +98,14 @@ class Home extends CI_Controller
         
         $this->load->view('homeView',$data);
 
-        header('Last-Modified: '. $lastModifiedDate);
+        header('Last-Modified: '. $lastModifiedDate, true);
 
         // remove pragma header
         header_remove("Pragma");
 
         // 15 minutes from the last
-        header("Cache-Control: max-age=900");
-        header("Expires: ". date(DateTime::RFC1123, time() + 900));
+        header("Cache-Control: max-age=900", true);
+        header("Expires: ". date(DateTime::RFC1123, time() + 900), true);
     }
 	/**************************************
 	@Function Name 	 : privacyPolicy
