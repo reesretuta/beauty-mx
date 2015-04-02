@@ -182,7 +182,7 @@ $res = $client->putObject(array(
     'Key'        => $result["id"] . '.' . $result["ext"],
     'SourceFile' => $result["filename"]
 ));
-var_dump($res);
+error_log($res);
 
 //// We can poll the object until it is accessible
 //$client->waitUntil('ObjectExists', array(
