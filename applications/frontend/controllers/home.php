@@ -97,6 +97,8 @@ class Home extends CI_Controller
         }
 
         //error_log("headers: ".print_r($_SERVER, true));
+        $h = print_r ($_SERVER, true);
+        error_log($h);
 
         $this->load->view('homeView',$data);
 
