@@ -86,8 +86,6 @@ class Home extends CI_Controller
         $lastModifiedDate = date(DateTime::RFC1123, $lastUpdateTime);
         error_log("lastUpdated: " . $lastModifiedDate);
 
-        header('Last-Modified: '. $lastModifiedDate);
-
         // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
         if(array_key_exists("HTTP_IF_MODIFIED_SINCE",$_SERVER)){
             $if_modified_since = strtotime(preg_replace('/;.*$/','',$_SERVER["HTTP_IF_MODIFIED_SINCE"]));
@@ -100,12 +98,14 @@ class Home extends CI_Controller
         
         $this->load->view('homeView',$data);
 
+        header('Last-Modified: '. $lastModifiedDate);
+
         // remove pragma header
         header_remove("Pragma");
 
         // 15 minutes from the last
         header("Cache-Control: max-age=900");
-        header("Expires: ". date(DateTime::RFC1123, $lastUpdateTime + 900));
+        header("Expires: ". date(DateTime::RFC1123, now() + 900));
     }
 	/**************************************
 	@Function Name 	 : privacyPolicy
