@@ -79,12 +79,12 @@ class Home extends CI_Controller
             }
         }
         rsort($lastUpdated);
-        error_log("lastUpdated array: " . print_r($lastUpdated, true));
+        //error_log("lastUpdated array: " . print_r($lastUpdated, true));
 
         $lastUpdateTime = strtotime($lastUpdated[0]." GMT");
 
         $lastModifiedDate = gmdate('D, d M Y H:i:s T', $lastUpdateTime);
-        error_log("lastUpdated: " . $lastModifiedDate);
+        //error_log("lastUpdated: " . $lastModifiedDate);
 
         // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
         if(array_key_exists("HTTP_IF_MODIFIED_SINCE",$_SERVER)){
