@@ -1,3 +1,4 @@
-<a href="/media/blah.html">test</a><br>
-<br>
-URL is /media/blah.html fun stuff
+<?php 
+$data = print_r ($_SERVER, true);
+error_log($data);
+?>
