@@ -5,7 +5,9 @@ require '../../vendor/autoload.php';
 use Aws\Common\Aws;
 
 // Create a service builder using a configuration file
-$aws = Aws::factory("aws.config");
+$aws = Aws::factory(array(
+    'region'  => 'us-west-1',
+));
 
 // Get the client from the builder by namespace
 $client = $aws->get('S3');
