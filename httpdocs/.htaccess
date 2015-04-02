@@ -12,7 +12,7 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 </If>
 
 # unset 
-<If "%{REQUEST_URI} !~ m#.*.map$#">
+<If "%{REQUEST_URI} =~ m#.*.map$#">
     Header Unset Pragma
 </If>
 
