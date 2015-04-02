@@ -79,10 +79,10 @@ class Home extends CI_Controller
             }
         }
         rsort($lastUpdated);
-        error_log("lastUpdated array " . $lastUpdated);
+        error_log("lastUpdated array: " . print_r($lastUpdated, true));
 
         $lastModifiedDate = date(DateTime::RFC1123, strtotime($lastUpdated[0]." GMT"));
-        error_log("lastUpdated " . $lastModifiedDate);
+        error_log("lastUpdated: " . $lastModifiedDate);
 
         header('Last-Modified: '. $lastModifiedDate);
         header("Pragma:");
