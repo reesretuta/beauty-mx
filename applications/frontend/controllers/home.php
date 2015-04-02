@@ -83,7 +83,7 @@ class Home extends CI_Controller
 
         $lastUpdateTime = strtotime($lastUpdated[0]." GMT");
 
-        $lastModifiedDate = date(DateTime::RFC1123, $lastUpdateTime);
+        $lastModifiedDate = gmdate('D, d M Y H:i:s T', $lastUpdateTime);
         error_log("lastUpdated: " . $lastModifiedDate);
 
         // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
