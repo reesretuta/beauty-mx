@@ -106,6 +106,7 @@ class Home extends CI_Controller
 
         // 15 minutes from the last
         header("Cache-Control: max-age=900", true);
+        header("Surrogate-Control: max-age=900", true);
         header("Expires: ". gmdate('D, d M Y H:i:s T', time() + 900), true);
     }
 	/**************************************
