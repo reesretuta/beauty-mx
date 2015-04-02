@@ -98,6 +98,7 @@ class Home extends CI_Controller
         
         $this->load->view('homeView',$data);
 
+        header("Content-Type: text/html", true);
         header('Last-Modified: '. $lastModifiedDate, true);
 
         // remove pragma header
