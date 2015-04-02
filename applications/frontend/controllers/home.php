@@ -105,7 +105,7 @@ class Home extends CI_Controller
 
         // 15 minutes from the last
         header("Cache-Control: max-age=900");
-        header("Expires: ". date(DateTime::RFC1123, now() + 900));
+        header("Expires: ". date(DateTime::RFC1123, time() + 900));
     }
 	/**************************************
 	@Function Name 	 : privacyPolicy
