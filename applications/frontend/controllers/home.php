@@ -80,7 +80,7 @@ class Home extends CI_Controller
         }
         rsort($lastUpdated);
 
-        $lastModifiedDate = $lastUpdated[0]->format(DateTime::RFC822);
+        $lastModifiedDate = date_parse($lastUpdated[0]." GMT")->format(DateTime::RFC822);
         error_log("lastUpdated array " . $lastModifiedDate);
 
         header('Last-Modified: '. $lastModifiedDate);
