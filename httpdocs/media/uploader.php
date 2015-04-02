@@ -177,11 +177,12 @@ $result = $uploader->handleUpload('files/');
 // do the s3 upload here
 // Upload an object by streaming the contents of a file
 // $pathToFile should be absolute path to a file on disk
-$result = $client->putObject(array(
+$res = $client->putObject(array(
     'Bucket'     => "jafra-mx",
     'Key'        => $result["id"] . '.' . $result["ext"],
     'SourceFile' => $result["filename"]
 ));
+var_dump($res);
 
 //// We can poll the object until it is accessible
 //$client->waitUntil('ObjectExists', array(
