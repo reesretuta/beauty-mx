@@ -53,10 +53,45 @@ class Home extends CI_Controller
         $data['contact']        = $this->cms->getContactSection();
         $data['testimonial']    = $this->cms->getTestimonialSection();
         $data['faqs']           = $this->cms->getFaqSection();
-
-        // $data['seo']                            = $this->cms->seoData('28');
-        $this->load->view('homeView',$data);
         
+        $lastUpdated = array();
+        foreach ($data as $key => $value) {
+            if (count($value) > 1) {
+                //array made of objects or more arrays
+                foreach ($value as $k => $v) {
+                    if (is_object($v)) {
+                        //object
+                        $lastUpdated[] = $v->last_updated;
+                    }else{
+                        //array
+                        for ($i=0; $i < count($v); $i++) { 
+                            $lastUpdated[] = $v[$i]->last_updated;
+                        }
+                    }
+                }
+            }else{
+                //array with length 1
+                $lastUpdated[] = $value[0]->last_updated;
+            }
+        }
+        rsort($lastUpdated);
+        header('Last-Modified: '. $lastUpdated[0] .' GMT');
+        header("Pragma:");
+        header("Cache-Control:");
+        header("Expires:");
+        
+        // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
+        if(array_key_exists("HTTP_IF_MODIFIED_SINCE",$_SERVER)){
+                $if_modified_since = strtotime(preg_replace('/;.*$/','',$_SERVER["HTTP_IF_MODIFIED_SINCE"]));
+                if($if_modified_since >= $lastUpdated[0])
+                {
+                    header("HTTP/1.0 304 Not Modified");
+                    exit();
+                }
+        }
+        
+        $this->load->view('homeView',$data);
+
 	}
 	/**************************************
 	@Function Name 	 : privacyPolicy
