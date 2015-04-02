@@ -55,6 +55,7 @@ class Home extends CI_Controller
         $data['faqs']           = $this->cms->getFaqSection();
         
         $lastUpdated = array();
+        error_log("data: ".$data);
         foreach ($data as $key => $value) {
             if (count($value) > 1) {
                 //array made of objects or more arrays
@@ -62,19 +63,25 @@ class Home extends CI_Controller
                     if (is_object($v)) {
                         //object
                         $lastUpdated[] = $v->last_updated;
-                    }else{
+                        error_log("object ".$k." => ".$v->last_updated);
+                    } else{
                         //array
                         for ($i=0; $i < count($v); $i++) { 
                             $lastUpdated[] = $v[$i]->last_updated;
+                            error_log("object ".$k." => ".$v[$i]->last_updated);
                         }
                     }
                 }
             }else{
                 //array with length 1
                 $lastUpdated[] = $value[0]->last_updated;
+                error_log("object ".$k." => ".$value[0]->last_updated);
             }
         }
         rsort($lastUpdated);
+
+        error_log("object ".$lastUpdated);
+
         header('Last-Modified: '. $lastUpdated[0] .' GMT');
         header("Pragma:");
         header("Cache-Control:");
