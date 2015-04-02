@@ -178,14 +178,14 @@ $result = $uploader->handleUpload('files/');
 // Upload an object by streaming the contents of a file
 // $pathToFile should be absolute path to a file on disk
 $result = $client->putObject(array(
-    'Bucket'     => "jaframx",
+    'Bucket'     => "jafra-mx",
     'Key'        => $result["id"] . '.' . $result["ext"],
     'SourceFile' => $result["filename"]
 ));
 
 // We can poll the object until it is accessible
 $client->waitUntil('ObjectExists', array(
-    'Bucket' => "jaframx",
+    'Bucket' => "jafra-mx",
     'Key'    => $result["id"] . '.' . $result["ext"]
 ));
 
