@@ -7,6 +7,13 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
 DefaultType "text/html"
 
+<If "%{REQUEST_URI} == /">
+    SetOutputFilter DEFLATE
+    SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|ico|png)$ \ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ \no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.pdf$ no-gzip dont-vary
+</If>
+
 # substitute URL prefixes to auto-CDNify them
 <If "%{REQUEST_URI} !~ m#^/cms.*#">
     AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
