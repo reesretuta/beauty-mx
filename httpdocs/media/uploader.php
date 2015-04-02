@@ -172,7 +172,7 @@ $allowedExtensions = array('png', 'jpg', 'gif', 'jpeg', 'pdf', 'doc', 'docx');
 $sizeLimit = 10 * 1024 * 1024;
 
 $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
-$result = $uploader->handleUpload('files/');
+$result = $uploader->handleUpload('files/', true);
 
 // do the s3 upload here
 // Upload an object by streaming the contents of a file
