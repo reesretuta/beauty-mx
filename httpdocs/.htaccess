@@ -7,7 +7,7 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
 DefaultType "text/html"
 
-<If "%{REQUEST_URI} == /">
+<If "%{REQUEST_URI} == '/'">
     SetOutputFilter DEFLATE
     SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|ico|png)$ \ no-gzip dont-vary
     SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ \no-gzip dont-vary
