@@ -156,7 +156,7 @@ class qqFileUploader {
         }
         
         if ($this->file->save($uploadDirectory . $filename . '.' . $ext)){
-            return array('success'=>true, 'fileName'=>$uploadDirectory.$filename.'.'.$ext, 'filename'=>$uploadDirectory.$filename.'.'.$ext);
+            return array('success'=>true, 'fileName'=>$uploadDirectory.$filename.'.'.$ext, 'filename'=>$uploadDirectory.$filename.'.'.$ext, 'id'=>$filename, 'ext'=>$ext);
         } else {
             return array('error'=> 'Could not save uploaded file.' .
                 'The upload was cancelled, or server error encountered');
@@ -179,14 +179,14 @@ $result = $uploader->handleUpload('files/');
 // $pathToFile should be absolute path to a file on disk
 $result = $client->putObject(array(
     'Bucket'     => "jaframx",
-    'Key'        => $filename . '.' . $ext,
+    'Key'        => $result["id"] . '.' . $result["ext"],
     'SourceFile' => $result["filename"]
 ));
 
 // We can poll the object until it is accessible
 $client->waitUntil('ObjectExists', array(
     'Bucket' => "jaframx",
-    'Key'    => $filename . '.' . $ext
+    'Key'    => $result["id"] . '.' . $result["ext"]
 ));
 
 // {"success":true,"fileName":"files\/d34a853b0444ca91677ed3d850b8a768.png","filename":"files\/d34a853b0444ca91677ed3d850b8a768.png"}
