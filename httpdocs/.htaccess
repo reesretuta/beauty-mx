@@ -5,6 +5,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
+DefaultType "text/html"
+
 # substitute URL prefixes to auto-CDNify them
 <If "%{REQUEST_URI} !~ m#^/cms.*#">
     AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
