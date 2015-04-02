@@ -11,6 +11,11 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
     Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
 </If>
 
+# unset 
+<If "%{REQUEST_URI} !~ m#.*.map$#">
+    Header Unset Pragma
+</If>
+
 # Declare a filter, which runs after all internal filters like PHP or SSI
 FilterDeclare  gzip CONTENT_SET
 
