@@ -55,7 +55,7 @@ class Home extends CI_Controller
         $data['faqs']           = $this->cms->getFaqSection();
         
         $lastUpdated = array();
-        error_log("data array ".print_r( $data, true ));
+        //error_log("data array ".print_r( $data, true ));
         foreach ($data as $key => $value) {
             if (count($value) > 1) {
                 //array made of objects or more arrays
@@ -63,30 +63,30 @@ class Home extends CI_Controller
                     if (is_object($v)) {
                         //object
                         $lastUpdated[] = $v->last_updated;
-                        error_log("object ".$k." => ".$v->last_updated);
+                        //error_log("object ".$k." => ".$v->last_updated);
                     } else{
                         //array
                         for ($i=0; $i < count($v); $i++) { 
                             $lastUpdated[] = $v[$i]->last_updated;
-                            error_log("object ".$k." => ".$v[$i]->last_updated);
+                            //error_log("object ".$k." => ".$v[$i]->last_updated);
                         }
                     }
                 }
             }else{
                 //array with length 1
                 $lastUpdated[] = $value[0]->last_updated;
-                error_log("object ".$key." => ".$value[0]->last_updated);
+                //error_log("object ".$key." => ".$value[0]->last_updated);
             }
         }
         rsort($lastUpdated);
 
-        $lastModifiedDate = date(DateTime::RFC822, strtotime($lastUpdated[0]." GMT"));
+        $lastModifiedDate = date(DateTime::RFC1123, strtotime($lastUpdated[0]." GMT"));
         error_log("lastUpdated array " . $lastModifiedDate);
 
         header('Last-Modified: '. $lastModifiedDate);
-        header_remove("Pragma");
-        header_remove("Cache-Control");
-        header_remove("Expires");
+        header("Pragma:");
+        header("Cache-Control:");
+        header("Expires:");
         
         // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
         if(array_key_exists("HTTP_IF_MODIFIED_SINCE",$_SERVER)){
