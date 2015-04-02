@@ -183,11 +183,11 @@ $result = $client->putObject(array(
     'SourceFile' => $result["filename"]
 ));
 
-// We can poll the object until it is accessible
-$client->waitUntil('ObjectExists', array(
-    'Bucket' => "jafra-mx",
-    'Key'    => $result["id"] . '.' . $result["ext"]
-));
+//// We can poll the object until it is accessible
+//$client->waitUntil('ObjectExists', array(
+//    'Bucket' => "jafra-mx",
+//    'Key'    => $result["id"] . '.' . $result["ext"]
+//));
 
 // {"success":true,"fileName":"files\/d34a853b0444ca91677ed3d850b8a768.png","filename":"files\/d34a853b0444ca91677ed3d850b8a768.png"}
 
