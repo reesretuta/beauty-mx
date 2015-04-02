@@ -81,7 +81,9 @@ class Home extends CI_Controller
         rsort($lastUpdated);
         error_log("lastUpdated array: " . print_r($lastUpdated, true));
 
-        $lastModifiedDate = date(DateTime::RFC1123, strtotime($lastUpdated[0]." GMT"));
+        $lastUpdateTime = strtotime($lastUpdated[0]." GMT");
+
+        $lastModifiedDate = date(DateTime::RFC1123, $lastUpdateTime);
         error_log("lastUpdated: " . $lastModifiedDate);
 
         header('Last-Modified: '. $lastModifiedDate);
@@ -91,12 +93,12 @@ class Home extends CI_Controller
         
         // $_SERVER['HTTP_IF_MODIFIED_SINCE'] // comes back undefined?
         if(array_key_exists("HTTP_IF_MODIFIED_SINCE",$_SERVER)){
-                $if_modified_since = strtotime(preg_replace('/;.*$/','',$_SERVER["HTTP_IF_MODIFIED_SINCE"]));
-                if($if_modified_since >= $lastUpdated[0])
-                {
-                    header("HTTP/1.0 304 Not Modified");
-                    exit();
-                }
+            $if_modified_since = strtotime(preg_replace('/;.*$/','',$_SERVER["HTTP_IF_MODIFIED_SINCE"]));
+            if($if_modified_since >= $lastUpdateTime)
+            {
+                header("HTTP/1.0 304 Not Modified");
+                exit();
+            }
         }
         
         $this->load->view('homeView',$data);
