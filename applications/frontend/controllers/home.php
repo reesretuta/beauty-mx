@@ -97,11 +97,15 @@ class Home extends CI_Controller
         }
 
         //error_log("headers: ".print_r($_SERVER, true));
-        $h = print_r ($_SERVER, true);
-        error_log($h);
+        //$h = print_r ($_SERVER, true);
+        //error_log($h);
 
-        $this->load->view('homeView',$data);
+        $rendered = $this->load->view('homeView',$data, true);
+        $len = strlen($rendered);
 
+        print($rendered);
+
+        header("Content-Length: ". $len, true);
         header("Content-Type: text/html", true);
         header('Last-Modified: '. $lastModifiedDate, true);
 
