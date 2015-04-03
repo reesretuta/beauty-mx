@@ -11,6 +11,10 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
     Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
 </If>
 
+<If "%{REQUEST_URI} !~ m#^/$#">
+    SetEnv downgrade-1.0
+</If>
+
 # enable expiration headers
 ExpiresActive on
 

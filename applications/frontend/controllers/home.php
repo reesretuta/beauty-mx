@@ -105,7 +105,6 @@ class Home extends CI_Controller
         $rendered = $this->load->view('homeView',$data, true);
         $len = strlen($rendered);
         error_log("serving / with length=".$len);
-        print($rendered);
         header("Content-Length: ". $len, true);
 
         header("Content-Type: text/html", true);
@@ -119,6 +118,8 @@ class Home extends CI_Controller
         header("Cache-Control: max-age=900", true);
         header("Surrogate-Control: max-age=900", true);
         header("Expires: ". gmdate('D, d M Y H:i:s T', time() + 900), true);
+
+        print($rendered);
     }
 	/**************************************
 	@Function Name 	 : privacyPolicy
