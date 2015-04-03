@@ -28,6 +28,7 @@ sed -i 's/^display_errors = Off/display_errors = On/' /app/vendor/heroku/heroku-
 # sed -i 's/^session.cookie_lifetime = 0/session.cookie_lifetime = 0/' /app/vendor/heroku/heroku-buildpack-php/conf/php/php.ini
 sed -i 's/^session.cookie_httponly =/session.cookie_httponly = On/' /app/vendor/heroku/heroku-buildpack-php/conf/php/php.ini
 # sed -i 's/^session.use_trans_sid = 0/session.use_trans_sid = 0/' /app/vendor/heroku/heroku-buildpack-php/conf/php/php.ini
+sed -i 's/^session.cache_limiter = nocache/session.cache_limiter =/' /app/vendor/heroku/heroku-buildpack-php/conf/php/php.ini
 echo "ignore_user_abort = On" >> /app/vendor/heroku/heroku-buildpack-php/conf/php/php.ini
 
 # override the apache settings, to get mod_substitute enabled
