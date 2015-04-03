@@ -13,6 +13,7 @@ RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
 <If "%{REQUEST_URI} !~ m#^/$#">
     SetEnv downgrade-1.0
+    SetOutputFilter gzip;DEFLATE
 </If>
 
 # enable expiration headers
