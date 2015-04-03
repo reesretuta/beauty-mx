@@ -53,6 +53,8 @@ ExpiresByType application/rss+xml "access plus 15 minutes"
 ExpiresByType application/xml "access plus 15 minutes"
 ExpiresByType image/jpeg "access plus 15 minutes"
 ExpiresByType image/png "access plus 15 minutes"
+ExpiresByType image/gif "access plus 15 minutes"
+ExpiresByType image/ico "access plus 15 minutes"
 ExpiresByType application/x-font-ttf "access plus 15 minutes"
 ExpiresByType application/x-font-woff "access plus 15 minutes"
 
