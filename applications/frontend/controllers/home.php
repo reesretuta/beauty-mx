@@ -104,6 +104,7 @@ class Home extends CI_Controller
 
         $rendered = $this->load->view('homeView',$data, true);
         $len = strlen($rendered);
+        error_log("serving / with length=".$len);
         print($rendered);
         header("Content-Length: ". $len, true);
 
