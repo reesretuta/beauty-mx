@@ -107,6 +107,7 @@ class Home extends CI_Controller
 
         // remove pragma header
         header_remove("Pragma");
+        header_remove("Set-Cookie");
 
         // 15 minutes from the last
         header("Cache-Control: max-age=900", true);
