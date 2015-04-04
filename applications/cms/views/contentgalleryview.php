@@ -134,7 +134,7 @@
 											<? endforeach;?>
 											<td style="width:150px; text-align: center;">
 												<? if($row):?>
-													<img rel="<?=$row?>" src="/media/imagecache.php?width=150&height=75&cropratio=150:75&image=<?=$row?>"/>
+													<img rel="<?=$row?>" width=150 height=75 style="max-width: 100%; height: auto" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$row?>"/>
 												<? else:?>
 													<img src="/media/imagecache.php?width=150&height=75&cropratio=150:75&image=/media/images/no_img.png"/>
 												<? endif;?>

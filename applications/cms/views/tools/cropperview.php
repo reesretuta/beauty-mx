@@ -1,6 +1,6 @@
 
                         
-<div id="image_crop_target" class="image_to_crop"><img src="/media/imagecache.php?image=<?php echo $image_src; ?>" /></div>
+<div id="image_crop_target" class="image_to_crop"><img src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?php echo $image_src; ?>" /></div>
 
 <div id="coordinates">
         <input type="hidden" id="x" name="x" />
@@ -37,7 +37,10 @@ $(function (){
                success:function(data){
                    $image_db_name = $(data).filter('#new_image').text();
                    window.opener.$("input[name=<?=$regUpload?>]").val($image_db_name);
-                   window.opener.$("img#<?=$regUpload?>").attr('src', '/media/imagecache.php?width=200&height=200&image='+$image_db_name);
+                   window.opener.$("img#<?=$regUpload?>").attr('width', '200');
+                   window.opener.$("img#<?=$regUpload?>").attr('height', '200');
+                   window.opener.$("img#<?=$regUpload?>").attr('style', 'max-width: 100%; height: auto');
+                   window.opener.$("img#<?=$regUpload?>").attr('src', 'http://jafra-mx.s3-website-us-west-1.amazonaws.com'+$image_db_name);
                    window.opener.$("img#<?=$regUpload?>").fadeIn();
                    window.close();
                },

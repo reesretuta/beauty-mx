@@ -86,7 +86,7 @@ jQuery(document).ready(
                                         <a href="javascript:;" onclick="showYouTubePopup('youtubePopup',this)" rel='<?php echo $banner->youtube_embed_code?>'>
                                             <img class="hoverswap" style="width: 100px !important;height: 100px !important; position: absolute; z-index: 100; left: 50%; top: 40%; margin-left:-65px;" src="<?php echo ROOTPATH;?>/media/images/Play_Arrow_100.png" class="player-icon" />
                                         <?php } ?>
-                                        <img src="/media/imagecache.php?height=585&image=<?php echo ROOTPATH.$banner->path;?>">
+                                        <img height="height=585" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?php echo ROOTPATH.$banner->path;?>">
                                         <?php
                                         if($youtube_banner) {
                                         ?>
@@ -147,7 +147,7 @@ jQuery(document).ready(
                                         <a class="tray_youtube_popup" href="javascript:;" onclick="showYouTubePopup('youtubePopup',this)" rel='<?php echo $tabs->youtube_embed_code?>'>
                                             <img src="<?php echo ROOTPATH;?>/media/images/youtube-play.png" class="player-icon" />
                                         <?php } ?>                                                
-                                	<img src="/media/imagecache.php?width=178&height=156&cropratio=1:1&image=<?php echo  $tabs->path;?>"  class="player-image" />
+                                	<img width=178 height=156 style="max-width: 100%; height: auto" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?php echo  $tabs->path;?>"  class="player-image" />
                                         <?php if($youtube_tray) { ?>
                                         </a>
                                         <?php } ?> 
