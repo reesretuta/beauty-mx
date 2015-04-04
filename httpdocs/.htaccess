@@ -21,7 +21,7 @@ ExpiresActive on
 #</Filesmatch>
 
 # Declare a filter, which runs after all internal filters like PHP or SSI
-FilterDeclare  COMPRESS CONTENT_SET
+FilterDeclare  COMPRESS
 
 # Enable "COMPRESS" filter if "Content-Type" contains Text, HTML , JS, CSS, XML:
 FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/plain'"
@@ -35,10 +35,10 @@ FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/rss+xml'"
 FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/xml'"
 
 # Add "COMPRESS" filter to the chain of filters
-FilterChain    COMPRESS
+FilterChain COMPRESS
 
 # The "COMPRESS" filter can change "Content-Length", can not be used with range requests
-FilterProtocol COMPRESS change=yes;byteranges=no
+FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
 
 # substitute URL prefixes to auto-CDNify them
 <If "%{REQUEST_URI} !~ m#^/cms.*#">
