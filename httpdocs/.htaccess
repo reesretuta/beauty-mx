@@ -10,17 +10,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
-# substitute URL prefixes to auto-CDNify them
-<If "%{REQUEST_URI} !~ m#^/cms.*#">
-    AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
-    Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
-</If>
-
-<If "%{REQUEST_URI} !~ m#^/$#">
-    SetEnv downgrade-1.0
-    SetOutputFilter gzip
-</If>
-
 # enable expiration headers
 ExpiresActive on
 
@@ -32,7 +21,7 @@ ExpiresActive on
 #</Filesmatch>
 
 # Declare a filter, which runs after all internal filters like PHP or SSI
-FilterDeclare  gzip CONTENT_SET
+FilterDeclare  COMPRESS CONTENT_SET
 
 # Enable "COMPRESS" filter if "Content-Type" contains Text, HTML , JS, CSS, XML:
 FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/plain'"
@@ -50,6 +39,17 @@ FilterChain    COMPRESS
 
 # The "COMPRESS" filter can change "Content-Length", can not be used with range requests
 FilterProtocol COMPRESS change=yes;byteranges=no
+
+# substitute URL prefixes to auto-CDNify them
+<If "%{REQUEST_URI} !~ m#^/cms.*#">
+    AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
+    Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
+</If>
+
+<If "%{REQUEST_URI} !~ m#^/$#">
+    SetEnv downgrade-1.0
+    SetOutputFilter COMPRESS
+</If>
 
 # short expires, but should help against any basic reloading & help cloudflare load, up time for prod
 ExpiresByType text/plain "access plus 15 minutes"
