@@ -179,7 +179,7 @@ $result = $uploader->handleUpload('files/', true);
 // $pathToFile should be absolute path to a file on disk
 $res = $client->putObject(array(
     'Bucket'     => "jafra-mx",
-    'Key'        => $result["id"] . '.' . $result["ext"],
+    'Key'        => "media/files/" .$result["id"] . '.' . $result["ext"],
     'SourceFile' => $result["filename"]
 ));
 error_log($res);
