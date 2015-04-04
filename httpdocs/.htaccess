@@ -1,5 +1,7 @@
 Options +FollowSymLinks
 RewriteEngine on
+
+RewriteLog /tmp/rewrite.log
 RewriteLogLevel 2
 
 RewriteRule ^/media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [P,L]
