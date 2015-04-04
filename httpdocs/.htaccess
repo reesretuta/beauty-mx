@@ -1,11 +1,12 @@
 Options +FollowSymLinks
 RewriteEngine on
+
+RewriteRule ^(/media/files/.*)$ http://jafra-mx.s3-website-us-west-1.amazonaws.com$1 [L,QSA]
+
 RewriteCond $1 !^(index\.php|resources|robots\.txt|Sitemap\.xml)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
-
-RewriteRule ^(/media/files/.*)$ http://jafra-mx.s3-website-us-west-1.amazonaws.com$1 [L,QSA]
 
 # substitute URL prefixes to auto-CDNify them
 <If "%{REQUEST_URI} !~ m#^/cms.*#">
