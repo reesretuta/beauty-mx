@@ -1,8 +1,8 @@
 Options +FollowSymLinks
 RewriteEngine on
 
-RewriteRule ^media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [P,L]
 RewriteRule ^media/imagecache.php.*image=(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com$1 [P,L]
+RewriteRule ^media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [P,L]
 
 RewriteCond $1 !^(index\.php|resources|robots\.txt|Sitemap\.xml)
 RewriteCond %{REQUEST_FILENAME} !-f
