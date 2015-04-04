@@ -34,22 +34,22 @@ ExpiresActive on
 # Declare a filter, which runs after all internal filters like PHP or SSI
 FilterDeclare  gzip CONTENT_SET
 
-# The "gzip" filter can change "Content-Length", can not be used with range requests
-FilterProtocol gzip change=yes;byteranges=no
+# Enable "COMPRESS" filter if "Content-Type" contains Text, HTML , JS, CSS, XML:
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/plain'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/html'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/css'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'text/javascript'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/javascript'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/x-javascript'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/xhtml+xml'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/rss+xml'"
+FilterProvider COMPRESS DEFLATE "%{CONTENT_TYPE} = 'application/xml'"
 
-# Enable "gzip" filter if "Content-Type" contains Text, HTML , JS, CSS, XML:
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/plain'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/html'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/css'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'text/javascript'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/javascript'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/x-javascript'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/xhtml+xml'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/rss+xml'"
-FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/xml'"
+# Add "COMPRESS" filter to the chain of filters
+FilterChain    COMPRESS
 
-# Add "gzip" filter to the chain of filters
-FilterChain    gzip
+# The "COMPRESS" filter can change "Content-Length", can not be used with range requests
+FilterProtocol COMPRESS change=yes;byteranges=no
 
 # short expires, but should help against any basic reloading & help cloudflare load, up time for prod
 ExpiresByType text/plain "access plus 15 minutes"
