@@ -72,6 +72,9 @@ define('DOCUMENT_ROOT',			$_SERVER['DOCUMENT_ROOT']);
 // Images must be local files, so for convenience we strip the domain if it's there
 $image			= preg_replace('/^(s?f|ht)tps?:\/\/[^\/]+/i', '', (string) $_GET['image']);
 
+header('Location: ' . $image, true, 302);
+exit;
+
 // For security, directories cannot contain ':', images cannot contain '..' or '<', and
 // images must start with '/'
 if ($image{0} != '/' || strpos(dirname($image), ':') || preg_match('/(\.\.|<|>)/', $image))
