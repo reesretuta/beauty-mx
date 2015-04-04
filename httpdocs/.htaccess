@@ -1,25 +1,14 @@
 Options +FollowSymLinks
 RewriteEngine on
 
-RewriteRule ^/google http://google.com/ [R,L]
+RewriteRule ^/google http://google.com/ [Ri=301,L]
 
-RewriteRule ^/media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [R,L]
+RewriteRule ^/media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [R=301,L]
 
 RewriteCond $1 !^(index\.php|resources|robots\.txt|Sitemap\.xml)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
-
-# substitute URL prefixes to auto-CDNify them
-<If "%{REQUEST_URI} !~ m#^/cms.*#">
-    AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
-    Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
-</If>
-
-<If "%{REQUEST_URI} !~ m#^/$#">
-    SetEnv downgrade-1.0
-    SetOutputFilter gzip;DEFLATE
-</If>
 
 # enable expiration headers
 ExpiresActive on
@@ -50,6 +39,17 @@ FilterProvider gzip DEFLATE "%{CONTENT_TYPE} = 'application/xml'"
 
 # Add "gzip" filter to the chain of filters
 FilterChain    gzip
+
+# substitute URL prefixes to auto-CDNify them
+<If "%{REQUEST_URI} !~ m#^/cms.*#">
+    AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
+    Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
+</If>
+
+<If "%{REQUEST_URI} !~ m#^/$#">
+    SetEnv downgrade-1.0
+    SetOutputFilter gzip;DEFLATE
+</If>
 
 # short expires, but should help against any basic reloading & help cloudflare load, up time for prod
 ExpiresByType text/plain "access plus 15 minutes"
