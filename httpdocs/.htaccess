@@ -48,7 +48,7 @@ FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
 
 <If "%{REQUEST_URI} !~ m#^/$#">
     SetEnv downgrade-1.0
-    SetOutputFilter COMPRESS
+    SetOutputFilter DEFLATE
 </If>
 
 # short expires, but should help against any basic reloading & help cloudflare load, up time for prod
