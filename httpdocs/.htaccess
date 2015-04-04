@@ -5,6 +5,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
 
+RewriteRule ^(/media/files/.*)$ http://jafra-mx.s3-website-us-west-1.amazonaws.com$1 [L,QSA]
+
 # substitute URL prefixes to auto-CDNify them
 <If "%{REQUEST_URI} !~ m#^/cms.*#">
     AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
