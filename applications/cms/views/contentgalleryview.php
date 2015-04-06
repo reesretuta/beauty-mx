@@ -70,7 +70,7 @@
 											</div>
 											<? if($row):?>
 												<!--<a class="noborder noborderh" href="<?=base_url().'content/edit/'.$table_name.'/'.$rowid?>"><img rel="<?=$row?>" src="/media/imagecache.php?width=135&height=135&cropratio=135:135&color=000&image=<?=$row?>"/></a>-->
-												<a class="noborder noborderh fancybox" rel="group" href="<?=$row?>"><img rel="<?=str_replace('/cms/','',base_url()).$row?>" alt="<?=str_replace('/cms/','',base_url()).$row?>" src="/media/imagecache.php?width=135&height=135&cropratio=135:135&color=000&image=<?=$row?>"/></a>
+												<a class="noborder noborderh fancybox" rel="group" href="<?=$row?>"><img rel="<?=str_replace('/cms/','',base_url()).$row?>" alt="<?=str_replace('/cms/','',base_url()).$row?>" style="max-width: 135px; max-height: 135px; width: auto; height: auto; display: block" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$row?>"/></a>
 											<? else:?>
 												<a class="noborder noborderh" href="<?=base_url().'content/edit/'.$table_name.'/'.$rowid?>"><img src="/media/imagecache.php?width=135&height=135&cropratio=135:135&color=000&image=/media/images/no_img.png"/></a>
 											<? endif;?>

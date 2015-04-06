@@ -145,7 +145,7 @@ $this->load->view('includes/header', $seo_data);?>
                         <div class="quarter-tile clearfix" style="height: auto; padding-bottom: 40px;">
 
                             <div class="col-sm-4 col-md-3">                                
-                                <img class="img-responsive frame" src="/media/imagecache.php?width=345&image=<?php echo ROOTPATH.$categoryMeta->path;?>">
+                                <img class="img-responsive frame" style="max-width: 200px; max-height: 200px; width: auto; height: auto; display: block" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?php echo ROOTPATH.$categoryMeta->path;?>">
                             </div>
                             <div class="col-sm-8 col-md-9">
                                 <p class="quarter-tile-title"><?php echo $categoryMeta->title;?></p>

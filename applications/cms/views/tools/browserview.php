@@ -28,7 +28,7 @@
 					}
 					else
 					{	?>
-						<img class="imagepick" rel="<?=$image->image_path?>" src="/media/imagecache.php?image=<?=$image->image_path?>&height=150&width=150&cropratio=150:150&color=FFFFFF"/>
+						<img class="imagepick" rel="<?=$image->image_path?>" style="max-width: 150px; max-height: 150px; width: auto; height: auto; display: block" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$image->image_path?>&height=150&width=150&cropratio=150:150&color=FFFFFF"/>
                 	<?php
                 	}
 					?>
@@ -79,7 +79,8 @@ $(function (){
 		}
 		<? if(isset($regUpload)):?>
 		window.opener.$("input[name=<?=$regUpload?>]").val($pathUrl);
-		window.opener.$("img#<?=$regUpload?>").attr('src', '/media/imagecache.php?width=200&height=200&image='+$url);
+        window.opener.$("img#<?=$regUpload?>").attr('style', 'max-width: 200px; max-height: 200px; width: auto; height: auto; display: block');
+        window.opener.$("img#<?=$regUpload?>").attr('src', 'http://jafra-mx.s3-website-us-west-1.amazonaws.com'+$url);
 		window.opener.$("img#<?=$regUpload?>").fadeIn();
 		<? else:?>
 		window.opener.CKEDITOR.tools.callFunction('<?=$funcnum?>', $url);
@@ -101,7 +102,8 @@ $(function (){
 		}
 		<? if(isset($regUpload)):?>
 		window.opener.$("input[name=<?=$regUpload?>]").val($pdfUrl);
-		window.opener.$("img#<?=$regUpload?>").attr('src', '/media/imagecache.php?width=200&height=200&image='+$url);
+        window.opener.$("img#<?=$regUpload?>").attr('style', 'max-width: 200px; max-height: 200px; width: auto; height: auto; display: block');
+        window.opener.$("img#<?=$regUpload?>").attr('src', 'http://jafra-mx.s3-website-us-west-1.amazonaws.com'+$url);
 		window.opener.$("img#<?=$regUpload?>").fadeIn();
 		<? else:?>
 		window.opener.CKEDITOR.tools.callFunction('<?=$funcnum?>', $url);

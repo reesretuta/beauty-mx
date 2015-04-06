@@ -14,7 +14,7 @@
 			<?php if(!in_array($title,unserialize(HIDE_PREVIEW_COLUMNS)) && $content):?>
 				<div class="heading"><?=humanize($title)?>:</div>
 				<?php if(in_array($title, unserialize(UPLOAD_PATHS))):?>
-					<div class="content"><img src="/media/imagecache.php?width=300&height=300&image=<?=$content?>"/></div>
+					<div class="content"><img style="max-width: 300px; max-height: 300px; width: auto; height: auto; display: block" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$content?>"/></div>
 				<?php else:?>
 					<div class="content"><?=$content?></div>
 				<?php endif;?>

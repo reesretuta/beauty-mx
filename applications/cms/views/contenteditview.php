@@ -155,7 +155,7 @@
 									<? }
 									else
 									{ ?>
-                                    <img class="uploaded_image" id="<?=$field->column_name?>" src="/media/imagecache.php?width=200&height=200&image=<?=$content->$column_name?>"/><br/>
+                                    <img class="uploaded_image" id="<?=$field->column_name?>" style="max-width: 200px; max-height: 200px; width: auto; height: auto; display: block" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$content->$column_name?>"/><br/>
                                     <? } ?>
 									<!-- <div class="file_uploader"></div> -->
 									<br/>
