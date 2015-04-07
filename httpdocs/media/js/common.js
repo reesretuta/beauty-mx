@@ -322,7 +322,7 @@ $(function (){
 	$("img.popup").click(function(){
 		$src=$(this).attr('rel');
 		blockade();
-		$('.inneroverlay').html('<img width=500 height=500 style="max-width: 100%; height: auto" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com'+$src+'"/>');
+		$('.inneroverlay').html('<img width=500 height=500 style="max-width: 100%; height: auto" src="'+$src+'"/>');
 		$('.inneroverlay').addClass('embeddedcenter imgborder');
 		addCloseButton();
 	});
