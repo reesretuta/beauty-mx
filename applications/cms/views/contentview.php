@@ -172,7 +172,7 @@
 											{
 											?>
 											<? if(!empty($row) && $row != NULL):?>
-												<img class="popup" rel="<?=$row?>" src="/media/imagecache.php?width=150&height=75&cropratio=150:75&image=<?=$row?>"/>
+												<img class="popup" style="max-width: 150px; max-height: 75px; width: auto; height: auto; display: block" rel="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$row?>" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$row?>"/>
 											<? else:?>
 												<img src="/media/imagecache.php?width=150&height=75&cropratio=150:75&image=/media/images/no_img.png"/>
 											<? endif;?>
