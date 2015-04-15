@@ -154,6 +154,7 @@ class Cms extends CI_Model {
     public function getFaqSection(){
    	 $this->db->select('*');
    	 $this->db->from('homepage_faqs');
+     $this->db->where('__is_trash',0);
    	 $query = $this->db->get();
        	 if($query->num_rows() == 0 ){
        		return false;
