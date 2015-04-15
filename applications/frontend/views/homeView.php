@@ -119,7 +119,7 @@
               <span ng-bind-html="&#39;OS-SECTION1-BODY&#39; | translate | unsafe" class="ng-binding"><?php echo $hero[0]->sub_title; ?></span></p>
 
             <p class="jumboget">
-              <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-med" role="button" href="#why_jafra" data-toggle="modal" data-target=".bs-example-modal-lg" analytics-on="click" analytics-event="Hero CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-SECTION1-BTN&#39; | translate | unsafe" class="ng-binding"><?php echo $hero[0]->start_button ?></span></a>
+              <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-med" href="#why_jafra" analytics-on="click" analytics-event="Hero CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-SECTION1-BTN&#39; | translate | unsafe" class="ng-binding"><?php echo $hero[0]->start_button ?></span></a>
 
             </p>
           </div>
@@ -280,7 +280,7 @@
                           </div>
                           <div class="row text-center subrow">
                             <span class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-ABOUT-MAKE&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->outro[0] ?></span> <span class="color-red HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-ABOUT-MAKE-TODAY&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->outro[1] ?></span></span> <span ng-bind-html="&#39;OS-ABOUT-THE-DAY-YOU-BEGIN&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->outro[2] ?></span></span>
-                            <p><a href="#contact_section" class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="About CTA" analytics-category="Buttons" data-toggle="modal" role="button" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;JOIN-JAFRA-TODAY&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->join_jafra ?></span></a></p>
+                            <p><a href="#contact_section" class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="About CTA" analytics-category="Buttons"><span ng-bind-html="&#39;JOIN-JAFRA-TODAY&#39; | translate | unsafe" class="ng-binding"><?php echo $timeline[0]->join_jafra ?></span></a></p>
                           </div>
                         </div>
                     </div>
