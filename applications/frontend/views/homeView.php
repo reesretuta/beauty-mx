@@ -561,29 +561,31 @@
     <div class="subsection">
         <div class="container">
             <div class="col-md-6">
-            <?php for ($i=0; $i < 8; $i++): ?>
-                    
-                    <div class="faqs-item">
-                        <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse<?= $i+1; ?>" analytics-on="click" analytics-event="Expand FAQ 0<?= $i+1; ?>" analytics-category="Content">
-                            <span ng-bind-html="&#39;OS-FAQ-QUESTION5&#39; | translate | unsafe" class="ng-binding"><?= $faqs[$i]->question ?></span> <a class="h4 more-link"></a>
+                
+            <?php $totalfaq = count($faqs); $halffaq = round($totalfaq / 2); ?>
+                
+            <?php for ($i=0; $i < $halffaq; $i++): ?>
+                        <div class="faqs-item">
+                            <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse<?= $i+1; ?>" analytics-on="click" analytics-event="Expand FAQ 0<?= $i+1; ?>" analytics-category="Content">
+                                <span ng-bind-html="&#39;OS-FAQ-QUESTION5&#39; | translate | unsafe" class="ng-binding"><?= $faqs[$i]->question ?></span> <a class="h4 more-link"></a>
+                            </div>
+                            <div class="faqs-item-answer">
+                                <!-- collapsed section content (default collapsed) -->
+                                <p id="FAQcollapse<?= $i+1; ?>" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION5-ANSWER&#39; | translate | unsafe"><?= $faqs[$i]->answer ?></p>
+                            </div>
                         </div>
-                        <div class="faqs-item-answer">
-                            <!-- collapsed section content (default collapsed) -->
-                            <p id="FAQcollapse<?= $i+1; ?>" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION5-ANSWER&#39; | translate | unsafe"><?= $faqs[$i]->answer ?></p>
-                        </div>
-                    </div>
-                    <hr>
+                        <hr>
             <?php endfor; ?>
             </div>
             <div class="col-md-6">
-                <?php for ($i=8; $i < count($faqs); $i++): ?>
+                <?php for ($i = $halffaq; $i < $totalfaq; $i++): ?>
                     
                         <div class="faqs-item">
                             <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse<?= $i+1; ?>" analytics-on="click" analytics-event="Expand FAQ 05" analytics-category="Content">
                                 <span ng-bind-html="&#39;OS-FAQ-QUESTION5&#39; | translate | unsafe" class="ng-binding"><?= $faqs[$i]->question ?></span> <a class="h4 more-link"></a>
                             </div>
                             <div class="faqs-item-answer">
-                                <!-- collapsed section content (default collapsed) -->
+
                                 <p id="FAQcollapse<?= $i+1; ?>" class="collapse ng-binding" ng-bind-html="&#39;OS-FAQ-QUESTION5-ANSWER&#39; | translate | unsafe"><?= $faqs[$i]->answer ?></p>
                             </div>
                         </div>
