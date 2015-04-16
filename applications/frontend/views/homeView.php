@@ -561,7 +561,7 @@
     <div class="subsection">
         <div class="container">
             <div class="col-md-6">
-            <?php for ($i=0; $i < 6; $i++): ?>
+            <?php for ($i=0; $i < 8; $i++): ?>
                     
                     <div class="faqs-item">
                         <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse<?= $i+1; ?>" analytics-on="click" analytics-event="Expand FAQ 0<?= $i+1; ?>" analytics-category="Content">
@@ -576,7 +576,7 @@
             <?php endfor; ?>
             </div>
             <div class="col-md-6">
-                <?php for ($i=6; $i < count($faqs); $i++): ?>
+                <?php for ($i=8; $i < count($faqs); $i++): ?>
                     
                         <div class="faqs-item">
                             <div class="faqs-item-question collapsed" data-toggle="collapse" data-target="#FAQcollapse<?= $i+1; ?>" analytics-on="click" analytics-event="Expand FAQ 05" analytics-category="Content">
