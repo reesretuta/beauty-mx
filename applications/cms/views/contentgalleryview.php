@@ -64,7 +64,7 @@
 										<? elseif(in_array($col, $_paths=unserialize(UPLOAD_PATHS))):?>
 											<!-- rollover icons -->
 											<div class="rollovers">
-                                                <a class="trash" href="javascript:;" onclick="trash('<?=base_url().'do_trash/'.$table_name.'/'.$rowid?>')" class="trash"></a>
+                                                <!-- <a class="trash" href="javascript:;" onclick="trash('<?=base_url().'do_trash/'.$table_name.'/'.$rowid?>')" class="trash"></a> -->
 												<a href="#" class="view"></a>
 												<!--<a href="<?=base_url().'content/edit/'.$table_name.'/'.$rowid?>" class="edit"></a>-->
 											</div>

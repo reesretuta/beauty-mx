@@ -822,7 +822,7 @@ ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-
 	position:absolute;
 	height:20px;
 	width:50px;
-	margin-left:18px;
+	margin-left:25px;
 	margin-top:45px;
 	display:none;
 	z-index:100;
