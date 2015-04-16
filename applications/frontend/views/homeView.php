@@ -185,7 +185,7 @@
 
                 <?php for ($i=0; $i < count($productstolove[1]); $i++): ?>
                     <div class="row padbottom subrow">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-md-offset-1">
                             <img src="<?= $productstolove[1][$i]->path ?>" class="img-responsive">
                         </div>
                         <div class="col-md-5">
