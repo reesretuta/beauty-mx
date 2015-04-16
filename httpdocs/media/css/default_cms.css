@@ -844,7 +844,12 @@ ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-
 	border:0;
 	background: url('../images/icons/gallery_icons.png') left top no-repeat;
 	}
-	
+
+.gallery_block a.trash{
+    margin: 0 auto;
+    float:none;
+}
+
 .gallery_block a.view, .gallery_block a.edit{
 	margin-left:12px;
 	background: url('../images/icons/gallery_icons.png') -25px top;
