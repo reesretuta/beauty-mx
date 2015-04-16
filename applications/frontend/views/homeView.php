@@ -171,7 +171,7 @@
                     </div><!-- /.carousel -->
                 </div><!-- /.col -->
             </div><!-- /.row -->
-            <div id="more_products" class="row collapse in">
+            <div id="more_products" class="collapse in">
                 <div class="col-md-10 col-md-offset-1">
                   <h3 class="titlify text-center section-title"><span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle ?></span></h3>
                   <p class="freedom_flexibility_description text-center padbottom">
@@ -184,11 +184,11 @@
 
 
                 <?php for ($i=0; $i < count($productstolove[1]); $i++): ?>
-                    <div class="row padbottom subrow">
+                    <div class="padbottom clearfix">
                         <div class="col-md-3">
                             <img src="<?= $productstolove[1][$i]->path ?>" class="img-responsive">
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->title ?></span></h3>
                             <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span><a target="_blank" href="<?= $productstolove[1][$i]->learn_more_link ?>">&nbsp;...learn more</a></p>
                         </div>
