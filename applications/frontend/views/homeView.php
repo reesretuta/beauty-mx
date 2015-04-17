@@ -649,7 +649,7 @@
           <!-- SPACER --> <p><br></p> <!-- REPLACE WITH CSS FROM UI DESIGN ITERATIONS BEFORE LAUNCH -->
 
         <div class="container text-center legalcopy">
-          <p><a href="" data-toggle="modal" data-target=".bs-terms-modal-lg" analytics-on="click" analytics-event="Footer Terms" analytics-category="Content"><span ng-bind-html="&#39;TERMS&#39; | translate | unsafe" class="ng-binding">Términos</span></a> | <a href="" data-toggle="modal" data-target=".bs-privacy-modal-lg" analytics-on="click" analytics-event="Footer Privacy" analytics-category="Content"><span ng-bind-html="&#39;PRIVACY&#39; | translate | unsafe" class="ng-binding">Privacidad</span></a></p>
+          <p><a href="" data-toggle="modal" data-target=".bs-terms-modal-lg" analytics-on="click" analytics-event="Footer Terms" analytics-category="Content"><span ng-bind-html="&#39;TERMS&#39; | translate | unsafe" class="ng-binding">Términos y condiciones</span></a> | <a href="" data-toggle="modal" data-target=".bs-privacy-modal-lg" analytics-on="click" analytics-event="Footer Privacy" analytics-category="Content"><span ng-bind-html="&#39;PRIVACY&#39; | translate | unsafe" class="ng-binding">Declaración de Seguridad y Privacidad</span></a></p>
           <p>
             <span ng-bind-html="&#39;COPYRIGHT&#39; | translate | unsafe" class="ng-binding">JAFRA Cosmetics International - Todos los Derechos Reservados</span>
           </p>
@@ -661,7 +661,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only"><span ng-bind-html="&#39;CLOSE&#39; | translate | unsafe" class="ng-binding">Cerrar</span></span></button>
         <h4 class="modal-title" id="myModalLabel"><span ng-bind-html="&#39;TERMS_OF_USE&#39; | translate | unsafe" class="ng-binding">Términos de Uso</span></h4>
-      </div>
+      </div></
       <div class="modal-body">
           <div class="agreement-content">
               
