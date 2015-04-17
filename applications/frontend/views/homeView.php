@@ -190,7 +190,7 @@
                         </div>
                         <div class="col-md-6">
                             <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->title ?></span></h3>
-                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span><a target="_blank" href="<?= $productstolove[1][$i]->learn_more_link ?>">&nbsp;...learn more</a></p>
+                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span></p>
                         </div>
                     </div>
                 <?php endfor; ?>
