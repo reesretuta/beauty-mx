@@ -520,13 +520,6 @@
                     </div>
                 
                 
-                    <div class="row subrow text-center cta-section">
-                    
-
-                                        <p><a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" href="http://jafraoportunidades.com.mx/contacto/form.php" target="_blank"><span>Contacto</span></a></p>
-                                   </div>
-                
-                
                 
                 </div>
                 
