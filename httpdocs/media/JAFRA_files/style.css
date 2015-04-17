@@ -1231,3 +1231,7 @@ ul.secondarynav {
 
 .middle {
   margin: 0 auto !important; }
+
+/*supress sections*/
+section#why_jafra_lifestyle, div#recompensas {
+  display: none; }

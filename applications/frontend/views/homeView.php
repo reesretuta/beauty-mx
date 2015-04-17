@@ -190,7 +190,7 @@
                         </div>
                         <div class="col-md-5">
                             <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->title ?></span></h3>
-                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span><a target="_blank" href="<?= $productstolove[1][$i]->learn_more_link ?>">&nbsp;...learn more</a></p>
+                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span></p>
                         </div>
                     </div>
                 <?php endfor; ?>
@@ -360,7 +360,8 @@
             </div>
         </div><!-- /.container -->
     </section><!-- /.subsection --></div><!-- end ngIf: session.language -->
-  <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/rewards.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/rewards.html&#39;" analytics-on="scrollby" analytics-event="Rewards" analytics-category="Scrolled To" class="ng-scope"><!-- rewards.html -->
+  <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/rewards.html' -->
+  <div id="recompensas" ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/rewards.html&#39;" analytics-on="scrollby" analytics-event="Rewards" analytics-category="Scrolled To" class="ng-scope"><!-- rewards.html -->
 <section class="subsection ng-scope" id="why_jafra_rewards">
         <div class="container subcontainer">
             <div class="row">
@@ -507,27 +508,12 @@
                     <div class="col-md-6">
                         <div class="section-copy">
                             <h3 class="titlify color-gold">ME QUIERO UNIR</h3>
-                            <?php #error_log(print_r($contact,true),0); ?>
                             <?= $contact[1]->content ?>
                         </div>
                     </div>
-                    
-                    
-                    
-                    
-                    <div class="row">
-                        
-                    </div>
-                
-                
-                    <div class="row subrow text-center cta-section">
-                    
-
-                                        <p><a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" href="http://jafraoportunidades.com.mx/contacto/form.php" target="_blank"><span>Contacto</span></a></p>
-                                   </div>
-                
-                
-                
+                    <!-- <div class="row subrow text-center cta-section">
+                        <p><a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" href="http://jafraoportunidades.com.mx/contacto/form.php" target="_blank"><span>Contacto</span></a></p>
+                    </div> -->
                 </div>
                 
                 
