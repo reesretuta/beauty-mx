@@ -28,7 +28,7 @@
 					}
 					else
 					{	?>
-						<img class="imagepick" rel="<?=$image->image_path?>" style="max-width: 150px; max-height: 150px; width: auto; height: auto; display: block" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$image->image_path?>&height=150&width=150&cropratio=150:150&color=FFFFFF"/>
+						<img class="imagepick" rel="<?=$image->image_path?>" style="max-width: 150px; max-height: 150px; width: auto; height: auto; display: block" src="http://jafra-mx.s3-website-us-west-1.amazonaws.com<?=$image->image_path?>?height=150&width=150&cropratio=150:150&color=FFFFFF"/>
                 	<?php
                 	}
 					?>
