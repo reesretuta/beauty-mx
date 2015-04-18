@@ -60,10 +60,15 @@ class Cms extends CI_Model {
 
      $this->db->select('*');
      $this->db->from('homepage_products_categories');
+     $this->db->where('__is_trash',0);
+     $this->db->order_by('sort_order','ASC');
      $products = $this->db->get();
 
      $this->db->select('*');
      $this->db->from('homepage_products_gallery');
+     $this->db->where('__is_draft',0);
+     $this->db->where('__is_trash',0);
+     $this->db->order_by('sort_order','ASC');
      $gallery = $this->db->get();
        	 if($query->num_rows() == 0 ){
        		return false;

@@ -453,7 +453,7 @@
                 </div>
             </div>
             <div class="row text-center mobile_tablet_centerfix">
-                <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg" analytics-on="click" analytics-event="Testimonials CTA" analytics-category="Buttons" data-toggle="modal" role="button" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-TESTIMONIAL-START-A-CAREER&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->start_career_button ?></span></a>
+                <a href="#contact_section" class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg" analytics-on="click" analytics-event="Testimonials CTA" analytics-category="Buttons" role="button"><span ng-bind-html="&#39;OS-TESTIMONIAL-START-A-CAREER&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->start_career_button ?></span></a>
             </div>
         </div>
     </section></div><!-- end ngIf: session.language -->
@@ -584,7 +584,7 @@
             
             <div class="col-md-12 text-center">
                 <div class="well">
-                    <a class="btn btn-primary btn-lg HelveticaNeueLTStd-BdCn" analytics-on="click" analytics-event="FAQs CTA" analytics-category="Buttons" role="button" data-toggle="modal" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-JOIN-BTN&#39; | translate | unsafe" class="ng-binding">¡Únete ahora!</span></a>
+                    <a class="btn btn-primary btn-lg HelveticaNeueLTStd-BdCn" analytics-on="click" analytics-event="FAQs CTA" analytics-category="Buttons" role="button" href="#contact_section"><span ng-bind-html="&#39;OS-JOIN-BTN&#39; | translate | unsafe" class="ng-binding">¡Únete ahora!</span></a>
                 </div>
             </div>
         </div>
