@@ -77,7 +77,7 @@
                     // console.log('response',response);
 		            $(".file_uploaded").eq(e).parents().find('form').prepend('<input type="hidden" name="_unlink[]" value="'+$(".file_uploaded").eq(e).val()+'"/>');
                     // $(".file_uploaded").eq(e).val('/media/'+response.filename);
-                    $(".file_uploaded").eq(e).val('/media/'+fileName);
+                    $(".file_uploaded").eq(e).val('/media/'+response.filename);
 	            	
                     
 	            	$(".file_uploader").eq(e).find(".qq-upload-success").not(":last").remove();
@@ -97,7 +97,7 @@
 					{
                         // $(".uploaded_image").eq(e).attr("src", '/media/imagecache.php?width=200&height=200&image=/media/'+response.filename);
                         $(".uploaded_image").eq(e).attr("style", 'max-width: 200px; max-height: 200px; width: auto; height: auto; display: block');
-                        $(".uploaded_image").eq(e).attr("src", 'http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/'+fileName);
+                        $(".uploaded_image").eq(e).attr("src", 'http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/'+response.filename);
 
                         
 					}
