@@ -171,7 +171,7 @@
                     </div><!-- /.carousel -->
                 </div><!-- /.col -->
             </div><!-- /.row -->
-            <div id="more_products" class="row collapse in">
+            <div id="more_products" class="collapse in">
                 <div class="col-md-10 col-md-offset-1">
                   <h3 class="titlify text-center section-title"><span ng-bind-html="&#39;OS-PRODUCTS-PURITY-PERFORMANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->subtitle ?></span></h3>
                   <p class="freedom_flexibility_description text-center padbottom">
@@ -184,13 +184,13 @@
 
 
                 <?php for ($i=0; $i < count($productstolove[1]); $i++): ?>
-                    <div class="row padbottom subrow">
+                    <div class="padbottom clearfix">
                         <div class="col-md-3">
                             <img src="<?= $productstolove[1][$i]->path ?>" class="img-responsive">
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <h3 class="titlify color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->title ?></span></h3>
-                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span><a target="_blank" href="<?= $productstolove[1][$i]->learn_more_link ?>">&nbsp;...learn more</a></p>
+                            <p><span ng-bind-html="&#39;OS-PRODUCTS-FRAGRANCE-DESC&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[1][$i]->description ?></span></p>
                         </div>
                     </div>
                 <?php endfor; ?>
@@ -360,62 +360,7 @@
             </div>
         </div><!-- /.container -->
     </section><!-- /.subsection --></div><!-- end ngIf: session.language -->
-  <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/rewards.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/rewards.html&#39;" analytics-on="scrollby" analytics-event="Rewards" analytics-category="Scrolled To" class="ng-scope"><!-- rewards.html -->
-<section class="subsection ng-scope" id="why_jafra_rewards">
-        <div class="container subcontainer">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-copy">
-                        <h3 class="titlify color-purple DidotLTPro-Italic">
-                            <span ng-bind-html="&#39;OS-SECTION4-TITLE1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->header1 ?></span><br>
-                            <span class="color-gold HelveticaNeueLTStd-BdCn enlarge"><span ng-bind-html="&#39;OS-SECTION4-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->header2 ?></span></span>
-                        </h3>
-                        <p><span ng-bind-html="&#39;OS-SECTION4-BODY&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->sub_header ?></span></p>
-                        <p class="text-right"><a data-target="#more_rewards" data-toggle="collapse" class="more-link more-link-alt collapsed" analytics-on="click" analytics-event="Expand Rewards" analytics-category="Content"><span><span ng-bind-html="&#39;OS-SECTION4-MORE&#39; | translate | unsafe" class="ng-binding">Recompensas</span></span></a></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div id="carousel-rewards-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive" src="/media/JAFRA_files/rewards_iPad_CoachBag.jpg">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="/media/JAFRA_files/rewards_summerTrip.jpg">
-                            </div>
-                        </div><!-- Controls -->
-                         <a class="left carousel-control" data-target="#carousel-rewards-generic" role="button" data-slide="prev" analytics-on="click" analytics-event="Rewards Carousel Prev" analytics-category="Content">
-                             <span class="glyphicon glyphicon-chevron-left"></span>
-                         </a>
-                        <a class="right carousel-control" data-target="#carousel-rewards-generic" role="button" data-slide="next" analytics-on="click" analytics-event="Rewards Carousel Next" analytics-category="Content">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- collapsed section content (default collapsed) -->
-            <div id="more_rewards" class="row collapse padtop">
-                <div class="col-md-6 text-left">
-                    <div class="padleft padright">
-                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->first_title1 ?></span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->first_title2 ?></span></span></h3>
-                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-TRAVEL-PART3&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->first_description ?></span></p>
-                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->second_title1 ?></span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->second_title2 ?></span></span></h3>
-                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-INCENTIVES-PART3&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->second_description ?></span></p>
-                        <h3 class="titlify color-purple DidotLTPro-Italic"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART1&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title1 ?></span> <span class="color-purple HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART2&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title2 ?></span></span> <span ng-bind-html="&#39;OS-REWARDS-FREE-PART3&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title3 ?></span> <br><span class="color-gold HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART4&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_title4 ?></span></span></h3>
-                        <p class="padbottom"><span ng-bind-html="&#39;OS-REWARDS-FREE-PART5&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->third_description ?></span></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="<?= $reward[0]->path; ?>" class="img-responsive padbottom">
-                </div>
-                <div class="text-center padbottom">
-                    <a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Rewards CTA" analytics-category="Buttons" data-toggle="modal" role="button" data-target=".bs-example-modal-lg"><span ng-bind-html="&#39;OS-REWARDS-TREAT-YOURSELF&#39; | translate | unsafe" class="ng-binding"><?= $reward[0]->treat_yourself_button ?></span></a>
-                </div>
-            </div>
-            
-        </div>
-    </section></div><!-- end ngIf: session.language -->
+
   <!-- ngIf: session.language --><!-- ngInclude: '/partials/online_sponsoring/sections/testimonials.html' --><div ng-if="session.language" ng-include="&#39;/partials/online_sponsoring/sections/testimonials.html&#39;" analytics-on="scrollby" analytics-event="Testimonials" analytics-category="Scrolled To" class="ng-scope"><!-- testimonials.html -->
 <section class="subsection ng-scope" id="why_jafra_testimonials">
         <div class="container subcontainer text-center">
@@ -518,13 +463,6 @@
                     <div class="row">
                         
                     </div>
-                
-                
-                    <div class="row subrow text-center cta-section">
-                    
-
-                                        <p><a class="btn btn-primary HelveticaNeueLTStd-BdCn btn-lg dropdown-toggle" analytics-on="click" analytics-event="Products CTA" analytics-category="Buttons" href="http://jafraoportunidades.com.mx/contacto/form.php" target="_blank"><span>Contacto</span></a></p>
-                                   </div>
                 
                 
                 
@@ -965,7 +903,14 @@
     var google_remarketing_only = true;
     
     </script>
+
     
+    <script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0032/4722.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    </script> 
   
 
 <script type="text/javascript">(function () {
