@@ -72,13 +72,18 @@
 	            multiple:true,
 	            showMessage:function(message){ $(".uploadstatus").html(message); },
 	            onComplete:function(id, fileName, response){
+                    // console.log('id',id);
+                    // console.log('fileName',fileName);
+                    // console.log('response',response);
 		            $(".file_uploaded").eq(e).parents().find('form').prepend('<input type="hidden" name="_unlink[]" value="'+$(".file_uploaded").eq(e).val()+'"/>');
-	            	$(".file_uploaded").eq(e).val('/media/'+response.filename);
+                    // $(".file_uploaded").eq(e).val('/media/'+response.filename);
+                    $(".file_uploaded").eq(e).val('/media/'+fileName);
 	            	
+                    
 	            	$(".file_uploader").eq(e).find(".qq-upload-success").not(":last").remove();
-	            	$f = response.filename;
-					
-					var ext = $f.split('.').pop();
+                    // $f = response.filename;
+                    // var ext = $f.split('.').pop();
+                    var ext = fileName.split('.').pop();
 
 					if(ext.toLowerCase() == 'pdf')
 					{
@@ -90,7 +95,10 @@
 					}
 					else
 					{
-	            		$(".uploaded_image").eq(e).attr("src", '/media/imagecache.php?width=200&height=200&image=/media/'+response.filename);
+                        // $(".uploaded_image").eq(e).attr("src", '/media/imagecache.php?width=200&height=200&image=/media/'+response.filename);
+                        $(".uploaded_image").eq(e).attr("src", '/media/imagecache.php?width=200&height=200&image=/media/'+fileName);
+                        
+                        
 					}
 	            	$(".uploaded_image").eq(e).fadeIn(1000);
 	            	$(".file_uploader").eq(e).find("a.qq-upload-cancel").addClass('removeUploadedImage');
