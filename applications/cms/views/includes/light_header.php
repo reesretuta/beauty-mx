@@ -96,8 +96,9 @@
 					else
 					{
                         // $(".uploaded_image").eq(e).attr("src", '/media/imagecache.php?width=200&height=200&image=/media/'+response.filename);
-                        $(".uploaded_image").eq(e).attr("src", '/media/imagecache.php?width=200&height=200&image=/media/'+fileName);
-                        
+                        $(".uploaded_image").eq(e).attr("style", 'max-width: 200px; max-height: 200px; width: auto; height: auto; display: block');
+                        $(".uploaded_image").eq(e).attr("src", 'http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/'+fileName);
+
                         
 					}
 	            	$(".uploaded_image").eq(e).fadeIn(1000);
