@@ -65,7 +65,7 @@ $(function (){
 			type:'POST',
 			data:'search=none&image='+$url+'&caption='+$caption,
 			success:function() {
-                console.log("success");
+                console.log("successfully uploaded");
                 var ext = $url.split('.').pop();
                 $pathUrl = $url;
                 if(ext.toLowerCase() == 'pdf')
@@ -77,7 +77,7 @@ $(function (){
                     $url = '/media/files/default_doc.png';
                 }
                 <? if(isset($regUpload)):?>
-                console.log("pathUrl", $pathUrl, "url", url);
+                console.log("pathUrl", $pathUrl, "url", $url);
                 window.opener.$("input[name=<?=$regUpload?>]").val($pathUrl);
                 window.opener.$("img#<?=$regUpload?>").attr('style', 'max-width: 200px; max-height: 200px; width: auto; height: auto; display: block');
                 window.opener.$("img#<?=$regUpload?>").attr('src', 'http://jafra-mx.s3-website-us-west-1.amazonaws.com'+$url);
