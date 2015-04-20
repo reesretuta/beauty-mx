@@ -41,7 +41,7 @@
 $route['default_controller'] = "home";
 
 
-//$route['pages'] = "custom404";
+// $route['pages'] = "custom404";
 $route['pages/(:any)'] = "home/pages/$2";
 
 $route['marketBuzz'] = "featuredPress";
@@ -65,7 +65,7 @@ $route['merchant/(:any)'] = "merchant/index/$2";
 
 $route['visitorInfo/(:any)'] = "visitorInfo/index/$2";
 $route['visitorinfo/(:any)'] = "visitorInfo/index/$2";
-//$route['404_override'] = 'custom404';
+$route['404_override'] = 'custom404';
 
 
 // Google Crawl Error handling
