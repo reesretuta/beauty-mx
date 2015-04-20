@@ -1439,12 +1439,20 @@
     <!-- AddThis widgets for social media sharing -->
     <script type="text/javascript">
       var addthis_config = {
-         data_ga_property: 'UA-7560748-27'
+          data_ga_property: 'UA-7560748-27',
+          pubid: 'ra-551adcbe3655bbf7'
       };
+      function initAddThis() {
+        addthis.init()
+      }
+      // After the DOM has loaded...
+      $( document ).ready(function() {
+        initAddThis();
+      });
     </script>
     <script src="/media/JAFRA_files/bootstrap.min.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551adcbe3655bbf7" async="async"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#async=1"></script>
     
     <script class="ng-scope">
       $(function(){ 
@@ -1502,5 +1510,12 @@
 <script type="text/javascript">(function () {
         return window.SIG_EXT = {};
       })()</script>
-      
-</body></html>
+
+<script type="text/javascript">
+    setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0032/4722.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+  </body></html>
