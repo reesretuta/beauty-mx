@@ -19,8 +19,8 @@ class Custom404 extends CI_Controller {
     {
         //Call the Model constructor
         parent::__construct();
-		$this->load->helper('url');
-		$this->load->database();
+        // $this->load->helper('url');
+        // $this->load->database();
    }
 
    
@@ -33,21 +33,20 @@ class Custom404 extends CI_Controller {
 *************************************************/		
 	public function index()
 	{
-        die('custom404 Controller');
+
         
 //                if(!method_exists ('Custom404' , $this->uri->segment(2) )) {echo $this->uri->segment(2); exit;}
 		$data['pageTitle']          =  '';
 		$data['metaDescription']	=  '';	
 		//$this->load->vars($data);
-        //$this->load->view('custom404');
+        $this->load->view('custom404');
         header("HTTP/1.0 404 Not Found");
-
         header_remove("Pragma");
         header_remove("Cache-Control");
         header_remove("Surrogate-Control");
         header_remove("Expires");
         
-        exit();
+        // exit();
 	}
 //        public function php()
 //	{
