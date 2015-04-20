@@ -1439,12 +1439,20 @@
     <!-- AddThis widgets for social media sharing -->
     <script type="text/javascript">
       var addthis_config = {
-         data_ga_property: 'UA-7560748-27'
+          data_ga_property: 'UA-7560748-27',
+          pubid: 'ra-551adcbe3655bbf7'
       };
+      function initAddThis() {
+        addthis.init()
+      }
+      // After the DOM has loaded...
+      $( document ).ready(function() {
+        initAddThis();
+      });
     </script>
     <script src="/media/JAFRA_files/bootstrap.min.js"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-551adcbe3655bbf7" async="async"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#async=1"></script>
     
     <script class="ng-scope">
       $(function(){ 
