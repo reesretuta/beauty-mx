@@ -426,7 +426,7 @@
                     <div class="section-copy text-left padtop">
                         <h3 class="titlify color-purple DidotLTPro-Italic text-center">
                             <span class="DidotLTPro-Roman"><span ng-bind-html="&#39;OS-SECTION5-TITLE1&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header1 ?></span></span>
-                            <span class="is_everything"><small class="color-gold HelveticaNeueLTStd-Th"><span ng-bind-html="&#39;OS-SECTION5-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header2 ?>es</span></small> <span ng-bind-html="&#39;OS-SECTION5-TITLE3&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header3 ?></span></span><br>
+                            <span class="is_everything"><small class="color-gold HelveticaNeueLTStd-Th"><span ng-bind-html="&#39;OS-SECTION5-TITLE2&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header2 ?></span></small> <span ng-bind-html="&#39;OS-SECTION5-TITLE3&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header3 ?></span></span><br>
                             <span class="color-gold HelveticaNeueLTStd-BdCn enlarge"><span ng-bind-html="&#39;OS-SECTION5-TITLE4&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header4 ?></span></span><br>
                             <span class="and_more"><span ng-bind-html="&#39;OS-SECTION5-TITLE5&#39; | translate | unsafe" class="ng-binding"><?= $testimonial[0]->header5 ?></span></span>
                         </h3>
