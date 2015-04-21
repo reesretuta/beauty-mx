@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)https://usa.jafra.com/join/?language=es_US -->
-<html lang="en" class="ng-scope"><script async="" src="//www.google-analytics.com/analytics.js"></script><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+<html lang="en" class="ng-scope">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <base href=".">
@@ -8,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
-
     <title class="ng-binding">Ingresa a JAFRA</title>
     <link type="image/x-icon" href="/media/JAFRA_files/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="/media/JAFRA_files/bootstrap.min.css">
@@ -1200,7 +1197,7 @@
     <!-- AddThis widgets for social media sharing -->
     <script type="text/javascript">
       var addthis_config = {
-          data_ga_property: 'UA-7560748-27',
+          data_ga_property: 'UA-7560748-9',
           pubid: 'ra-551adcbe3655bbf7'
       };
       function initAddThis() {
@@ -1263,24 +1260,13 @@
      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-     ga('create', 'UA-7560748-27', 'auto');
+     ga('create', 'UA-7560748-9', 'auto');
      ga('send', 'pageview');
 
     </script>
-    <script type="text/javascript">
-   
-    var google_conversion_id = 957228484;
-    var google_custom_params = window.google_tag_params;
-    var google_remarketing_only = true;
+     
     
-    </script>
     
-  
-
-<script type="text/javascript">(function () {
-        return window.SIG_EXT = {};
-      })()</script>
-
 <script type="text/javascript">
     setTimeout(function(){var a=document.createElement("script");
         var b=document.getElementsByTagName("script")[0];
