@@ -4,6 +4,10 @@ RewriteEngine on
 RewriteRule ^media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [P,L]
 #RewriteRule ^media/imagecache.php?.*image=/media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com$1 [P,L]
 
+RewriteRule ^regional.*$ http://www.jafra.com.mx/ [L,R=302]
+RewriteRule ^corporate-mx.*$ http://www.jafra.com.mx/ [L,R=302]
+RewriteRule ^sharedfiles.*$ http://www.jafra.com.mx/ [L,R=302]
+
 RewriteCond $1 !^(index\.php|resources|robots\.txt|Sitemap\.xml)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
