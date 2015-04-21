@@ -80,10 +80,10 @@
                     </li>
                   </ul>
               <ul class="join_nav nav navbar-nav navbar-right HelveticaNeueLTStd-BdCn">
-                <li class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu About" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li>
-                <li class="ng-scope"><a href="#why_jafra" analytics-on="click" analytics-event="Menu Kits" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li>
-                <li class="ng-scope"><a href="#catalog_section" analytics-on="click" analytics-event="Menu FAQs" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li>
-                <li class="ng-scope"><a href="#contact_section" class="cta"  analytics-on="click" analytics-event="Menu CTA" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li>
+                <li class="ng-scope"><a href="#freedom_flexibility" analytics-on="click" analytics-event="Menu WhoIsJafra" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV1&#39; | translate | unsafe" class="ng-binding">¿QUIÉN ES JAFRA?</span></a></li>
+                <li class="ng-scope"><a href="#why_jafra" analytics-on="click" analytics-event="Menu Producto" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV2&#39; | translate | unsafe" class="ng-binding">PRODUCTO</span></a></li>
+                <li class="ng-scope"><a href="#catalog_section" analytics-on="click" analytics-event="Menu Catalog" analytics-category="Content"><span ng-bind-html="&#39;OS-NAV3&#39; | translate | unsafe" class="ng-binding">CATÁLOGO</span></a></li>
+                <li class="ng-scope"><a href="#contact_section" class="cta"  analytics-on="click" analytics-event="Menu Contact" analytics-category="Buttons"><span ng-bind-html="&#39;OS-NAV4&#39; | translate | unsafe" class="ng-binding">CONTACTO</span></a></li>
           </ul>
 			</div>
         </div><!--/.navbar-collapse -->
