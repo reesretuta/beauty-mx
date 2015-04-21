@@ -475,8 +475,8 @@
                           <h3><?= $catalog[0]->title ?></h3>
                           <p><?= $catalog[0]->description ?></p>
                           <ul>
-                              <li><a target="blank" href="<?= $catalog[0]->external_pdf_link ?>">Download PDF</a></li>
-                              <li><a target="blank" href="<?= $catalog[0]->flash_link ?>">Interactive Version (flash)</a></li>
+                              <li><a target="blank" href="<?= $catalog[0]->external_pdf_link ?>">Descargar PDF</a></li>
+                              <li><a target="blank" href="<?= $catalog[0]->flash_link ?>">Versión Interactiva (Flash)</a></li>
                           </ul>
                       </div>
                 </div>
@@ -595,7 +595,7 @@
   <div class="container">
     <div class="row text-center">
       <p class="h4">
-        Share This Page:
+        Compartir:
       </p><!-- addthis sharing tools -->
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
       <div class="addthis_sharing_toolbox" data-url="http://www.jafra.com.mx" data-title="JAFRA_MEXICO"></div>
