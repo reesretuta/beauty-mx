@@ -1,7 +1,7 @@
 Options +FollowSymLinks
 RewriteEngine on
 
-#RewriteRule ^media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [P,L]
+RewriteRule ^media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com/media/files/$1 [P,L]
 #RewriteRule ^media/imagecache.php?.*image=/media/files/(.*) http://jafra-mx.s3-website-us-west-1.amazonaws.com$1 [P,L]
 
 RewriteRule ^regional/(.*.pdf)$ http://jcregmexico-1636426045.us-east-1.elb.amazonaws.com/regional/$1 [P,L]
@@ -46,10 +46,10 @@ FilterChain COMPRESS
 FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
 
 # substitute URL prefixes to auto-CDNify them
-#<If "%{REQUEST_URI} !~ m#^/cms.*#">
-#    AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
-#    Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
-#</If>
+<If "%{REQUEST_URI} !~ m#^/cms.*#">
+    AddOutputFilterByType SUBSTITUTE text/html text/plain text/javascript text/css application/xhtml+xml application/javascript application/x-javascript application/xml
+    #Substitute "s|/media/|http://jafra-mx-herokuapp-com.global.ssl.fastly.net/media/|n"
+</If>
 
 <If "%{REQUEST_URI} !~ m#^/$#">
     SetEnv downgrade-1.0
