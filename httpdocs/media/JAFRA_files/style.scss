@@ -466,16 +466,22 @@ section#why_jafra_products #more_products {
   background: url(/media/JAFRA_files/img/labgirl_bg01.jpg) no-repeat bottom;
   background-size: 97.5%;
   
+  
   @include breakpoint('mobile'){
+      
       .titlify{
           font-size:18px;
       }
   }
   
-  
-  
-  
 }
+
+@media screen and (max-width:1200px) {
+    section#why_jafra_products #more_products {
+        background:none;
+    }
+}
+
 section#why_jafra_products #more_products img.products-offleft {
   margin-left: -35px;
   padding-right: 25px;
