@@ -1477,9 +1477,18 @@
           //     }
           // });
         // }
+        
+        if ($(window).width() > 768) {
+            $('ul.join_nav a').on('click',function(e){
+                var section = $(e.currentTarget).attr("href");
+                var yOffset = $(section).offset().top - 80;
+                $("body").scrollTop(yOffset);
+                return false;
+            });
+            
+        }
 
         $('a.more-link').on('click', function() {
-
           $('this').parent('section').toggleClass('expanded');
         });
 
