@@ -304,7 +304,7 @@
                         <img src="/media/JAFRA_files/fpo-itsyourcall.jpg" class="pull-right fpo-itsyourcall hidden-sm hidden-xs">
                         </h3>
                         <p><?= $decision[0]->first_description ?></p>
-                        <p class="text-right"><a data-target="#more_call" data-toggle="collapse" class="more-link more-link-alt collapsed" analytics-on="click" analytics-event="Expand Opportunity" analytics-category="Content"><span>OPORTUNIDADES</span></a></p>
+                        <p class="text-right"><a data-target="#more_call" data-toggle="collapse" class="more-link more-link-alt collapsed" ps-on="click" analytics-event="Expand Opportunity" analytics-category="Content"><span>OPORTUNIDADES</span></a></p>
                     </div><!-- /.section-copy -->
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -472,8 +472,8 @@
                           <h3><?= $catalog[0]->title ?></h3>
                           <p><?= $catalog[0]->description ?></p>
                           <ul>
-                              <li><a target="blank" href="<?= $catalog[0]->external_pdf_link ?>">Descargar PDF</a></li>
-                              <li><a target="blank" href="<?= $catalog[0]->flash_link ?>">Versión Interactiva (Flash)</a></li>
+                              <li><a target="blank" analytics-on="click" analytics-category="Catalog" analytics-event="PDF category link" href="<?= $catalog[0]->external_pdf_link ?>">Descargar PDF</a></li>
+                              <li><a target="blank" analytics-on="click" analytics-category="Catalog" analytics-event="PDF flash link" href="<?= $catalog[0]->flash_link ?>">Versión Interactiva (Flash)</a></li>
                           </ul>
                       </div>
                 </div>
@@ -1249,6 +1249,8 @@
         $('a.more-link').on('click', function() {
           $('this').parent('section').toggleClass('expanded');
         });
+        
+        
 
       });
     </script>
@@ -1264,7 +1266,21 @@
      ga('send', 'pageview');
 
     </script>
+    <script>
      
+         $('a[analytics-on="click"],li[analytics-on="click"],div[analytics-on="click"]').on('click',function(){
+             // 'analytics-on="click" analytics-event="Menu About" analytics-category="Content"'
+             var category = $(this).attr('analytics-category');
+             var event = $(this).attr('analytics-event');
+             ga('send', 'event', category, 'click', event);
+         });
+         
+         $('a[href="*"]').on('click',function(){
+             var href = $(this).attr('href');
+             ga('send', 'event', 'anchor', 'click', href);
+         });
+         
+    </script> 
     
     
 <script type="text/javascript">
