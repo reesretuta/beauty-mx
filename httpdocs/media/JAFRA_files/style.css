@@ -1182,6 +1182,9 @@ body.incheckout {
 .navbar-brand {
   padding-top: 7px; }
 
+#contact h3.titlify {
+  text-align: center; }
+
 @media screen and (max-width: 768px) {
   #jafra-u, #jafra-mia {
     display: none; } }

@@ -498,13 +498,13 @@
                 <div class="contact-encapsulate clearfix">
                     <div class="col-md-6">
                         <div class="section-copy">
-                            <h3 class="titlify color-gold">QUIERO COMPRAR</h3>
+                            <h3 class="titlify color-gold">Quiero Comprar</h3>
                             <?= $contact[0]->content ?>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="section-copy">
-                            <h3 class="titlify color-gold">ME QUIERO UNIR</h3>
+                            <h3 class="titlify color-gold">Me Quiero Unir</h3>
                             <?= $contact[1]->content ?>
                         </div>
                     </div>
