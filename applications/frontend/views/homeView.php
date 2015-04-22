@@ -1145,37 +1145,37 @@
                   nuestro Aviso de Privacidad correspondiente:
               </p>
               <br/>
-              <!-- <strong>Comerciante Independiente y Público en general</strong>
-                                                <ul>
-                                                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafraCosmetics3/file/AvisoPrivacidadJafraCosmetics3.pdf">Aviso Privacidad Jafra Cosmetics</a></li>
-                                                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafrafinparaAcreditados3/file/AvisoPrivacidadJafrafinparaAcreditados3.pdf">Aviso Privacidad Jafrafin para Acreditados</a></li>
-                                                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadFundacionJafra3/file/AvisoPrivacidadFundacionJafra3.pdf">Aviso Privacidad Fundación Jafra</a></li>
-                                                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafraCosmetics3/file/AvisoPrivacidadJafraCosmetics3.pdf">Aviso Privacidad Jafra Cosmetics</a></li>
-                                                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafrafinparaAcreditados3/file/AvisoPrivacidadJafrafinparaAcreditados3.pdf">Aviso Privacidad Jafrafin para Acreditados</a></li>
-                                                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadFundacionJafra3/file/AvisoPrivacidadFundacionJafra3.pdf">Aviso Privacidad Fundación Jafra</a></li>
-                                                </ul>
+              <strong>Comerciante Independiente y Público en general</strong>
+                <ul>
+                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafraCosmetics3/file/AvisoPrivacidadJafraCosmetics3.pdf">Aviso Privacidad Jafra Cosmetics</a></li>
+                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafrafinparaAcreditados3/file/AvisoPrivacidadJafrafinparaAcreditados3.pdf">Aviso Privacidad Jafrafin para Acreditados</a></li>
+                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadFundacionJafra3/file/AvisoPrivacidadFundacionJafra3.pdf">Aviso Privacidad Fundación Jafra</a></li>
+                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafraCosmetics3/file/AvisoPrivacidadJafraCosmetics3.pdf">Aviso Privacidad Jafra Cosmetics</a></li>
+                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadJafrafinparaAcreditados3/file/AvisoPrivacidadJafrafinparaAcreditados3.pdf">Aviso Privacidad Jafrafin para Acreditados</a></li>
+                <li><a target="_blank" href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadFundacionJafra3/file/AvisoPrivacidadFundacionJafra3.pdf">Aviso Privacidad Fundación Jafra</a></li>
+                </ul>
 
-                                                <strong>(Ex) Trabajador/Candidato</strong>
-                                                <ul>
-                                                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadCandidatosDirsamex3/file/AvisoPrivacidadCandidatosDirsamex3.pdf" target"_blank">Aviso Privacidad Candidatos Dirsamex</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadCandidatosJafraManufacturing3.pdf" target"_blank">Aviso Privacidad Candidatos Jafra Manufacturing</a></li>
-                                                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadCandidatosServiday3/file/AvisoPrivacidadCandidatosServiday3.pdf" target"_blank">Aviso Privacidad Candidatos Serviday</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadEmpleadosExempleadosJafraManufacturing3.pdf" target"_blank">Aviso Privacidad Empleados-Exempleados Jafra Manufacturing</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadEmpleadosExempleadosServiday3.pdf" target"_blank">Aviso Privacidad Empleados-Exempleados Serviday</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadEmpleadosyexempleadosDirsamex3.pdf" target"_blank">Aviso Privacidad Empleados-Exempleados Dirsamex</a></li>
-                                                </ul>
+                <strong>(Ex) Trabajador/Candidato</strong>
+                <ul>
+                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadCandidatosDirsamex3/file/AvisoPrivacidadCandidatosDirsamex3.pdf" target"_blank">Aviso Privacidad Candidatos Dirsamex</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadCandidatosJafraManufacturing.pdf" target"_blank">Aviso Privacidad Candidatos Jafra Manufacturing</a></li>
+                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadCandidatosServiday3/file/AvisoPrivacidadCandidatosServiday3.pdf" target"_blank">Aviso Privacidad Candidatos Serviday</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadEmpleados-ExempleadosJafraManufacturing.pdf" target"_blank">Aviso Privacidad Empleados-Exempleados Jafra Manufacturing</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadEmpleados-ExempleadosServiday.pdf" target"_blank">Aviso Privacidad Empleados-Exempleados Serviday</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadEmpleadosyexempleadosDirsamex.pdf" target"_blank">Aviso Privacidad Empleados-Exempleados Dirsamex</a></li>
+                </ul>
 
-                                                <strong>Proveedor</strong>
-                                                <ul>
-                                                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadProveedoresDirsamex3/file/AvisoPrivacidadProveedoresDirsamex3.pdf" target="_blank">Aviso Privacidad Proveedores Dirsamex</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadProveedoresDistribuidoraComercialJafra3.pdf" target="_blank">Aviso Privacidad Proveedores Distribuidora Comercial Jafra</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadProveedoresDistribuidoraVenus3.pdf" target="_blank">Aviso Privacidad Proveedores Distribuidora Venus</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadProveedoresJafraCosmetics3.pdf" target="_blank">Aviso Privacidad Proveedores Jafra Cosmetics</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadProveedoresJafraCosmeticsInternational3.pdf" target="_blank">Aviso Privacidad Proveedores Jafra Cosmetics International</a></li>
-                                                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadProveedoresJafrafin3/file/AvisoPrivacidadProveedoresJafrafin3.pdf" target="_blank">Aviso Privacidad Proveedores Jafrafin</a></li>
-                                                <li><a href="http://www.jafra.com.mx/regional/AvisoPrivacidadProveedoresJafraManufacturing3.pdf" target="_blank">Aviso Privacidad Proveedores Jafra Manufacturing</a></li>
-                                                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadProveedoresServiday3/file/AvisoPrivacidadProveedoresServiday3.pdf" target="_blank">Aviso Privacidad Proveedores Serviday</a></li>
-                                                </ul> -->
+                <strong>Proveedor</strong>
+                <ul>
+                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadProveedoresDirsamex3/file/AvisoPrivacidadProveedoresDirsamex3.pdf" target="_blank">Aviso Privacidad Proveedores Dirsamex</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadProveedoresDistribuidoraComercialJafra.pdf" target="_blank">Aviso Privacidad Proveedores Distribuidora Comercial Jafra</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadProveedoresDistribuidoraVenus.pdf" target="_blank">Aviso Privacidad Proveedores Distribuidora Venus</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadProveedoresJafraCosmetics1.pdf" target="_blank">Aviso Privacidad Proveedores Jafra Cosmetics</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadProveedoresJafraCosmeticsInternational.pdf" target="_blank">Aviso Privacidad Proveedores Jafra Cosmetics International</a></li>
+                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadProveedoresJafrafin3/file/AvisoPrivacidadProveedoresJafrafin3.pdf" target="_blank">Aviso Privacidad Proveedores Jafrafin</a></li>
+                <li><a href="/media/legal/AvisoPrivacidadProveedoresJafraManufacturing.pdf" target="_blank">Aviso Privacidad Proveedores Jafra Manufacturing</a></li>
+                <li><a href="http://www.jafra.com.mx/sharedfiles/websites/Corporate-MX/pages/avisos-de-privacidad/zones/Zone2/zoneContents/default/content/es_MX/resources/AvisoPrivacidadProveedoresServiday3/file/AvisoPrivacidadProveedoresServiday3.pdf" target="_blank">Aviso Privacidad Proveedores Serviday</a></li>
+                </ul>
           </div>
           
       </div>
