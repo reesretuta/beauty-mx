@@ -200,7 +200,7 @@
 
                         <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART1&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro1 ?></span> 
 
-                        <span class="color-red HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro2 ?></span></span>. 
+                        <span class="color-red HelveticaNeueLTStd-BdCn"><span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART2&#39; | translate | unsafe" class="ng-binding"><?= $productstolove[0]->outro2 ?></span></span>, 
 
                         <span ng-bind-html="&#39;OS-PRODUCTS-RESULTS-PART3&#39; | translate | unsafe" class="ng-binding"><br><?= $productstolove[0]->outro3 ?></span>
 
